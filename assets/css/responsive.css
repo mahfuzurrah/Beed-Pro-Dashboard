@@ -1,0 +1,28 @@
+/* @media screen and (max-width: ..px) {} */
+@media screen and (max-width: 991px) {
+
+    /* ===LogIn Pages=== */
+    .login_page .login-img {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .login-img .text-content {
+        display: none;
+    }
+
+    .login_page .login-area {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* ===LogIn Pages=== */
+
+    .login_page .login {
+        width: 320px;
+        margin: auto;
+    }
+}
