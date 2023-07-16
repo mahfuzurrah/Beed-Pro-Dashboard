@@ -177,6 +177,7 @@ textarea::placeholder {
   border-radius: 4px;
   cursor: pointer;
   font-family: 'SourceSansPro-Semibold', sans-serif;
+  text-align: center;
 }
 
 .btn:hover {
@@ -226,6 +227,7 @@ LogIn Page
 .login_page .login-form .btn,
 .login_page .login-form .btn_sec {
   width: 100%;
+  display: block;
 }
 
 .login_page .login-img {
