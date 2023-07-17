@@ -10,6 +10,11 @@
   src: url('../fonts/SourceSansPro-Semibold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
+
 :root {
   /* COLOR */
   --primary-color: #3F526F;
@@ -25,7 +30,8 @@
   --small-font-size: 14px;
   /* TYPOGRAPHY */
   --body-font: "SourceSansPro", sans-serif;
-  --text-semibold: 'SourceSansPro-Semibolde', sans-serif;
+  --text-semibold: 'SourceSansPro-Semibold', sans-serif;
+  --text-bold: 'SourceSansPro-Bold', sans-serif;
   --ex-text-font: 'Hammersmith One', sans-serif;
 }
 
@@ -38,14 +44,14 @@
   box-sizing: border-box;
 }
 
-.scroll-container {
+/* .scroll-container {
   height: 20px;
   overflow-y: scroll;
-}
+} */
 
-.scroll-content {
+/* .scroll-content {
   padding: 20px;
-}
+} */
 
 /* Hide default scrollbar */
 ::-webkit-scrollbar {
@@ -148,6 +154,11 @@ textarea::placeholder {
   color: var(--description-color);
 }
 
+.icons {
+  font-size: 24px;
+  color: var(--description-color);
+}
+
 #shadow-host-content {
   display: none;
 }
@@ -187,6 +198,167 @@ textarea::placeholder {
 
 .btn_sec:hover {
   background: #3f526f44;
+}
+
+.body_container {
+  width: 100%;
+  height: 100vh;
+  padding-left: 250px;
+  /* padding-right: 30px; */
+  /* position: relative; */
+}
+
+.container-fluid {
+  padding: 0 20px;
+}
+
+.logo_area .logo {
+  height: 40px;
+}
+
+/* ============
+Said Navbar
+=========== */
+.said_navbar {
+  background: var(--primary-color);
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.said_navbar .nav_list_area {
+  margin-top: 30px;
+}
+
+.said_navbar .nav_list_area .menu_list .nav_list{
+  margin-top: 20px;
+}
+
+.said_navbar .nav_list_area .menu_list .nav_list:nth-child(1){
+  margin-top: 0;
+}
+
+.said_navbar .nav_list_area .menu_list .nav_list .nav_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all 0.5s ease-in-out;
+}
+
+.said_navbar .nav_list_area .menu_list .nav_list .nav_link span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #919EAB;
+}
+
+.said_navbar .nav_list_area .menu_list .nav_list .nav_link span .icons {
+  font-size: 20px;
+}
+
+.said_navbar .nav_list_area .menu_list .nav_list .nav_link.active span {
+  color: var(--white-color) !important;
+}
+
+.said_navbar .nav_list_area .menu_list .nav_list .nav_link.active span .icons {
+  color: var(--secondary-color);
+}
+
+.said_navbar .nav_list_area .menu_list .nav_list .sub_menu {
+  margin-left: 45px;
+  margin-top: 10px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.said_navbar .nav_list_area .menu_list .nav_list .sub_menu li{
+  list-style-type: circle;
+  color: #919EAB;
+  margin-top: 10px;
+}
+
+.said_navbar .nav_list_area .menu_list .nav_list .sub_menu li a{
+  color: #919EAB;
+}
+
+.said_navbar .nav_list_area .menu_list .nav_list .sub_menu.open{
+  display: block;
+  opacity: 1;
+}
+
+.menu_title{
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: #919EAB;
+  font-family: var(--text-bold)
+}
+
+
+/* ============
+Top Navbar
+=========== */
+
+.top_navbar {
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  right: -20px !important;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  max-width: 1680px;
+  padding: 0 20px;
+}
+
+.top_navbar .user_area {
+  width: 48px;
+  height: 48px;
+  background: var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.top_navbar .user_area .icons {
+  color: var(--primary-color);
+}
+
+.top_navbar .text {
+  text-align: end;
+}
+
+.top_navbar .text .company_name {
+  font-family: var(--text-bold);
+  color: var(--primary-color);
+}
+
+
+/* ============
+404 Page
+=========== */
+.error_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 375px;
+  margin: auto;
+  height: 90vh;
+}
+
+.error_content .btn {
+  width: 100%;
 }
 
 /* ============
@@ -295,6 +467,7 @@ LogIn Page
 .input-group-text {
   background: none;
   border-left: none;
+  cursor: pointer;
 }
 
 .input-group-text .icons {

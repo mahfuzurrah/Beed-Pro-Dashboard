@@ -1,3 +1,14 @@
+// Dropdown Menu
+const menuLists = document.querySelectorAll('.nav_list');
+
+menuLists.forEach(menuList => {
+  const subMenu = menuList.querySelector('.sub_menu');
+  menuList.addEventListener('click', () => {
+    subMenu.classList.toggle('open');
+  });
+});
+
+// Toggle Password
 const togglePassword = document.querySelector('#togglePassword');
 const passwordInput = document.querySelector('#InputPassword');
 
