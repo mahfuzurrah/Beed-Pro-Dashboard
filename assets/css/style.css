@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 
 @font-face {
-  font-family: 'SourceSansPro';
-  src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'SourceSansPro-Semibold';
-  src: url('../fonts/SourceSansPro-Semibold.ttf') format('truetype');
+  font-family: "SourceSansPro-Semibold";
+  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'SourceSansPro-Bold';
-  src: url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-family: "SourceSansPro-Bold";
+  src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
 }
 
 :root {
   /* COLOR */
-  --primary-color: #3F526F;
-  --secondary-color: #E4B95E;
-  --title-color: #4F4F50;
-  --description-color: #8D8E90;
+  --primary-color: #3f526f;
+  --secondary-color: #e4b95e;
+  --title-color: #4f4f50;
+  --description-color: #8d8e90;
   --white-color: #ffffff;
-  --border-color: #E0E1E4;
+  --border-color: #e0e1e4;
   /* TYPOGRAPHY */
   --h1-font-size: 24px;
   --h2-font-size: 20px;
@@ -30,9 +30,9 @@
   --small-font-size: 14px;
   /* TYPOGRAPHY */
   --body-font: "SourceSansPro", sans-serif;
-  --text-semibold: 'SourceSansPro-Semibold', sans-serif;
-  --text-bold: 'SourceSansPro-Bold', sans-serif;
-  --ex-text-font: 'Hammersmith One', sans-serif;
+  --text-semibold: "SourceSansPro-Semibold", sans-serif;
+  --text-bold: "SourceSansPro-Bold", sans-serif;
+  --ex-text-font: "Hammersmith One", sans-serif;
 }
 
 /*========== BASE ==========*/
@@ -73,7 +73,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--title-color);
-  background: #E9EAED;
+  background: #e9eaed;
 }
 
 h1,
@@ -174,20 +174,20 @@ textarea::placeholder {
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  font-family: 'SourceSansPro-Semibold', sans-serif;
+  font-family: "SourceSansPro-Semibold", sans-serif;
 }
 
 .btn_sec {
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  background: #E0E3E8;
+  background: #e0e3e8;
   color: var(--title-color);
   border: none;
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
   cursor: pointer;
-  font-family: 'SourceSansPro-Semibold', sans-serif;
+  font-family: "SourceSansPro-Semibold", sans-serif;
   text-align: center;
 }
 
@@ -219,7 +219,7 @@ textarea::placeholder {
 /* ============
 Said Navbar
 =========== */
-.said_navbar {
+.side_navbar {
   background: var(--primary-color);
   width: 250px;
   height: 100vh;
@@ -229,45 +229,45 @@ Said Navbar
   left: 0;
 }
 
-.said_navbar .nav_list_area {
+.side_navbar .nav_list_area {
   margin-top: 30px;
 }
 
-.said_navbar .nav_list_area .menu_list .nav_list{
+.side_navbar .nav_list_area .menu_list .nav_list {
   margin-top: 20px;
 }
 
-.said_navbar .nav_list_area .menu_list .nav_list:nth-child(1){
+.side_navbar .nav_list_area .menu_list .nav_list:nth-child(1) {
   margin-top: 0;
 }
 
-.said_navbar .nav_list_area .menu_list .nav_list .nav_link {
+.side_navbar .nav_list_area .menu_list .nav_list .nav_link {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   transition: all 0.5s ease-in-out;
 }
 
-.said_navbar .nav_list_area .menu_list .nav_list .nav_link span {
+.side_navbar .nav_list_area .menu_list .nav_list .nav_link span {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #919EAB;
+  color: #919eab;
 }
 
-.said_navbar .nav_list_area .menu_list .nav_list .nav_link span .icons {
+.side_navbar .nav_list_area .menu_list .nav_list .nav_link span .icons {
   font-size: 20px;
 }
 
-.said_navbar .nav_list_area .menu_list .nav_list .nav_link.active span {
+.side_navbar .nav_list_area .menu_list .nav_list .nav_link.active span {
   color: var(--white-color) !important;
 }
 
-.said_navbar .nav_list_area .menu_list .nav_list .nav_link.active span .icons {
+.side_navbar .nav_list_area .menu_list .nav_list .nav_link.active span .icons {
   color: var(--secondary-color);
 }
 
-.said_navbar .nav_list_area .menu_list .nav_list .sub_menu {
+.side_navbar .nav_list_area .menu_list .nav_list .sub_menu {
   margin-left: 45px;
   margin-top: 10px;
   display: none;
@@ -275,29 +275,27 @@ Said Navbar
   transition: opacity 0.3s ease-in-out;
 }
 
-
-.said_navbar .nav_list_area .menu_list .nav_list .sub_menu li{
+.side_navbar .nav_list_area .menu_list .nav_list .sub_menu li {
   list-style-type: circle;
-  color: #919EAB;
+  color: #919eab;
   margin-top: 10px;
 }
 
-.said_navbar .nav_list_area .menu_list .nav_list .sub_menu li a{
-  color: #919EAB;
+.side_navbar .nav_list_area .menu_list .nav_list .sub_menu li a {
+  color: #919eab;
 }
 
-.said_navbar .nav_list_area .menu_list .nav_list .sub_menu.open{
+.side_navbar .nav_list_area .menu_list .nav_list .sub_menu.open {
   display: block;
   opacity: 1;
 }
 
-.menu_title{
+.menu_title {
   margin-top: 40px;
   text-transform: uppercase;
-  color: #919EAB;
-  font-family: var(--text-bold)
+  color: #919eab;
+  font-family: var(--text-bold);
 }
-
 
 /* ============
 Top Navbar
@@ -315,6 +313,12 @@ Top Navbar
   align-items: center;
   max-width: 1680px;
   padding: 0 20px;
+}
+
+.top_navbar .right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .top_navbar .user_area {
@@ -342,6 +346,14 @@ Top Navbar
   color: var(--primary-color);
 }
 
+.top_navbar .left .toggle_icon{
+  cursor: pointer;
+  display: none;
+}
+
+.top_navbar .left .toggle_icon .icons {
+  font-size: 30px;
+}
 
 /* ============
 404 Page
@@ -359,6 +371,13 @@ Top Navbar
 
 .error_content .btn {
   width: 100%;
+}
+
+.side_ex_bg {
+  position: fixed;
+  right: -25%;
+  bottom: -30%;
+  z-index: -100000;
 }
 
 /* ============
@@ -417,7 +436,6 @@ LogIn Page
   left: 50%;
   top: 43%;
   transform: translate(-50%, -43%);
-
 }
 
 .login_page .login-img .text-content h1 {

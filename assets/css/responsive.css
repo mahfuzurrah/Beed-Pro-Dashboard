@@ -1,5 +1,45 @@
 /* @media screen and (max-width: ..px) {} */
 @media screen and (max-width: 991px) {
+    .body_container {
+        padding-left: 0;
+    }
+
+    /* ===Top Navbar=== */
+
+    .top_navbar .left .toggle_icon {
+        display: block;
+    }
+
+    /* ===Side Menu=== */
+
+    .side_navbar {
+        left: -250px;
+        z-index: 1;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #toggle_icon {
+        position: absolute;
+        right: -50px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--primary-color);
+        border-radius: 8px;
+        margin-top: -5px;
+        right: -65px;
+    }
+
+    #toggle_icon .icons{
+        color: var(--white-color)
+    }
+
+    .side_navbar.active {
+        left: 0;
+        transition: all 0.5s ease-in-out;
+    }
 
     /* ===LogIn Pages=== */
     .login_page .login-img {
