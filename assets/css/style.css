@@ -297,6 +297,9 @@ Said Navbar
   font-family: var(--text-bold);
 }
 
+#toggle_icon{
+  display: none;
+}
 /* ============
 Top Navbar
 =========== */
