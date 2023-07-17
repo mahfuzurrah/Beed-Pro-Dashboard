@@ -297,9 +297,10 @@ Said Navbar
   font-family: var(--text-bold);
 }
 
-#toggle_icon{
+#toggle_icon {
   display: none;
 }
+
 /* ============
 Top Navbar
 =========== */
@@ -324,7 +325,7 @@ Top Navbar
   align-items: center;
 }
 
-.top_navbar .user_area {
+.top_navbar .user {
   width: 48px;
   height: 48px;
   background: var(--border-color);
@@ -334,10 +335,30 @@ Top Navbar
   justify-content: center;
   margin-left: 30px;
   cursor: pointer;
+  position: relative;
 }
 
-.top_navbar .user_area .icons {
+.top_navbar .user .user_area .icons {
   color: var(--primary-color);
+  margin-top: 7px;
+}
+
+.top_navbar .status .bxs-check-circle,
+.top_navbar .status .bxs-x-circle {
+  font-size: 18px;
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  display: none;
+}
+
+.top_navbar .status .icons.green{
+  display: block;
+  color: #009B51 !important;
+}
+
+.top_navbar .status .icons.red{
+  color: #ff0000 !important;
 }
 
 .top_navbar .text {
@@ -349,7 +370,7 @@ Top Navbar
   color: var(--primary-color);
 }
 
-.top_navbar .left .toggle_icon{
+.top_navbar .left .toggle_icon {
   cursor: pointer;
   display: none;
 }
