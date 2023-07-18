@@ -57,12 +57,3 @@
     }
 }
 
-@media screen and (max-width: 576px) {
-
-    /* ===LogIn Pages=== */
-
-    .login_page .login {
-        width: 320px;
-        margin: auto;
-    }
-}
