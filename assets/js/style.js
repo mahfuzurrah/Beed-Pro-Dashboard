@@ -15,3 +15,40 @@ menuLists.forEach(menuList => {
     subMenu.classList.toggle('open');
   });
 });
+
+
+// Enter Verification Code
+
+function handleInput(currentInput, nextInput) {
+  if (currentInput.value.length === currentInput.maxLength) {
+    nextInput.focus();
+  }
+}
+
+function handleInputTwo(currentInput, nextInput) {
+  if (currentInput.value.length === currentInput.maxLength) {
+    nextInput.focus();
+  }
+}
+
+function handleInputThree(currentInput, nextInput) {
+  if (currentInput.value.length === currentInput.maxLength) {
+    if (nextInput) {
+      nextInput.focus();
+    }
+  }
+}
+
+function handleBackspace(currentInput, previousInput) {
+  if (currentInput.value.length === 0 && event.keyCode === 8) {
+    previousInput.focus();
+  }
+}
+
+
+// input_error
+
+function removeInputError() {
+  const errorDiv = document.querySelector('.input_error');
+  errorDiv.classList.remove('input_error');
+}

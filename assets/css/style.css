@@ -44,15 +44,6 @@
   box-sizing: border-box;
 }
 
-/* .scroll-container {
-  height: 20px;
-  overflow-y: scroll;
-} */
-
-/* .scroll-content {
-  padding: 20px;
-} */
-
 /* Hide default scrollbar */
 ::-webkit-scrollbar {
   width: 1px;
@@ -128,7 +119,7 @@ img {
 }
 
 input {
-  padding: 8px;
+  padding: 8px !important;
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }

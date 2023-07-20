@@ -3,143 +3,207 @@ LogIn Page
 =========== */
 
 .login_page {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .login_page .login-area {
-    padding: 20px;
-    border-radius: 8px;
-    width: 50%;
-    margin: auto;
-  }
-  
-  .login_page .login {
-    width: 400px;
-    margin: auto;
-  }
-  
-  .login_page .login-form {
-    padding: 20px;
-    background: var(--white-color);
-    border-radius: 8px;
-    margin-top: 30px;
-  }
-  
-  .login_page .login-form h1 {
-    margin-bottom: 20px;
-  }
-  
-  .login_page .login-form .btn,
-  .login_page .login-form .btn_sec {
-    width: 100%;
-    display: block;
-  }
-  
-  .login_page .login-img {
-    width: 50%;
-    background-image: url(../img/login_img.png);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  
-  .login_page .login-img .text-content {
-    position: absolute;
-    left: 50%;
-    top: 43%;
-    transform: translate(-50%, -43%);
-  }
-  
-  .login_page .login-img .text-content h1 {
-    color: var(--white-color);
-    margin-bottom: 30px;
-  }
-  
-  .login_page .login-img .text-content p {
-    color: var(--white-color);
-    font-size: 20px;
-  }
-  
-  .login_page .login-area .f_pass {
-    display: block;
-    margin-top: 20px;
-    color: var(--secondary-color);
-    text-align: center;
-    text-decoration: underline;
-  }
-  
-  .terms_footer {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 250px;
-  }
-  
-  .terms_footer p {
-    color: var(--white-color);
-    font-size: var(--small-font-size);
-  }
-  
-  .terms_footer .terms_info {
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
-    font-size: var(--small-font-size);
-    color: var(--white-color);
-  }
-  
-  .terms_footer .terms_info a {
-    color: var(--white-color);
-    text-decoration: underline;
-  }
-  
-  .input-group-text {
-    background: none;
-    border-left: none;
-    cursor: pointer;
-  }
-  
-  .input-group-text .icons {
-    font-size: var(--small-font-size);
-    color: var(--border-color) !important;
-  }
-  
-  /* #InputPassword {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+
+.login_page .login-area {
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  margin: auto;
+}
+
+.login_page .login {
+  width: 400px;
+  margin: auto;
+}
+
+.login_page .login-form {
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.login_page .login-form h1 {
+  margin-bottom: 20px;
+}
+
+.login_page .login-form .btn,
+.login_page .login-form .btn_sec {
+  width: 100%;
+  display: block;
+}
+
+.login_page .login-img {
+  width: 50%;
+  background-image: url(../img/login_img.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.login_page .login-img .text-content {
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, -43%);
+}
+
+.login_page .login-img .text-content h1 {
+  color: var(--white-color);
+  margin-bottom: 30px;
+}
+
+.login_page .login-img .text-content p {
+  color: var(--white-color);
+  font-size: 20px;
+}
+
+.login_page .login-area .f_pass {
+  display: block;
+  margin-top: 20px;
+  color: var(--secondary-color);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.terms_footer {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 250px;
+}
+
+.terms_footer p {
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+}
+
+.terms_footer .terms_info {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+}
+
+.terms_footer .terms_info a {
+  color: var(--white-color);
+  text-decoration: underline;
+}
+
+.input-group-text {
+  background: none !important;
+  border-left: none;
+  cursor: pointer;
+}
+
+.input-group-text .icons {
+  font-size: var(--small-font-size);
+  color: var(--border-color);
+}
+
+/* #InputPassword {
     border-right: none;
   } */
 
-
-  @media screen and (max-width: 991px) {
-
-    /* ===LogIn Pages=== */
-    .login_page .login-img {
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-    }
-
-    .login-img .text-content {
-        display: none;
-    }
-
-    .login_page .login-area {
-        width: 100%;
-    }
+.input_error_message {
+  margin-top: 10px;
+  font-size: var(--small-font-size);
+  color: #F31155;
+  display: none;
 }
 
-  @media screen and (max-width: 576px) {
+.input_error_text {
+  border-right: none !important;
+  border-left: 1px solid var(--border-color);
+}
 
-    /* ===LogIn Pages=== */
+.input-group-text.input_error_text .icons.error {
+  color: #F31155;
+  font-size: 16px;
+}
 
-    .login_page .login {
-        width: 320px;
-        margin: auto;
-    }
+.input-group .input-group-text.input_error_text,
+.input_error_message {
+  display: none;
+}
+
+.input_error .input-group .input-group-text.input_error_text,
+.input_error .input_error_message {
+  display: block;
+}
+
+.input_error .input-group input{
+border-left: none;
+}
+
+/* .input_error .input_error_text {
+  border-right: none;
+  padding-left: 8px;
+  padding-right: 2px;
+}
+
+.input_error .input-group input{
+  border-left: none
+}
+
+.input_error_text{
+  padding-left: 0;
+  padding-right: 1px;
+} */
+
+
+/*  */
+
+.otp_area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.otp_area input {
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  border-radius: 8px;
+}
+
+
+@media screen and (max-width: 991px) {
+
+  /* ===LogIn Pages=== */
+  .login_page .login-img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .login-img .text-content {
+    display: none;
+  }
+
+  .login_page .login-area {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  /* ===LogIn Pages=== */
+
+  .login_page .login {
+    width: 320px;
+    margin: auto;
+  }
 }
