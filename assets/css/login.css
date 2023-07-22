@@ -142,8 +142,8 @@ LogIn Page
   display: block;
 }
 
-.input_error .input-group input{
-border-left: none;
+.input_error .input-group input {
+  border-left: none;
 }
 
 /* .input_error .input_error_text {
@@ -160,6 +160,16 @@ border-left: none;
   padding-left: 0;
   padding-right: 1px;
 } */
+
+.login_page .terms {
+  display: flex;
+  gap: 10px;
+  align-items: first baseline;
+}
+
+.login_page .terms a{
+  text-decoration: underline;
+}
 
 
 /*  */
