@@ -1,4 +1,22 @@
 /* @media screen and (max-width: ..px) {} */
+
+@media screen and (max-width: 1250px) {
+
+    /* ===Suppliers Contact List=== */
+    .overflow_area {
+        overflow-x: auto;
+        padding-bottom: 20px;
+    }
+
+    .suppliers_con_list .s-info_group {
+        width: 120%;
+    }
+
+    /* .suppliers_con_list .s-info_group {
+        flex-wrap: wrap;
+    } */
+}
+
 @media screen and (max-width: 991px) {
     .body_container {
         padding-left: 0;
@@ -32,7 +50,7 @@
         right: -65px;
     }
 
-    #toggle_icon .icons{
+    #toggle_icon .icons {
         color: var(--white-color)
     }
 
@@ -40,5 +58,54 @@
         left: 0;
         transition: all 0.5s ease-in-out;
     }
+
+    /* ===Suppliers Contact List=== */
+
+    .suppliers_con_list .s-info_group .tag_area {
+        min-width: 250px;
+    }
+
+    .suppliers_con_list .find_add_suppliers .s_find_info .s_categories,
+    .suppliers_con_list .find_add_suppliers .s_find_info .s_search {
+        width: 100%;
+    }
+
 }
 
+@media screen and (max-width: 768px) {
+
+    /* ===Suppliers Contact List=== */
+    .suppliers_con_list .s-info_group {
+        width: 170%;
+    }
+
+    .suppliers_con_list .find_add_suppliers .s_add_bulk,
+    .suppliers_con_list .find_add_suppliers {
+        display: block;
+    }
+
+    .suppliers_con_list .find_add_suppliers .s_add_bulk .btn_sec,
+    .suppliers_con_list .find_add_suppliers .s_add_bulk .btn {
+        display: block;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    /* ===Top Navbar=== */
+    .top_navbar .text{
+        display: none;
+    }
+
+    .suppliers_con_list .find_add_suppliers .s_find_info {
+        display: block;
+    }
+
+    .find_add_suppliers .s_find_info .s_search {
+        margin-top: 20px;
+    }
+
+
+}

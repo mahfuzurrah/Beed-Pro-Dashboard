@@ -52,3 +52,83 @@ function removeInputError() {
   const errorDiv = document.querySelector('.input_error');
   errorDiv.classList.remove('input_error');
 }
+
+
+// input Tag
+
+const tagInput = document.getElementById('tag-input');
+const selectedTagsContainer = document.getElementById('selected-tags');
+const dropdown = document.getElementById('dropdown');
+const dropdownOptions = document.querySelectorAll('.dropdown li');
+
+let isDropdownVisible = false;
+
+tagInput.addEventListener('click', () => {
+  toggleDropdown();
+});
+
+dropdownOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    addTag(option.textContent);
+    tagInput.value = '';
+    toggleDropdown();
+  });
+});
+
+tagInput.addEventListener('keydown', event => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    addTag(tagInput.value);
+    tagInput.value = '';
+  }
+});
+
+document.addEventListener('click', event => {
+  if (!event.target.matches('#tag-input') && isDropdownVisible) {
+    hideDropdown();
+  }
+});
+
+function toggleDropdown() {
+  if (isDropdownVisible) {
+    hideDropdown();
+  } else {
+    showDropdown();
+  }
+}
+
+function showDropdown() {
+  dropdown.style.display = 'block';
+  isDropdownVisible = true;
+}
+
+function hideDropdown() {
+  dropdown.style.display = 'none';
+  isDropdownVisible = false;
+}
+
+function addTag(tag) {
+  if (tag.trim() === '') return;
+
+  const tagElement = document.createElement('div');
+  tagElement.classList.add('selected-tag');
+  tagElement.textContent = tag;
+  tagElement.addEventListener('click', () => {
+    tagElement.remove();
+  });
+
+  selectedTagsContainer.appendChild(tagElement);
+}
+
+
+
+// Supplier Name Hide
+const items = document.querySelectorAll('.hide_p');
+
+// Add click event listener to each item
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    // Toggle the visibility of the clicked item
+    item.style.display = 'none';
+  });
+});
