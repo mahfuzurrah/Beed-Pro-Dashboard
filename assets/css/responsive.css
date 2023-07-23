@@ -94,8 +94,9 @@
 }
 
 @media screen and (max-width: 576px) {
+
     /* ===Top Navbar=== */
-    .top_navbar .text{
+    .top_navbar .text {
         display: none;
     }
 
@@ -107,5 +108,9 @@
         margin-top: 20px;
     }
 
+
+    .add_supplier_page .s_add_form {
+        width: 100%;
+    }
 
 }
