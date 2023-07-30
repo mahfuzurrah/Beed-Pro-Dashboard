@@ -117,6 +117,10 @@ Add Supplier
     font-size: 16px;
     margin-left: 5px;
   }
+  .add_supplier_page .c_person_name.active{
+    background: var(--primary-color);
+    color: var(--white-color);
+  }
   
   .add_supplier_page .c_person_list.view_zigzag .c_person_name {
     padding: 12px 8px !important;

@@ -123,26 +123,25 @@ function addTag(tag) {
 
 
 // Supplier Name Hide
-// const items = document.querySelectorAll('.hide_p');
 
-// // Add click event listener to each item
-// items.forEach(item => {
-//   item.addEventListener('click', () => {
-//     // Toggle the visibility of the clicked item
-//     item.style.display = 'none';
-//   });
-// });
-
-// Get all elements with class "hide_p"
 const hideButtons = document.querySelectorAll('.hide_p');
 
-// Add click event listener to each "hide_p" element
 hideButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Get the parent element of the "hide_p" button, which is the "c_person_name" span
         const personNameSpan = button.parentElement;
 
-        // Toggle the visibility of the parent element
         personNameSpan.style.display = 'none';
     });
+});
+
+const pItems = document.querySelectorAll('.c_person_name');
+
+pItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    pItems.forEach((pItem) => {
+      pItem.classList.remove('active');
+    });
+
+    item.classList.add('active');
+  });
 });
