@@ -138,3 +138,7 @@ Add Supplier
     gap: 5px;
     flex-wrap: wrap;
   }
+
+  #tag-input{
+    cursor: pointer;
+  }
