@@ -561,6 +561,11 @@ Add Supplier
   cursor: pointer;
 }
 
+.add_supplier_page .c_person_name .hide_p{
+  font-size: 16px;
+  margin-left: 5px;
+}
+
 .add_supplier_page .c_person_list.view_zigzag .c_person_name {
   padding: 12px 8px !important;
   cursor: pointer;
