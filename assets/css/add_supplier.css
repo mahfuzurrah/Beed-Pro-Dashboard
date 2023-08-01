@@ -50,6 +50,10 @@ Add Supplier
     display: block;
   }
   
+  .add_supplier_page .s_add_form .ex_s_text.add-p {
+    color: var(--primary-color)
+  }
+  
   .tag-container {
     position: relative;
   }

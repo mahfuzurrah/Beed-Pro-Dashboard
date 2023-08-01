@@ -258,6 +258,10 @@ textarea::placeholder {
   margin-top: 20px;
 }
 
+.section_title h1{
+  color: var(--primary-color);
+}
+
 /* ============
 Said Navbar
 =========== */
