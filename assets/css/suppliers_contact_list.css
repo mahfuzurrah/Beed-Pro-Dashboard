@@ -64,9 +64,13 @@ Suppliers Contact List
   gap: 10px;
 }
 
-.suppliers_con_list .suppliers_list_group .s_list .s_header .title h2 {
-  margin-right: 5px;
+.suppliers_con_list .suppliers_list_group .s_list .s_header .title{
+  gap: 0;
 }
+
+/* .suppliers_con_list .suppliers_list_group .s_list .s_header .title h2 {
+  margin-right: 5px;
+} */
 
 .suppliers_con_list .suppliers_list_group .s_list .s_header .title .icons {
   font-size: 20px;
