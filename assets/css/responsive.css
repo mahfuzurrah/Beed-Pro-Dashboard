@@ -70,6 +70,14 @@
         width: 100%;
     }
 
+    /* ===PRICING PAGE=== */
+    .pricing_page .pricing_table_area .pricing_header .text_content img{
+        display: none;
+    }
+
+    .pricing_page .table_area{
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {

@@ -19,8 +19,10 @@
   /* COLOR */
   --primary-color: #3f526f;
   --secondary-color: #e4b95e;
-  --title-color: #4f4f50;
-  --description-color: #8d8e90;
+  --title-color: #3F526F;
+  --description-color: #637381;
+  --gray-black-color: #161C24;
+
   --white-color: #ffffff;
   --border-color: #e0e1e4;
   /* TYPOGRAPHY */
@@ -122,6 +124,26 @@ span {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.mt-2,
+.mb-2 {
+  margin: 20px 0 !important;
+}
+
+.mt-3,
+.mb-3 {
+  margin: 30px 0 !important;
+}
+
+.mt-4,
+.mb-4 {
+  margin: 40px 0 !important;
+}
+
+.mt-5,
+.mb-5 {
+  margin: 50px 0 !important;
 }
 
 input {
@@ -254,11 +276,11 @@ textarea::placeholder {
   font-family: var(--text-semibold);
 }
 
-.section_title {
+/* .section_title {
   margin-top: 20px;
-}
+} */
 
-.section_title h1{
+.section_title h1 {
   color: var(--primary-color);
 }
 
@@ -304,6 +326,7 @@ Said Navbar
 
 .side_navbar .nav_list_area .menu_list .nav_list .nav_link span .icons {
   font-size: 20px;
+  color: #919eab;
 }
 
 .side_navbar .nav_list_area .menu_list .nav_list .nav_link.active span {
@@ -318,12 +341,12 @@ Said Navbar
   margin-left: 45px;
   margin-top: 10px;
   display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  /* opacity: 0; */
+  transition: 0.3s ease-in-out;
 }
 
 .side_navbar .nav_list_area .menu_list .nav_list .sub_menu li {
-  list-style-type: circle;
+  list-style-type: disc;
   color: #919eab;
   margin-top: 10px;
 }
@@ -352,11 +375,12 @@ Said Navbar
   font-size: var(--small-font-size);
   font-family: var(--text-bold);
   text-transform: uppercase;
+  color: #919eabad;
 }
 
 
 .side_notifi {
-  padding: 8px 8px;
+  padding: 3px 8px;
   background: var(--secondary-color);
   border-radius: 100px;
   color: var(--white-color) !important;
@@ -450,3 +474,91 @@ Top Navbar
 }
 
 
+
+
+/* ============
+PRICING PAGE
+=========== */
+
+.pricing_page {
+  /* padding: 0 120px; */
+  max-width: 1250px;
+  margin: auto;
+}
+
+.pricing_page .pricing_table_area .pricing_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pricing_page .pricing_table_area .table_header .h_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pricing_page .pricing_table_area .table_header .h_title span.recommended{
+  padding: 4px 10px;
+  background: var(--secondary-color);
+  border-radius: 100px;
+  color: var(--title-color);
+}
+
+.pricing_page .pricing_table_area .pricing_header .text_content h1 {
+  font-size: 48px;
+}
+
+.pricing_page .pricing_table_area .pricing_header .text_content .btn_group {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pricing_page .pricing_table_area .table_content {
+  background: var(--white-color);
+  border: 1px solid var(--border-color);
+  height: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  height: 100%;
+}
+
+.pricing_page .pricing_table_area .table_content .price h1 {
+  font-size: 48px;
+}
+
+.pricing_page .pricing_table_area .table_content .price h1 .mo_year_title {
+  font-size: 20px;
+}
+
+.pricing_page .pricing_table .pricing_status_btn {
+ display: initial;
+}
+
+.pricing_page .p_status.active {
+ background: var(--primary-color);
+ color: var(--white-color);
+}
+
+.pricing_page .pricing_table_area .table_content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.pricing_page .pricing_table_area .table_content .pricing_info_list ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pricing_page .pricing_table_area .table_content .pricing_info_list p {
+  font-size: var(--normal-font-size);
+  color: var(--gray-black-color);
+  font-weight: 600;
+}

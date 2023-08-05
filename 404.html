@@ -21,32 +21,79 @@
     <!-- side_navbar -->
     <div class="side_navbar" id="toggle_content">
       <div class="toggle_icon" id="toggle_icon">
-        <i class='bx bx-menu-alt-left icons'></i>
+        <i class="bx bx-menu-alt-left icons"></i>
       </div>
       <div class="logo_area">
-        <a href="#"><img class="logo" src="assets/img/logo.svg" alt="Logo" /></a>
+        <a href="index.html"
+          ><img class="logo" src="assets/img/logo.svg" alt="Logo"
+        /></a>
       </div>
       <hr style="border: 1px solid #ffffff6c" />
       <div class="nav_list_area">
         <ul class="menu_list">
           <li class="nav_list">
-            <a href="#" class="nav_link active">
+            <a href="#" class="nav_link active" onclick="toggleNavDropdown('sub_menu1')">
               <span><i class="bx bx-home icons"></i>Pricing</span>
               <i class="bx bx-chevron-down icons"></i>
             </a>
-            <ul class="sub_menu">
+            <ul class="sub_menu" id="sub_menu1">
               <li><a href="#">Home</a></li>
               <li><a href="#">Home</a></li>
             </ul>
           </li>
+          <p class="nav_title mt-5">Main Menu</p>
           <li class="nav_list">
-            <a href="#" class="nav_link">
-              <span><i class="bx bx-home icons"></i>Pricing</span>
+            <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu2')">
+              <span><i class="bx bx-layer icons"></i>Beed Flow</span>
               <i class="bx bx-chevron-down icons"></i>
             </a>
-            <ul class="sub_menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Home</a></li>
+            <ul class="sub_menu" id="sub_menu2">
+              <li><a href="#">Beed Deal</a></li>
+              <li><a href="#">Beed Doc</a></li>
+            </ul>
+          </li>
+          <p class="nav_title mt-5">Additional</p>
+          <li class="nav_list">
+            <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu3')">
+              <span><i class="bx bx-layer icons"></i>Suppliers</span>
+              <i class="bx bx-chevron-down icons"></i>
+            </a>
+            <ul class="sub_menu" id="sub_menu3">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+            </ul>
+          </li>
+          <li class="nav_list">
+            <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu4')">
+              <span><i class="bx bx-layer icons"></i>Contracts</span>
+              <i class="bx bx-chevron-down icons"></i>
+            </a>
+            <ul class="sub_menu" id="sub_menu4">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+            </ul>
+          </li>
+          <li class="nav_list">
+            <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu5')">
+              <span><i class="bx bx-layer icons"></i>Name</span>
+              <i class="bx bx-chevron-down icons"></i>
+            </a>
+            <ul class="sub_menu" id="sub_menu5">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+            </ul>
+          </li>
+          <li class="nav_list">
+            <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu6')">
+              <span
+                ><i class="bx bx-home icons"></i>Documentation
+                <span class="side_notifi">new</span></span
+              >
+              <i class="bx bx-chevron-down icons"></i>
+            </a>
+            <ul class="sub_menu" id="sub_menu6">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
             </ul>
           </li>
         </ul>

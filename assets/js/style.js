@@ -1,21 +1,26 @@
 // Toggle side menu
-const toggleContainer = document.getElementById('toggle_icon');
-const contentDiv = document.getElementById('toggle_content');
+const toggleContainer = document.getElementById("toggle_icon");
+const contentDiv = document.getElementById("toggle_content");
 
-toggleContainer.addEventListener('click', function () {
-  contentDiv.classList.toggle('active');
+toggleContainer.addEventListener("click", function () {
+  contentDiv.classList.toggle("active");
 });
 
 // Dropdown Menu
-const menuLists = document.querySelectorAll('.nav_list');
+function toggleNavDropdown(dropdownId) {
+  const dropdownOptions = document.getElementById(dropdownId);
+  const allDropdowns = document.getElementsByClassName("sub_menu");
 
-menuLists.forEach(menuList => {
-  const subMenu = menuList.querySelector('.sub_menu');
-  menuList.addEventListener('click', () => {
-    subMenu.classList.toggle('open');
-  });
-});
+  for (let i = 0; i < allDropdowns.length; i++) {
+    const dropdown = allDropdowns[i];
+    if (dropdown.id !== dropdownId) {
+      dropdown.style.display = "none";
+    }
+  }
 
+  dropdownOptions.style.display =
+    dropdownOptions.style.display === "block" ? "none" : "block";
+}
 
 // Enter Verification Code
 
@@ -45,46 +50,44 @@ function handleBackspace(currentInput, previousInput) {
   }
 }
 
-
 // input_error
 
 function removeInputError() {
-  const errorDiv = document.querySelector('.input_error');
-  errorDiv.classList.remove('input_error');
+  const errorDiv = document.querySelector(".input_error");
+  errorDiv.classList.remove("input_error");
 }
-
 
 // input Tag
 
-const tagInput = document.getElementById('tag-input');
-const selectedTagsContainer = document.getElementById('selected-tags');
-const dropdown = document.getElementById('dropdown');
-const dropdownOptions = document.querySelectorAll('.dropdown li');
+const tagInput = document.getElementById("tag-input");
+const selectedTagsContainer = document.getElementById("selected-tags");
+const dropdown = document.getElementById("dropdown");
+const dropdownOptions = document.querySelectorAll(".dropdown li");
 
 let isDropdownVisible = false;
 
-tagInput.addEventListener('click', () => {
+tagInput.addEventListener("click", () => {
   toggleDropdown();
 });
 
-dropdownOptions.forEach(option => {
-  option.addEventListener('click', () => {
+dropdownOptions.forEach((option) => {
+  option.addEventListener("click", () => {
     addTag(option.textContent);
-    tagInput.value = '';
+    tagInput.value = "";
     toggleDropdown();
   });
 });
 
-tagInput.addEventListener('keydown', event => {
-  if (event.key === 'Enter') {
+tagInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
     event.preventDefault();
     addTag(tagInput.value);
-    tagInput.value = '';
+    tagInput.value = "";
   }
 });
 
-document.addEventListener('click', event => {
-  if (!event.target.matches('#tag-input') && isDropdownVisible) {
+document.addEventListener("click", (event) => {
+  if (!event.target.matches("#tag-input") && isDropdownVisible) {
     hideDropdown();
   }
 });
@@ -98,50 +101,60 @@ function toggleDropdown() {
 }
 
 function showDropdown() {
-  dropdown.style.display = 'block';
+  dropdown.style.display = "block";
   isDropdownVisible = true;
 }
 
 function hideDropdown() {
-  dropdown.style.display = 'none';
+  dropdown.style.display = "none";
   isDropdownVisible = false;
 }
 
 function addTag(tag) {
-  if (tag.trim() === '') return;
+  if (tag.trim() === "") return;
 
-  const tagElement = document.createElement('div');
-  tagElement.classList.add('selected-tag');
+  const tagElement = document.createElement("div");
+  tagElement.classList.add("selected-tag");
   tagElement.textContent = tag;
-  tagElement.addEventListener('click', () => {
+  tagElement.addEventListener("click", () => {
     tagElement.remove();
   });
 
   selectedTagsContainer.appendChild(tagElement);
 }
 
-
-
 // Supplier Name Hide
 
-const hideButtons = document.querySelectorAll('.hide_p');
+const hideButtons = document.querySelectorAll(".hide_p");
 
-hideButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const personNameSpan = button.parentElement;
+hideButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const personNameSpan = button.parentElement;
 
-        personNameSpan.style.display = 'none';
-    });
-});
-
-const pItems = document.querySelectorAll('.c_person_name');
-
-pItems.forEach((item) => {
-  item.addEventListener('click', () => {
-    pItems.forEach((pItem) => {
-      pItem.classList.remove('active');
-    });
-
-    item.classList.add('active');
+    personNameSpan.style.display = "none";
   });
 });
+
+const pItems = document.querySelectorAll(".c_person_name");
+
+pItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    pItems.forEach((pItem) => {
+      pItem.classList.remove("active");
+    });
+
+    item.classList.add("active");
+  });
+});
+
+//Pricing Table Btn
+
+function setActiveButton(buttonClass) {
+  const buttons = document.getElementsByClassName(buttonClass);
+
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("active");
+  }
+
+  event.currentTarget.classList.add("active");
+}
