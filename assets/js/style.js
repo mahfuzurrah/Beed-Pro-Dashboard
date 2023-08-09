@@ -158,3 +158,26 @@ function setActiveButton(buttonClass) {
 
   event.currentTarget.classList.add("active");
 }
+
+//Notification Toggle Btn
+
+function toggleNotification() {
+  var notificationDiv = document.getElementById("notificationDiv");
+  notificationDiv.classList.toggle("active");
+}
+
+function openNotification() {
+  var notificationList = document.getElementById("notificationList");
+  var singleNotification = document.getElementById("single_notification");
+
+  notificationList.style.display = "none";
+  singleNotification.style.display = "block";
+}
+
+function backNotification() {
+  var notificationList = document.getElementById("notificationList");
+  var singleNotification = document.getElementById("single_notification");
+
+  notificationList.style.display = "block";
+  singleNotification.style.display = "none";
+}

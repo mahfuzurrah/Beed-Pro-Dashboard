@@ -167,6 +167,10 @@ LogIn Page
   align-items: first baseline;
 }
 
+.login_page .terms input{
+  height: auto;
+}
+
 .login_page .terms a{
   text-decoration: underline;
 }

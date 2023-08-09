@@ -122,3 +122,13 @@
     }
 
 }
+
+@media screen and (max-width: 450px) {
+
+    /* ===notification_area=== */
+    .notification_area{
+        width: auto !important;
+        left: 20px;
+    }
+
+}
