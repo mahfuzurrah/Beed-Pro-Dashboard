@@ -1,12 +1,39 @@
-// Toggle side menu
+//////////// Toggle side menu ////////////
 const toggleContainer = document.getElementById("toggle_icon");
 const contentDiv = document.getElementById("toggle_content");
 
 toggleContainer.addEventListener("click", function () {
-  contentDiv.classList.toggle("active");
+  contentDiv.classList.toggle("active"); // Toggle the "active" class on the contentDiv
 });
 
-// Dropdown Menu
+//////////// Toggle side menu ////////////
+
+const toggleSidemenuButton = document.getElementById("toggle_side_menu");
+const sidemenuList = document.querySelectorAll(".sm_side_navbar");
+const breakpoint = 991;
+
+function toggleSmSidebarClass() {
+  const isMobile = window.innerWidth <= breakpoint;
+
+  sidemenuList.forEach((element) => {
+    if (isMobile) {
+      element.classList.remove("sm_sidebar");
+    } else {
+      element.classList.toggle("sm_sidebar");
+    }
+  });
+}
+
+// Call the function initially and on window resize
+toggleSmSidebarClass();
+
+window.addEventListener("resize", toggleSmSidebarClass);
+
+// Toggle sidebar class on button click
+toggleSidemenuButton.addEventListener("click", toggleSmSidebarClass);
+
+
+//////////// Dropdown Menu ////////////
 function toggleNavDropdown(dropdownId) {
   const dropdownOptions = document.getElementById(dropdownId);
   const allDropdowns = document.getElementsByClassName("sub_menu");
@@ -22,7 +49,7 @@ function toggleNavDropdown(dropdownId) {
     dropdownOptions.style.display === "block" ? "none" : "block";
 }
 
-// Enter Verification Code
+//////////// Enter Verification Code ////////////
 
 function handleInput(currentInput, nextInput) {
   if (currentInput.value.length === currentInput.maxLength) {
@@ -50,14 +77,14 @@ function handleBackspace(currentInput, previousInput) {
   }
 }
 
-// input_error
+//////////// input_error ////////////
 
 function removeInputError() {
   const errorDiv = document.querySelector(".input_error");
   errorDiv.classList.remove("input_error");
 }
 
-// input Tag
+//////////// input Tag ////////////
 
 const tagInput = document.getElementById("tag-input");
 const selectedTagsContainer = document.getElementById("selected-tags");
@@ -123,7 +150,7 @@ function addTag(tag) {
   selectedTagsContainer.appendChild(tagElement);
 }
 
-// Supplier Name Hide
+//////////// Supplier Name Hide ////////////
 
 const hideButtons = document.querySelectorAll(".hide_p");
 
@@ -147,7 +174,7 @@ pItems.forEach((item) => {
   });
 });
 
-//Pricing Table Btn
+//////////// Pricing Table Btn ////////////
 
 function setActiveButton(buttonClass) {
   const buttons = document.getElementsByClassName(buttonClass);
@@ -159,7 +186,7 @@ function setActiveButton(buttonClass) {
   event.currentTarget.classList.add("active");
 }
 
-//Notification Toggle Btn
+//////////// /Notification Toggle Btn ////////////
 
 function toggleNotification() {
   var notificationDiv = document.getElementById("notificationDiv");
