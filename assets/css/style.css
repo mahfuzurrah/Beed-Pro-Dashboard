@@ -304,6 +304,10 @@ textarea::placeholder {
   color: var(--primary-color);
 }
 
+
+.form-group{
+  margin-top: 16px !important;
+}
 /* ============
 Said Navbar
 =========== */
