@@ -725,3 +725,24 @@ Profile css
   align-items: center;
   gap: 5px;
 }
+
+
+.user_m_list{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.user_m_list .icons{
+  color: var(--secondary-color)
+}
+
+.user_m_list p{
+  font-size: var(--normal-font-size);
+  font-family: var(--text-semibold);
+  color: #262526;
+}
