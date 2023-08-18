@@ -100,20 +100,39 @@ LogIn Page
   text-decoration: underline;
 }
 
-.input-group-text {
-  background: none !important;
-  border-left: none;
-  cursor: pointer;
+.password-group{
+  display: flex;
+  align-items: center;
 }
 
-.input-group-text .icons {
+.password-group{
+  position: relative;
+}
+
+.password_input{
+  position: relative
+}
+
+.toggle_eye {
+  position: absolute;
+  right: 10px;
+}
+
+.error_input .input_error_text{
+border-left: 0;
+margin-left: 12px;
+position: absolute;
+bottom: 6px;
+}
+
+.error_input input{
+padding-left: 45px !important;
+}
+
+.toggle_eye .icons {
   font-size: var(--small-font-size);
   color: var(--border-color);
 }
-
-/* #InputPassword {
-    border-right: none;
-  } */
 
 .input_error_message {
   margin-top: 10px;
@@ -127,23 +146,23 @@ LogIn Page
   border-left: 1px solid var(--border-color);
 }
 
-.input-group-text.input_error_text .icons.error {
+.toggle_eye.input_error_text .icons.error {
   color: #F31155;
   font-size: 16px;
 }
 
-.input-group .input-group-text.input_error_text,
+.toggle_eye.input_error_text,
 .input_error_message {
   display: none;
 }
 
-.input_error .input-group .input-group-text.input_error_text,
+.input-group .toggle_eye.input_error_text,
 .input_error .input_error_message {
   display: block;
 }
 
-.input_error .input-group input {
-  border-left: none;
+.password_input{
+  padding-right: 40px !important;
 }
 
 /* .input_error .input_error_text {

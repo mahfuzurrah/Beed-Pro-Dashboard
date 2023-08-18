@@ -296,14 +296,9 @@ textarea::placeholder {
   font-family: var(--text-semibold);
 }
 
-/* .section_title {
-  margin-top: 20px;
-} */
-
 .section_title h1 {
   color: var(--primary-color);
 }
-
 
 .form-group{
   margin-top: 16px !important;
