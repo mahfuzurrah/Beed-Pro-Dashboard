@@ -192,7 +192,6 @@ input::placeholder {
 textarea,
 input:focus {
   box-shadow: none !important;
-  /* border: 1px transparent !important; */
 }
 
 textarea::placeholder {
