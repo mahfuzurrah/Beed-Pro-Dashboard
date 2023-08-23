@@ -194,6 +194,10 @@ input:focus {
   box-shadow: none !important;
 }
 
+input::-ms-reveal {
+  display: none;
+}
+
 textarea::placeholder {
   font-size: var(--small-font-size);
   color: var(--description-color);

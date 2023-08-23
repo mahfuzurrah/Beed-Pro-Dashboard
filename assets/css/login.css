@@ -20,6 +20,40 @@ LogIn Page
   margin-top: 0 !important;
 }
 
+
+.toggle_eye {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.show-password .toggle_eye i {
+  display: none;
+}
+
+.show-password .toggle_eye i.fa-eye {
+  display: block;
+}
+
+.show-password .toggle_eye i.fa-eye-slash {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .login_page .login-area {
   padding: 20px;
   border-radius: 8px;
