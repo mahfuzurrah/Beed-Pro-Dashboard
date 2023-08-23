@@ -195,7 +195,7 @@ input:focus {
 }
 
 input::-ms-reveal {
-  display: none;
+  display: none !important;
 }
 
 textarea::placeholder {
