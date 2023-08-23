@@ -200,6 +200,14 @@ textarea::placeholder {
   color: var(--description-color);
 }
 
+.toggle_eye{
+  cursor: pointer;
+}
+
+.toggle_eye .icons{
+  color: var(--description-color) !important;
+}
+
 .icons {
   font-size: 22px;
   color: var(--description-color);
