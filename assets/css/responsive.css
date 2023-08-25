@@ -122,6 +122,11 @@
         width: 100%;
     }
 
+    .toast{
+        position: initial !important;
+        align-items: flex-start !important;
+    }
+
 }
 
 @media screen and (max-width: 450px) {

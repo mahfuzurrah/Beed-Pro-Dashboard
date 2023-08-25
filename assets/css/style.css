@@ -203,11 +203,11 @@ textarea::placeholder {
   color: var(--description-color);
 }
 
-.toggle_eye{
+.toggle_eye {
   cursor: pointer;
 }
 
-.toggle_eye .icons{
+.toggle_eye .icons {
   color: var(--description-color) !important;
 }
 
@@ -218,6 +218,29 @@ textarea::placeholder {
 
 #shadow-host-content {
   display: none;
+}
+
+.toast {
+  position: absolute;
+  top: 15%;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  color: var(--title-color);
+  font-size: 16px;
+  opacity: 0;
+}
+
+.toast .icons {
+  color: red;
+}
+
+.toast.show {
+  opacity: 1;
 }
 
 /* Common Css*/
@@ -311,9 +334,10 @@ textarea::placeholder {
   color: var(--primary-color);
 }
 
-.form-group{
+.form-group {
   margin-top: 10px;
 }
+
 /* ============
 Said Navbar
 =========== */
@@ -499,7 +523,7 @@ Said Navbar
   margin-top: 0;
 }
 
-.side_navbar.sm_sidebar  .nav_list_area .menu_list .nav_list .sub_menu li a{
+.side_navbar.sm_sidebar .nav_list_area .menu_list .nav_list .sub_menu li a {
   color: var(--white-color);
 }
 
@@ -733,7 +757,7 @@ Profile css
 }
 
 
-.user_m_list{
+.user_m_list {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -743,11 +767,11 @@ Profile css
   margin-top: 16px;
 }
 
-.user_m_list .icons{
+.user_m_list .icons {
   color: var(--secondary-color)
 }
 
-.user_m_list p{
+.user_m_list p {
   font-size: var(--normal-font-size);
   font-family: var(--text-semibold);
   color: #262526;
