@@ -125,6 +125,7 @@
     .toast{
         position: initial !important;
         align-items: flex-start !important;
+        width: 100% !important;
     }
 
 }
