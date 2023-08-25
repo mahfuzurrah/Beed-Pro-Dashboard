@@ -222,7 +222,7 @@ textarea::placeholder {
 
 .toast {
   position: absolute;
-  top: 15%;
+  top: 5%;
   padding: 10px 20px;
   background: #ffffff;
   border-radius: 8px;
