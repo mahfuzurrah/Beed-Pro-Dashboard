@@ -17,8 +17,8 @@
 
 <body>
   <div class="main">
-    <!-- side_navbar sm_side_navbar -->
-    <div class="side_navbar sm_side_navbar sm_side_navbar sm_side_navbar" id="toggle_content">
+    <!-- side_navbar toggle_body -->
+    <div class="side_navbar toggle_body toggle_body toggle_body" id="toggle_content">
       <div class="toggle_icon" id="toggle_icon">
         <i class="bx bx-menu-alt-left icons"></i>
       </div>
@@ -95,13 +95,14 @@
         </ul>
       </div>
     </div>
-    <div class="body_container sm_side_navbar sm_side_navbar">
+    <div class="body_container toggle_body toggle_body">
       <!-- top_navbar -->
       <div class="top_navbar">
         <div class="left">
           <div class="toggle_menu" id="toggle_side_menu">
             <i class="bx bx-menu icons"></i>
           </div>
+          <a href="contract-list.html" class="btn_sec">SUPPLIER</a>
         </div>
         <div class="right">
           <div class="text">
@@ -110,7 +111,7 @@
           </div>
           <div class="top_icon_group">
             <div class="user">
-              <a href="" class="user_area">
+              <a href="#" class="user_area">
                 <i class="bx bx-user-circle icons"></i>
               </a>
               <div class="status">
@@ -120,7 +121,7 @@
             </div>
             <div class="user">
               <a href="#" class="user_area" onclick="toggleNotification()">
-                <i class="bx bx-bell icons"></i>
+                <i class="bx bx-bell icons" onclick="toggleNotification()"></i>
               </a>
               <!-- <div class="status">
                   <i class='bx bxs-check-circle icons green'></i>

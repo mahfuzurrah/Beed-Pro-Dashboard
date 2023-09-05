@@ -19,9 +19,9 @@
   /* COLOR */
   --primary-color: #3f526f;
   --secondary-color: #e4b95e;
-  --title-color: #3F526F;
+  --title-color: #3f526f;
   --description-color: #637381;
-  --gray-black-color: #161C24;
+  --gray-black-color: #161c24;
 
   --white-color: #ffffff;
   --border-color: #e0e1e4;
@@ -174,13 +174,13 @@ input {
 label {
   margin-bottom: 5px;
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: #4f4f50;
   font-weight: 600;
 }
 
 hr {
   margin: 0;
-  border: 1px solid var(--border-color);
+  border: 1px solid #a6b0b9;
 }
 
 input::placeholder {
@@ -212,8 +212,12 @@ textarea::placeholder {
 }
 
 .icons {
-  font-size: 22px;
+  font-size: 24px;
   color: var(--description-color);
+}
+
+.bx-x.icons {
+  font-size: 26px;
 }
 
 #shadow-host-content {
@@ -318,7 +322,6 @@ textarea::placeholder {
   top: -25%;
   right: -25%;
   z-index: -99999;
-
 }
 
 .breadcrumb a {
@@ -338,10 +341,12 @@ textarea::placeholder {
 .form-group {
   margin-top: 10px;
 }
+.modal_close_btn {
+  border: none !important;
+  background: transparent !important;
+}
 
-/* ============
-Said Navbar
-=========== */
+/* ============ Said Navbar =========== */
 .side_navbar {
   background: var(--primary-color);
   width: 250px;
@@ -351,6 +356,13 @@ Said Navbar
   top: 0;
   left: 0;
   z-index: 10 !important;
+}
+
+.side_navbar.new_navbar {
+  background-image: url(../img/nav_bg.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .side_navbar .nav_list_area {
@@ -433,7 +445,6 @@ Said Navbar
   color: #919eabad;
 }
 
-
 .side_notifi {
   padding: 3px 8px;
   background: var(--secondary-color);
@@ -448,7 +459,6 @@ Said Navbar
   gap: 15px;
   margin-left: 30px;
 }
-
 
 .side_navbar.sm_sidebar {
   width: 80px;
@@ -476,7 +486,7 @@ Said Navbar
 }
 
 .side_navbar.sm_sidebar .nav_list_area .menu_list .nav_list a span.icons {
-  text-align: center
+  text-align: center;
 }
 
 .side_navbar.sm_sidebar .nav_list_area .menu_list .nav_list .side_notifi {
@@ -527,7 +537,6 @@ Said Navbar
 .side_navbar.sm_sidebar .nav_list_area .menu_list .nav_list .sub_menu li a {
   color: var(--white-color);
 }
-
 
 /* ============
 Top Navbar
@@ -603,7 +612,7 @@ Top Navbar
 
 .top_navbar .status .icons.green {
   display: block;
-  color: #009B51 !important;
+  color: #009b51 !important;
 }
 
 .top_navbar .status .icons.red {
@@ -619,6 +628,17 @@ Top Navbar
   color: var(--primary-color);
 }
 
+.top_navbar .left{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.top_navbar .left .btn_sec{
+  border: 1px solid var(--border-color);
+  background: transparent;
+}
+
 .top_navbar .left .toggle_icon {
   cursor: pointer;
   display: none;
@@ -627,7 +647,6 @@ Top Navbar
 .top_navbar .left .toggle_icon .icons {
   font-size: 30px;
 }
-
 
 /* ============
 notification area
@@ -662,7 +681,7 @@ notification area
 }
 
 .notification_area .notifi_item:hover {
-  background: #E4B95E29;
+  background: #e4b95e29;
 }
 
 .notification_area .notifi_item:first-child {
@@ -699,7 +718,6 @@ notification area
   top: 6px;
 }
 
-
 .single_notification .notifi_item {
   cursor: auto;
 }
@@ -728,7 +746,6 @@ notification area
   font-weight: 600;
 }
 
-
 /* ============
 Profile css
 =========== */
@@ -737,12 +754,11 @@ Profile css
   padding: 40px;
   background: var(--white-color);
   border-radius: 8px;
-
 }
 
 .profile_page .profile_content .profile_info_list p {
-  color: #212B36;
-  font-family: var(--text-semibold)
+  color: #212b36;
+  font-family: var(--text-semibold);
 }
 
 .profile_page .profile_content .profile_info_list ul {
@@ -757,7 +773,6 @@ Profile css
   gap: 5px;
 }
 
-
 .user_m_list {
   display: flex;
   align-items: center;
@@ -769,11 +784,63 @@ Profile css
 }
 
 .user_m_list .icons {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .user_m_list p {
   font-size: var(--normal-font-size);
   font-family: var(--text-semibold);
   color: #262526;
+}
+
+/* Style the file input to be hidden */
+.upload-container {
+  display: inline-block;
+  border-bottom: 2px solid #00A1B3 !important;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.file-label {
+  font-weight: bold;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.file-label .icons{
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.file-input {
+  display: none;
+}
+
+.fileInfoArea{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.fileInfoArea span{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.fileInfoArea{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#deleteFile {
+  display: none;
+  border-radius: 5px;
+  border: none;
+  margin: 0;
+  background: transparent;
+  padding: 0
 }

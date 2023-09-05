@@ -161,10 +161,6 @@
                     onclick="toggleNotification()"
                   ></i>
                 </a>
-                <!-- <div class="status">
-                  <i class='bx bxs-check-circle icons green'></i>
-                  <i class='bx bxs-x-circle icons red'></i>
-                </div> -->
               </div>
             </div>
           </div>
@@ -174,102 +170,137 @@
           <div class="breadcrumb">
             <a href="index.html">Home</a>
             <span><i class="bx bx-chevron-right icons"></i></span>
-            <a href="suppliers_contact_list.html" class="active">Suppliers</a>
+            <a href="contract-list.html" class="active">Suppliers</a>
           </div>
           <section class="add_supplier_page">
             <div class="section_title">
               <h1>Add Supplier</h1>
               <hr class="mt-4" />
             </div>
-            <div class="s_add_nav">
+            <div class="s_add_nav mt-4">
               <ul>
                 <li>
-                  <a href="#"
-                    ><i class="bx bx-home icons"></i>Company Information</a
+                  <a href="auto_upload-contract.html"
+                    ><i class="bx bx-home icons"></i>Automated upload</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="active"
-                    ><i class="bx bx-user-circle icons"></i>Contact Person</a
+                  <a href="manual-upload.html" class="active"
+                    ><i class="bx bx-user-circle icons"></i>Manual upload</a
                   >
                 </li>
               </ul>
             </div>
             <div class="s_add_info">
               <form class="s_add_form">
-                <div class="c_person_list mb-3">
-                  <span class="c_person_name primary"
-                    >John Doe <i class="bx bxs-star"></i
-                  ></span>
-                  <span class="c_person_name"
-                    >Yelena Abrahamyan <i class="bx bx-x hide_p"></i
-                  ></span>
-                  <span class="c_person_name"
-                    >Artyom Yeprikyan <i class="bx bx-x hide_p"></i
-                  ></span>
-                  <span class="c_person_name"
-                    >Tigran mKhitaryan <i class="bx bx-x hide_p"></i
-                  ></span>
-                </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Full Name *</label>
-                  <input
-                    type="name"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="nameHelp"
-                    placeholder="Full name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPhone">Phone *</label>
+                  <label for="exampleInputPhone">Contract Number *</label>
                   <input
                     type="phone"
                     class="form-control"
                     id="exampleInputPhone"
                     aria-describedby="phoneHelp"
-                    placeholder="0123456789"
+                    placeholder="Type"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Email *</label>
+                  <label for="exampleInputEmail1">Supplier Name *</label>
                   <input
-                    type="email"
+                    type="name"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="nameHelp"
+                    placeholder="Type"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Signatory Name *</label>
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="nameHelp"
+                    placeholder="Type"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Signatory Date *</label>
+                  <input
+                    type="date"
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
-                    placeholder="Enter email"
+                    placeholder="Type"
                     required
                   />
                 </div>
-                <div class="form-group tag-container mt-3">
-                  <label for="">Tags *</label>
-                  <input type="text" class="form-select" id="tag-input" />
-                  <div class="selected-tags" id="selected-tags"></div>
-                  <div class="dropdown" id="dropdown">
-                    <ul>
-                      <li>Tag 1</li>
-                      <li>Tag 2</li>
-                      <li>Tag 3</li>
-                    </ul>
-                  </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Expiry Date *</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Type"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Note</label>
+                  <label for="exampleInputEmail1">Contract Amount *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Type"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1"
+                    >Payment terms *</label
+                  >
                   <textarea
                     class="form-control"
                     id="exampleFormControlTextarea1"
                     rows="3"
                   ></textarea>
                 </div>
-                <a href="#" class="ex_s_text mt-3 add-p"
-                  >+ Add alternative contact person</a
-                >
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="upload-container">
+                  <label for="fileInput" class="file-label">
+                    <img src="assets/img/icons/Attachment.svg" alt="" />Upload
+                    File</label
+                  >
+                  <input
+                    type="file"
+                    id="fileInput"
+                    accept=".jpg, .jpeg, .png"
+                    class="file-input"
+                  />
+                  <div class="fileInfoArea">
+                    <p id="fileInfo" class="file-info"></p>
+                    <span>
+                      <p id="fileSize" class="file-info"></p>
+                      <button id="deleteFile">
+                        <i class="bx bx-x icons"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
                 <div class="btn_group">
-                  <a href="add_supplier_c_p.html" class="btn_sec mt-3">Back</a>
-                  <a href="view_supplieer.html" class="btn mt-3">Save</a>
+                  <a href="add_supplier_c_p.html" class="btn_sec mt-3">Close</a>
+                  <a href="view_supplieer.html" class="btn mt-3">Add to List</a>
                 </div>
               </form>
             </div>

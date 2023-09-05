@@ -161,10 +161,6 @@
                     onclick="toggleNotification()"
                   ></i>
                 </a>
-                <!-- <div class="status">
-                  <i class='bx bxs-check-circle icons green'></i>
-                  <i class='bx bxs-x-circle icons red'></i>
-                </div> -->
               </div>
             </div>
           </div>
@@ -174,104 +170,56 @@
           <div class="breadcrumb">
             <a href="index.html">Home</a>
             <span><i class="bx bx-chevron-right icons"></i></span>
-            <a href="suppliers_contact_list.html" class="active">Suppliers</a>
+            <a href="contract-list.html" class="active">Suppliers</a>
           </div>
           <section class="add_supplier_page">
             <div class="section_title">
-              <h1>Add Supplier</h1>
+              <h1>Upload Contract</h1>
               <hr class="mt-4" />
             </div>
-            <div class="s_add_nav">
+            <div class="s_add_nav mt-4">
               <ul>
                 <li>
-                  <a href="#"
-                    ><i class="bx bx-home icons"></i>Company Information</a
+                  <a href="auto_upload-contract.html" class="active"
+                    ><i class="bx bx-home icons"></i>Automated upload</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="active"
-                    ><i class="bx bx-user-circle icons"></i>Contact Person</a
+                  <a href="manual-upload.html"
+                    ><i class="bx bx-user-circle icons"></i>Manual upload</a
                   >
                 </li>
               </ul>
             </div>
             <div class="s_add_info">
-              <form class="s_add_form">
-                <div class="c_person_list mb-3">
-                  <span class="c_person_name primary"
-                    >John Doe <i class="bx bxs-star"></i
-                  ></span>
-                  <span class="c_person_name"
-                    >Yelena Abrahamyan <i class="bx bx-x hide_p"></i
-                  ></span>
-                  <span class="c_person_name"
-                    >Artyom Yeprikyan <i class="bx bx-x hide_p"></i
-                  ></span>
-                  <span class="c_person_name"
-                    >Tigran mKhitaryan <i class="bx bx-x hide_p"></i
-                  ></span>
+              <div class="upload_card">
+                <div class="file_img" id="fileImage">
+                  <img src="assets/img/icons/file.svg" alt="" />
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Full Name *</label>
+                <div class="text">
+                  <p id="textContent">
+                    Make sure the contract is in a digital format, such as a PDF
+                    or Word document. Review the contract to ensure it's
+                    accurate and complete.
+                  </p>
+                </div>
+                <form id="fileUploadForm" onsubmit="return handleSubmit();">
                   <input
-                    type="name"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="nameHelp"
-                    placeholder="Full name"
-                    required
+                    type="file"
+                    id="fileInput"
+                    style="display: none"
+                    onchange="handleFileChange()"
                   />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPhone">Phone *</label>
-                  <input
-                    type="phone"
-                    class="form-control"
-                    id="exampleInputPhone"
-                    aria-describedby="phoneHelp"
-                    placeholder="0123456789"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email *</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter email"
-                    required
-                  />
-                </div>
-                <div class="form-group tag-container mt-3">
-                  <label for="">Tags *</label>
-                  <input type="text" class="form-select" id="tag-input" />
-                  <div class="selected-tags" id="selected-tags"></div>
-                  <div class="dropdown" id="dropdown">
-                    <ul>
-                      <li>Tag 1</li>
-                      <li>Tag 2</li>
-                      <li>Tag 3</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Note</label>
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-                </div>
-                <a href="#" class="ex_s_text mt-3 add-p"
-                  >+ Add alternative contact person</a
-                >
-                <div class="btn_group">
-                  <a href="add_supplier_c_p.html" class="btn_sec mt-3">Back</a>
-                  <a href="view_supplieer.html" class="btn mt-3">Save</a>
-                </div>
-              </form>
+                  <button
+                    class="btn"
+                    id="uploadButton"
+                    type="button"
+                    onclick="chooseFile()"
+                  >
+                    Upload
+                  </button>
+                </form>
+              </div>
             </div>
           </section>
         </div>

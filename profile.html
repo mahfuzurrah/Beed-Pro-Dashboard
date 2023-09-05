@@ -19,9 +19,9 @@
 
   <body>
     <div class="main">
-      <!-- side_navbar sm_side_navbar -->
+      <!-- side_navbar toggle_body -->
       <div
-        class="side_navbar sm_side_navbar sm_side_navbar sm_side_navbar"
+        class="side_navbar toggle_body toggle_body toggle_body"
         id="toggle_content"
       >
         <div class="toggle_icon" id="toggle_icon">
@@ -130,7 +130,7 @@
           </ul>
         </div>
       </div>
-      <div class="body_container sm_side_navbar sm_side_navbar">
+      <div class="body_container toggle_body toggle_body">
         <!-- top_navbar -->
         <div class="top_navbar">
           <div class="left">
@@ -145,7 +145,7 @@
             </div>
             <div class="top_icon_group">
               <div class="user">
-                <a href="" class="user_area">
+                <a href="#" class="user_area">
                   <i class="bx bx-user-circle icons"></i>
                 </a>
                 <div class="status">
@@ -155,7 +155,10 @@
               </div>
               <div class="user">
                 <a href="#" class="user_area" onclick="toggleNotification()">
-                  <i class="bx bx-bell icons"></i>
+                  <i
+                    class="bx bx-bell icons"
+                    onclick="toggleNotification()"
+                  ></i>
                 </a>
                 <!-- <div class="status">
                   <i class='bx bxs-check-circle icons green'></i>

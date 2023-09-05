@@ -21,14 +21,6 @@ Suppliers Contact List
   width: 250px;
 }
 
-/* .suppliers_con_list .find_add_suppliers .s_find_info .s_search input{
-    border-right: none;
-  }
-  
-  .suppliers_con_list .find_add_suppliers .s_find_info .s_search input:focus{
-    border-right: 1px !important;
-  } */
-
 .suppliers_con_list .find_add_suppliers .s_find_info .s_search .input-group-text {
   background: var(--white-color);
   border-left: none
@@ -41,12 +33,12 @@ Suppliers Contact List
 .suppliers_con_list .suppliers_list_group .s_list {
   padding: 16px 24px;
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--white-color);
   transition: all 0.5s ease-in-out;
 }
 
 .suppliers_con_list .suppliers_list_group .s_list:hover {
-  background: var(--white-color);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .suppliers_con_list .suppliers_list_group .s_list .s_header {
@@ -64,7 +56,7 @@ Suppliers Contact List
   gap: 10px;
 }
 
-.suppliers_con_list .suppliers_list_group .s_list .s_header .title{
+.suppliers_con_list .suppliers_list_group .s_list .s_header .title {
   gap: 0;
 }
 
@@ -89,10 +81,15 @@ Suppliers Contact List
   width: 100%;
 }
 
+.suppliers_con_list .s-info_group.c-info_group {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .suppliers_con_list .s-info_group ul li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
+  font-size: var(--small-font-size)
 }
 
 .suppliers_con_list .s-info_group ul li span {
@@ -109,7 +106,71 @@ Suppliers Contact List
 .suppliers_con_list .s-info_group span.s_p_info {
   color: var(--title-color);
   font-family: var(--text-semibold);
+}
 
+.s-info_group.c-info_group span.s_p_info {
+  color: #4F4F50
+}
+
+.s_list.c_renewed {
+  border-left: 4px solid #FFAE11;
+}
+
+.s_list.c_renewed span.renewed,
+.s_list.c_expired span.expired,
+.s_list.c_current span.current {
+  padding: 2px 4px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.s_list.c_expired span.expired {
+  background: #f3115548;
+  color: #F31155;
+}
+
+.s_list.c_current span.current {
+  background: #009b5042;
+  color: #009B51;
+}
+
+.s_list.c_renewed span.renewed {
+  background: #ffb0113f;
+  color: #FFAE11;
+}
+
+.s_list.c_expired {
+  border-left: 4px solid red !important;
+}
+
+.s_list.c_current {
+  border-left: 4px solid #74D062 !important;
+}
+
+.btn_review{
+  background: #009B51;
+  color: var(--white-color);
+}
+
+.btn_process{
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.btn_process span{
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.btn_process:hover{
+  background: #d1aa56;
+  color: var(--primary-color);
+}
+
+.btn_review:hover{
+  background: #01924c;
+  color: var(--white-color);
 }
 
 .suppliers_con_list .s-info_group .tag_area {
