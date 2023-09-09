@@ -1,106 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/fav.png" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Registration Page</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/fav.png" />
-  <link rel="stylesheet" href="assets/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <!-- Custom Css -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/login.css" />
-</head>
+  <body>
+    <div class="login_page">
+      <div class="login-area">
+        <div class="login">
+          <div class="logo">
+            <img src="assets/img/logo-black.svg" alt="" />
+          </div>
+          <form class="login-form">
+            <h1>Registration</h1>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Organization ID*</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Type"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address*</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                required
+              />
+            </div>
 
-<body>
-  <div class="login_page">
-    <div class="login-area">
-      <div class="login">
-        <div class="logo">
-          <img src="assets/img/logo-black.svg" alt="" />
+            <div class="form-group">
+              <label for="exampleInputPassword1">New Password*</label>
+              <div class="password-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="InputPassword1"
+                  placeholder="Password"
+                  required
+                />
+                <span
+                  class="toggle_eye"
+                  onclick="togglePasswordVisibility('InputPassword1')"
+                  ><i class="fas fa-eye-slash icons"></i
+                ></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Confirm Password*</label>
+              <div class="password-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="InputPassword2"
+                  placeholder="Password"
+                />
+                <span
+                  class="toggle_eye"
+                  onclick="togglePasswordVisibility('InputPassword2')"
+                  ><i class="fas fa-eye-slash icons"></i
+                ></span>
+              </div>
+            </div>
+
+            <div class="terms mt-2">
+              <input type="checkbox" />
+              <p>
+                <a href="#">Privacy Policy</a> and
+                <a href="#">Terms of Service</a> condition verification and
+                email subscription
+              </p>
+            </div>
+            <button type="submit" class="btn mt-2">Register</button>
+            <a href="login.html" class="btn_sec mt-2">Login</a>
+            <a href="forget-password.html" class="f_pass">Forgot password?</a>
+          </form>
         </div>
-        <form class="login-form">
-          <h1>Registration</h1>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Organization ID*</label>
-            <input type="text" class="form-control" placeholder="Type" required />
+      </div>
+      <div class="login-img">
+        <div class="text-content">
+          <h1>VALUE PROPOSITION</h1>
+          <p>Accelerated buying decision</p>
+          <p>Automated price negotiation</p>
+          <p>Unbiased comparison of offers</p>
+        </div>
+        <div class="terms_footer">
+          <p>Beed Pro. Al Rights Reserved.</p>
+          <div class="terms_info">
+            <a href="">Privacy Policy</a>
+            <span>|</span>
+            <a href="">Terms of Service</a>
           </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address*</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Enter email" required />
-          </div>
-
-          <div class="form-group">
-            <label for="exampleInputPassword1">New Password*</label>
-            <div class="password-group">
-              <input type="password" class="form-control" id="InputPassword1" placeholder="Password" required>
-              <span class="toggle_eye" onclick="togglePasswordVisibility('InputPassword1')"><i
-                  class="fas fa-eye-slash icons"></i></span>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Confirm Password*</label>
-            <div class="password-group">
-              <input type="password" class="form-control" id="InputPassword2" placeholder="Password">
-              <span class="toggle_eye" onclick="togglePasswordVisibility('InputPassword2')"><i
-                  class="fas fa-eye-slash icons"></i></span>
-            </div>
-          </div>
-
-          <div class="terms mt-2">
-            <input type="checkbox">
-            <p><a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> condition verification and email
-              subscription</p>
-          </div>
-          <button type="submit" class="btn mt-2">Register</button>
-          <a href="login.html" class="btn_sec mt-2">Login</a>
-          <a href="forget-password.html" class="f_pass">Forgot password?</a>
-        </form>
+        </div>
       </div>
     </div>
-    <div class="login-img">
-      <div class="text-content">
-        <h1>VALUE PROPOSITION</h1>
-        <p>Accelerated buying decision</p>
-        <p>Automated price negotiation</p>
-        <p>Unbiased comparison of offers</p>
-      </div>
-      <div class="terms_footer">
-        <p>Beed Pro. Al Rights Reserved.</p>
-        <div class="terms_info">
-          <a href="">Privacy Policy</a>
-          <span>|</span>
-          <a href="">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Js Part -->
-  <script src="assets/js/jquery-3.6.4.min.js"></script>
-  <script src="assets/js/all.min.js"></script>
-  <script src="assets/js/fontawesome.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <!-- Custom JS -->
-  <script src="assets/js/style.js"></script>
-  <script>
-    // Toggle Password
-    function togglePasswordVisibility(inputId) {
-      const passwordInput = document.getElementById(inputId);
-      const toggleEye = passwordInput.parentElement.querySelector('.toggle_eye');
+    <!-- Js Part -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/style.js"></script>
+    <script>
+      // Toggle Password
+      function togglePasswordVisibility(inputId) {
+        const passwordInput = document.getElementById(inputId);
+        const toggleEye =
+          passwordInput.parentElement.querySelector(".toggle_eye");
 
-      if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        toggleEye.innerHTML = '<i class="fas fa-eye icons"></i>';
-      } else {
-        passwordInput.type = 'password';
-        toggleEye.innerHTML = '<i class="fas fa-eye-slash icons"></i>';
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          toggleEye.innerHTML = '<i class="fas fa-eye icons"></i>';
+        } else {
+          passwordInput.type = "password";
+          toggleEye.innerHTML = '<i class="fas fa-eye-slash icons"></i>';
+        }
       }
-    }
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

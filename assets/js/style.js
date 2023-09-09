@@ -6,7 +6,7 @@ try {
   toggleContainer.addEventListener("click", function () {
     contentDiv.classList.toggle("active"); // Toggle the "active" class on the contentDiv
   });
-} catch (error) { }
+} catch (error) {}
 
 
 //////////// Toggle side menu ////////////
@@ -43,7 +43,7 @@ try {
     isSidebarActive = !isSidebarActive;
     toggleSmSidebarClass();
   });
-} catch (error) { }
+} catch (error) {}
 
 
 //////////// Dropdown Menu ////////////
@@ -211,6 +211,36 @@ try {
   }
 } catch (error) {}
 
+
+///////////// User Status ////////////
+
+try {
+  function toggleUserStatus() {
+    var notificationDiv = document.getElementById("nav_user_status");
+    notificationDiv.classList.toggle("active");
+  }
+
+  document.addEventListener("click", function (event) {
+    var notificationDiv = document.getElementById("nav_user_status");
+    var userAreaLink = document.querySelector(".user_area");
+
+    // Check if the clicked element is not the user_area link or a child of the notificationDiv
+    if (
+      event.target !== userAreaLink &&
+      !userAreaLink.contains(event.target) &&
+      event.target !== notificationDiv &&
+      !notificationDiv.contains(event.target)
+    ) {
+      notificationDiv.classList.remove("active");
+    }
+  });
+
+
+} catch (error) {
+
+}
+
+
 //////////// /Notification Toggle Btn ////////////
 
 try {
@@ -234,6 +264,22 @@ try {
     notificationList.style.display = "block";
     singleNotification.style.display = "none";
   }
+
+  // document.addEventListener("click", function (event) {
+  //   var notificationDiv = document.getElementById("notificationDiv");
+  //   var userAreaLink = document.querySelector(".user_area");
+
+  //   // Check if the clicked element is not the user_area link or a child of the notificationDiv
+  //   if (
+  //     event.target !== userAreaLink &&
+  //     !userAreaLink.contains(event.target) &&
+  //     event.target !== notificationDiv &&
+  //     !notificationDiv.contains(event.target)
+  //   ) {
+  //     notificationDiv.classList.remove("active");
+  //   }
+  // });
+  
 } catch (error) {
   console.log("Notification");
 }
@@ -292,15 +338,15 @@ try {
     const uploadButton = document.getElementById('uploadButton');
     const fileImage = document.getElementById('fileImage');
     const textContent = document.getElementById('textContent');
-  
+
     if (fileInput.files.length > 0) {
       // A file has been selected, change button text and type
       uploadButton.textContent = 'Start';
       uploadButton.type = 'submit';
-  
+
       // Change the image source
       fileImage.innerHTML = '<img src="assets/img/icons/process.svg" alt="" />';
-  
+
       // Change the text content
       textContent.innerHTML = `
         <p>
@@ -311,10 +357,10 @@ try {
       `;
     }
   }
-  
+
   function chooseFile() {
     document.getElementById('fileInput').click();
   }
 } catch (error) {
-  
+
 }

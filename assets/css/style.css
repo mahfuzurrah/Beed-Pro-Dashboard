@@ -346,6 +346,10 @@ textarea::placeholder {
   background: transparent !important;
 }
 
+.modal-footer{
+  border: none;
+}
+
 /* ============ Said Navbar =========== */
 .side_navbar {
   background: var(--primary-color);
@@ -646,6 +650,45 @@ Top Navbar
 
 .top_navbar .left .toggle_icon .icons {
   font-size: 30px;
+}
+
+/* ============
+notification area
+=========== */
+
+.nav_user_status{
+  display: none;
+  padding: 20px;
+  background: var(--white-color);
+  width: 200px;
+  border-radius: 5px;
+  position: absolute;
+  right: 40px;
+  transform: translateX(-40px);
+  margin-top: 20px;
+  top: 70px;
+}
+
+.nav_user_status.active{
+  display: block;
+}
+
+.nav_user_status ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav_user_status ul li a{
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: var(--small-font-size);
+font-family: var(--text-bold)
+}
+
+.nav_user_status ul li a .icons{
+font-size: 16px;
 }
 
 /* ============

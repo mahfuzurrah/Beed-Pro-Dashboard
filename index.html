@@ -111,17 +111,17 @@
           </div>
           <div class="top_icon_group">
             <div class="user">
-              <a href="#" class="user_area">
+              <a href="#" class="user_area" onclick="toggleUserStatus()">
                 <i class="bx bx-user-circle icons"></i>
               </a>
-              <div class="status">
-                <i class="bx bxs-check-circle icons green"></i>
+              <!-- <div class="status">
+                <i class="bx bxs-check-circle icons green" id="toggleUserButton"></i>
                 <i class="bx bxs-x-circle icons red"></i>
-              </div>
+              </div> -->
             </div>
             <div class="user">
               <a href="#" class="user_area" onclick="toggleNotification()">
-                <i class="bx bx-bell icons" onclick="toggleNotification()"></i>
+                <i class="bx bx-bell icons"></i>
               </a>
               <!-- <div class="status">
                   <i class='bx bxs-check-circle icons green'></i>
@@ -130,6 +130,25 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- User Status Area -->
+
+      <div class="nav_user_status" id="nav_user_status">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-user-gear icons"></i>Profile</a>
+          </li>
+          <li>
+            <a href="">
+              <iconify-icon icon="twemoji:flag-liberia" class="icons"></iconify-icon>English
+            </a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-arrow-right-to-bracket icons"></i>Log
+              out</a>
+          </li>
+        </ul>
       </div>
 
       <!-- notification area -->
@@ -200,6 +219,8 @@
   <script src="assets/js/all.min.js"></script>
   <script src="assets/js/fontawesome.min.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- Custom JS -->
   <script src="assets/js/style.js"></script>
