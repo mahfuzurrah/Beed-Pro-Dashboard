@@ -146,7 +146,7 @@
             </div>
             <div class="top_icon_group">
               <div class="user">
-                <a href="#" class="user_area">
+                <a href="#" class="user_area" onclick="toggleUserStatus()">
                   <i class="bx bx-user-circle icons"></i>
                 </a>
                 <div class="status">
@@ -288,6 +288,92 @@
               </form>
             </div>
           </section>
+        </div>
+        <!-- nav_user_status -->
+        <div class="nav_user_status" id="nav_user_status">
+          <ul>
+            <li>
+              <a href=""><i class="fa-solid fa-user-gear icons"></i>Profile</a>
+            </li>
+            <li>
+              <a href="">
+                <iconify-icon
+                  icon="twemoji:flag-liberia"
+                  class="icons"
+                ></iconify-icon
+                >English
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-arrow-right-to-bracket icons"></i>Log
+                out</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- notification area -->
+        <div class="notification_area" id="notificationDiv">
+          <!-- Notification List -->
+          <div class="notification_list" id="notificationList">
+            <div class="notifi_item" onclick="openNotification()">
+              <div class="notifi_header read">
+                <h6 class="notifi_title">
+                  Title of the message should be here
+                </h6>
+                <p>03.08.2023</p>
+              </div>
+              <p>
+                Radzen is a desktop tool that gives you the power to create line
+                of business applications fast.
+              </p>
+            </div>
+            <div class="notifi_item" onclick="openNotification()">
+              <div class="notifi_header unread">
+                <h6 class="notifi_title">
+                  Title of the message should be here
+                </h6>
+                <p>03.08.2023</p>
+              </div>
+              <p>
+                Radzen is a desktop tool that gives you the power to create line
+                of business applications fast.
+              </p>
+            </div>
+          </div>
+
+          <!-- Open Single notification -->
+          <div
+            class="single_notification"
+            id="single_notification"
+            style="display: none"
+          >
+            <a href="#" id="backButton" onclick="backNotification()"
+              ><i class="bx bx-chevron-left icons"></i>Back</a
+            >
+            <hr class="mt-2" />
+            <div class="notifi_item">
+              <div class="notifi_header">
+                <h6 class="notifi_title">
+                  Title of the message should be here
+                </h6>
+                <p>03.08.2023</p>
+              </div>
+              <p>
+                Radzen is a desktop tool that gives you Radzen is a desktop tool
+                that gives you the power to create line of business applications
+                fast. the power to create line of business applications fast.
+                Radzen is a desktop tool that gives you Radzen is a desktop tool
+                that gives you the power to create line of business applications
+                fast. the power to create line of business applications
+                fast.Radzen is a desktop tool that gives you Radzen is a desktop
+                tool that gives you the power to create line of business
+                applications fast. the power to create line of business
+                applications fast.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

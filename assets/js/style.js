@@ -264,21 +264,6 @@ try {
     notificationList.style.display = "block";
     singleNotification.style.display = "none";
   }
-
-  // document.addEventListener("click", function (event) {
-  //   var notificationDiv = document.getElementById("notificationDiv");
-  //   var userAreaLink = document.querySelector(".user_area");
-
-  //   // Check if the clicked element is not the user_area link or a child of the notificationDiv
-  //   if (
-  //     event.target !== userAreaLink &&
-  //     !userAreaLink.contains(event.target) &&
-  //     event.target !== notificationDiv &&
-  //     !notificationDiv.contains(event.target)
-  //   ) {
-  //     notificationDiv.classList.remove("active");
-  //   }
-  // });
   
 } catch (error) {
   console.log("Notification");
