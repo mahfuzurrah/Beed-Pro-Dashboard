@@ -691,6 +691,50 @@ font-family: var(--text-bold)
 font-size: 16px;
 }
 
+.custom-selector {
+  position: relative;
+}
+
+.custom-selector .selected-option {
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-selector .selected-option .option-text {
+  flex-grow: 1;
+}
+
+.custom-selector .options {
+  /* display: none; */
+  position: absolute;
+  left: -120%;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.option-text,
+.options_list{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-selector .options div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.custom-selector .options div:hover {
+  background-color: #f0f0f0;
+}
+
 /* ============
 notification area
 =========== */

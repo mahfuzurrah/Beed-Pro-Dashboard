@@ -139,11 +139,28 @@
           <li>
             <a href=""><i class="fa-solid fa-user-gear icons"></i>Profile</a>
           </li>
-          <li>
-            <a href="">
-              <iconify-icon icon="twemoji:flag-liberia" class="icons"></iconify-icon>English
-            </a>
-          </li>
+          <div class="custom-selector">
+            <div class="selected-option" onclick="toggleOptions()">
+                <div class="option-text">
+                    <iconify-icon icon="twemoji:flag-liberia"></iconify-icon> English
+                </div>
+            </div>
+            <div class="options" id="options">
+                <div class="options_list" onclick="selectOption('English')">
+                    <iconify-icon icon="twemoji:flag-liberia"></iconify-icon> English
+                </div>
+                <div class="options_list" onclick="selectOption('Spanish')">
+                    <iconify-icon icon="twemoji:flag-germany"></iconify-icon> German
+                </div>
+                <div class="options_list" onclick="selectOption('French')">
+                    <iconify-icon icon="emojione-v1:flag-for-portugal"></iconify-icon> Portugues 
+                </div>
+                <div class="options_list" onclick="selectOption('German')">
+                    <iconify-icon icon="twemoji:flag-french-polynesia"></iconify-icon> French
+                </div>
+            </div>
+        </div>
+
           <li>
             <a href=""><i class="fa-solid fa-arrow-right-to-bracket icons"></i>Log
               out</a>
@@ -207,7 +224,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
 
     <div class="side_ex_bg">

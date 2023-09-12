@@ -240,6 +240,30 @@ try {
 
 }
 
+///////////// User Status Flag ////////////
+
+try {
+// JavaScript logic to show/hide options and select an option
+const optionsDiv = document.getElementById('options');
+        const optionText = document.querySelector('.option-text');
+
+        function toggleOptions() {
+            if (optionsDiv.style.display === 'block') {
+                optionsDiv.style.display = 'none';
+            } else {
+                optionsDiv.style.display = 'block';
+            }
+        }
+
+        function selectOption(option) {
+            optionText.innerHTML = `<iconify-icon icon="twemoji:flag-liberia"></iconify-icon> ${option}`;
+            optionsDiv.style.display = 'none';
+        }
+
+} catch (error) {
+
+}
+
 
 //////////// /Notification Toggle Btn ////////////
 
