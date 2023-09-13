@@ -658,7 +658,6 @@ notification area
 
 .nav_user_status{
   display: none;
-  padding: 20px;
   background: var(--white-color);
   width: 200px;
   border-radius: 5px;
@@ -676,7 +675,7 @@ notification area
 .nav_user_status ul{
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 5px;
 }
 
 .nav_user_status ul li a{
@@ -684,7 +683,12 @@ display: flex;
 align-items: center;
 gap: 10px;
 font-size: var(--small-font-size);
-font-family: var(--text-bold)
+font-family: var(--text-bold);
+padding: 8px 12px;
+}
+
+.nav_user_status ul li a:hover{
+  background: #00A1B31A;
 }
 
 .nav_user_status ul li a .icons{
@@ -703,14 +707,25 @@ font-size: 16px;
   justify-content: space-between;
 }
 
-.custom-selector .selected-option .option-text {
-  flex-grow: 1;
+.custom-selector .selected-option :hover{
+  background: #00A1B31A;
 }
 
+
+.custom-selector .selected-option .option-text {
+  flex-grow: 1;
+  padding: 8px 10px;
+}
+
+.custom-selector .selected-option .option-text:hover{
+  background: #00A1B31A;
+}
+
+
 .custom-selector .options {
-  /* display: none; */
+  display: none;
   position: absolute;
-  left: -120%;
+  left: -105%;
   width: 100%;
   border: 1px solid #ccc;
   border-top: none;
@@ -726,14 +741,15 @@ font-size: 16px;
 }
 
 .custom-selector .options div {
-  padding: 10px;
+  padding: 8px 12px;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
-.custom-selector .options div:hover {
-  background-color: #f0f0f0;
+.custom-selector .options div:hover{
+  background: #00A1B31A;
 }
+
 
 /* ============
 notification area
