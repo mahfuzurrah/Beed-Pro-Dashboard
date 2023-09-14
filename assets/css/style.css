@@ -363,10 +363,18 @@ textarea::placeholder {
 }
 
 .side_navbar.new_navbar {
-  background-image: url(../img/nav_bg.svg);
-  background-repeat: no-repeat;
-  object-fit: cover;
-  background-size: cover;
+  background-image: url(../img/nav_bg.svg) !important;
+  background-repeat: no-repeat !important;
+  object-fit: cover !important;
+  background-size: cover !important;
+}
+
+.side_navbar.sm_sidebar .sub_menu.sub_nav_bg {
+  background-image: url(../img/sub_nav_bg.png) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  object-fit: cover !important;
+  background-size: cover !important;
 }
 
 .side_navbar .nav_list_area {
