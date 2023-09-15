@@ -243,22 +243,22 @@ try {
 ///////////// User Status Flag ////////////
 
 try {
-// JavaScript logic to show/hide options and select an option
-const optionsDiv = document.getElementById('options');
-        const optionText = document.querySelector('.option-text');
+  // JavaScript logic to show/hide options and select an option
+  const optionsDiv = document.getElementById('options');
+  const optionText = document.querySelector('.option-text');
 
-        function toggleOptions() {
-            if (optionsDiv.style.display === 'block') {
-                optionsDiv.style.display = 'none';
-            } else {
-                optionsDiv.style.display = 'block';
-            }
-        }
+  function toggleOptions() {
+    if (optionsDiv.style.display === 'block') {
+      optionsDiv.style.display = 'none';
+    } else {
+      optionsDiv.style.display = 'block';
+    }
+  }
 
-        function selectOption(option) {
-            optionText.innerHTML = `<iconify-icon icon="twemoji:flag-liberia"></iconify-icon> ${option}`;
-            optionsDiv.style.display = 'none';
-        }
+  function selectOption(option) {
+    optionText.innerHTML = `<iconify-icon icon="twemoji:flag-liberia"></iconify-icon> ${option}`;
+    optionsDiv.style.display = 'none';
+  }
 
 } catch (error) {
 
@@ -268,10 +268,25 @@ const optionsDiv = document.getElementById('options');
 //////////// /Notification Toggle Btn ////////////
 
 try {
+  document.addEventListener("click", function (event) {
+    var notificationDiv = document.getElementById("notificationDiv");
+    var userAreaLink = document.querySelector(".user_area");
+  
+    if (
+      event.target !== notificationDiv &&
+      !notificationDiv.contains(event.target) &&
+      event.target !== userAreaLink
+    ) {
+      notificationDiv.classList.remove("active");
+    }
+  });
+  
   function toggleNotification() {
     var notificationDiv = document.getElementById("notificationDiv");
     notificationDiv.classList.toggle("active");
+    event.stopPropagation();
   }
+
 
   function openNotification() {
     var notificationList = document.getElementById("notificationList");
@@ -288,10 +303,11 @@ try {
     notificationList.style.display = "block";
     singleNotification.style.display = "none";
   }
-  
 } catch (error) {
   console.log("Notification");
 }
+
+
 ///////////// File Upload ////////////
 
 try {

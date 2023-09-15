@@ -668,12 +668,13 @@ notification area
   display: none;
   background: var(--white-color);
   width: 200px;
-  border-radius: 5px;
+  border-radius: 8px;
   position: absolute;
   right: 40px;
   transform: translateX(-40px);
   margin-top: 20px;
   top: 70px;
+  border: 1px solid var(--border-color)
 }
 
 .nav_user_status.active{
@@ -693,6 +694,7 @@ gap: 10px;
 font-size: var(--small-font-size);
 font-family: var(--text-bold);
 padding: 8px 12px;
+border-radius: 8px;
 }
 
 .nav_user_status ul li a:hover{
@@ -709,8 +711,6 @@ font-size: 16px;
 
 .custom-selector .selected-option {
   cursor: pointer;
-  border-radius: 4px;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
 }
