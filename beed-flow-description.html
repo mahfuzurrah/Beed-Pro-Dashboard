@@ -20,8 +20,8 @@
 
 <body>
   <div class="main">
-    <!-- side_navbar toggle_body -->
-    <div class="side_navbar toggle_body" id="toggle_content">
+    <!-- side_navbar toggle_body new_navbar -->
+    <div class="side_navbar toggle_body new_navbar new_navbar" id="toggle_content">
       <div class="toggle_icon" id="toggle_icon">
         <i class="bx bx-menu-alt-left icons"></i>
       </div>
@@ -37,7 +37,7 @@
               <span><i class="bx bx-home icons"></i>Pricing</span>
               <i class="bx bx-chevron-down icons"></i>
             </a>
-            <ul class="sub_menu" id="sub_menu1">
+            <ul class="sub_menu sub_nav_bg" id="sub_menu1">
               <li><a href="#">Home</a></li>
               <li><a href="#">Home</a></li>
             </ul>
@@ -48,7 +48,7 @@
               <span><i class="bx bx-layer icons"></i>Beed Flow</span>
               <i class="bx bx-chevron-down icons"></i>
             </a>
-            <ul class="sub_menu" id="sub_menu2">
+            <ul class="sub_menu sub_nav_bg" id="sub_menu2">
               <li><a href="#">Beed Deal</a></li>
               <li><a href="#">Beed Doc</a></li>
             </ul>
@@ -59,7 +59,7 @@
               <span><i class="bx bx-layer icons"></i>Suppliers</span>
               <i class="bx bx-chevron-down icons"></i>
             </a>
-            <ul class="sub_menu" id="sub_menu3">
+            <ul class="sub_menu sub_nav_bg" id="sub_menu3">
               <li><a href="#">1</a></li>
               <li><a href="#">2</a></li>
             </ul>
@@ -69,7 +69,7 @@
               <span><i class="bx bx-layer icons"></i>Contracts</span>
               <i class="bx bx-chevron-down icons"></i>
             </a>
-            <ul class="sub_menu" id="sub_menu4">
+            <ul class="sub_menu sub_nav_bg" id="sub_menu4">
               <li><a href="#">1</a></li>
               <li><a href="#">2</a></li>
             </ul>
@@ -79,7 +79,7 @@
               <span><i class="bx bx-layer icons"></i>Name</span>
               <i class="bx bx-chevron-down icons"></i>
             </a>
-            <ul class="sub_menu" id="sub_menu5">
+            <ul class="sub_menu sub_nav_bg" id="sub_menu5">
               <li><a href="#">1</a></li>
               <li><a href="#">2</a></li>
             </ul>
@@ -90,7 +90,7 @@
                 <span class="side_notifi">new</span></span>
               <i class="bx bx-chevron-down icons"></i>
             </a>
-            <ul class="sub_menu" id="sub_menu6">
+            <ul class="sub_menu sub_nav_bg" id="sub_menu6">
               <li><a href="#">1</a></li>
               <li><a href="#">2</a></li>
             </ul>
@@ -105,6 +105,7 @@
           <div class="toggle_menu" id="toggle_side_menu">
             <i class="bx bx-menu icons"></i>
           </div>
+          <a href="beed-flow-request.html" class="btn_sec">BUYER</a>
         </div>
         <div class="right">
           <div class="text">
@@ -134,191 +135,72 @@
         <div class="breadcrumb">
           <a href="index.html">Home</a>
           <span><i class="bx bx-chevron-right icons"></i></span>
-          <a href="suppliers_contact_list.html" class="active">Suppliers</a>
+          <a href="beed-flow-request.html" class="active">Beed Flow</a>
         </div>
         <section class="suppliers_con_list">
           <div class="section_title">
-            <h1>Suppliers Contact List</h1>
+            <h1>Beed Flow</h1>
             <hr class="mt-4" />
           </div>
-          <div class="find_add_suppliers">
-            <div class="s_find_info">
-              <div class="s_categories">
-                <label for="">Categories</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>All</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-              <div class="s_search">
-                <label for="">Search</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search" required />
-                  <span class="input-group-text" id="togglePassword">
-                    <i class="bx bx-search icons"></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="s_add_bulk">
-              <a href="#" class="btn_sec">Bulk Upload</a>
-              <a href="add_supplier_company_info.html" class="btn">Add Supplier</a>
-            </div>
-          </div>
-          <div class="suppliers_list_group mt-4">
-            <div class="s_list mt-2">
-              <div class="s_header">
-                <div class="title">
-                  <h2>Zigzag Electronics</h2>
-                  <img src="assets/img/icons/D_sm_logo_for_SCL.svg" alt="" />
-                </div>
-                <div class="rating">
-                  <p>3.6</p>
-                  <span>
-                    <i class="fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-star-half-stroke icons"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="overflow_area">
-                <div class="s-info_group mt-3">
-                  <ul>
-                    <li class="mt-1">
-                      <span><i class="bx bx-phone-call icons"></i>Phone</span><span class="s_p_info">+37496878787</span>
-                    </li>
-                    <li class="mt-1">
-                      <span><i class="bx bx-home icons"></i>Address</span><span class="s_p_info">25 Charents st.,
-                        Yerevan</span>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li class="mt-1">
-                      <span><i class="bx bx-envelope icons"></i>Email</span><span
-                        class="s_p_info">example@mail.com</span>
-                    </li>
-                    <li class="mt-1">
-                      <span><i class="bx bx-cog icons"></i>Status</span><span class="s_p_info">Registered</span>
-                    </li>
-                  </ul>
-                  <ul class="tag_area">
-                    <p>TAGS</p>
-                    <div class="tag_list">
-                      <a href="#" class="tag">Hardware</a>
-                    </div>
-                  </ul>
-                  <div class="s_btn_area">
-                    <a href="view_supplieer.html" class="btn_sec"><i class="fa-solid fa-eye icons"></i></a>
-                    <a href="edit_supplier.html" class="btn_sec">Edit</a>
-                    <a href="#" class="btn_sec">Delete</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="s_list mt-2">
-              <div class="s_header">
-                <div class="title">
-                  <h2>Derar Furniture</h2>
-                  <img src="assets/img/icons/L_sm_logo_for_SCL.svg" alt="" />
-                </div>
-                <div class="rating">
-                  <p>3.6</p>
-                  <span>
-                    <i class="fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-star-half-stroke icons"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="overflow_area">
-                <div class="s-info_group mt-3">
-                  <ul>
-                    <li class="mt-1">
-                      <span><i class="bx bx-phone-call icons"></i>Phone</span><span class="s_p_info">+37496878787</span>
-                    </li>
-                    <li class="mt-1">
-                      <span><i class="bx bx-home icons"></i>Address</span><span class="s_p_info">25 Charents st.,
-                        Yerevan</span>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li class="mt-1">
-                      <span><i class="bx bx-envelope icons"></i>Email</span><span
-                        class="s_p_info">example@mail.com</span>
-                    </li>
-                    <li class="mt-1">
-                      <span><i class="bx bx-cog icons"></i>Status</span><span class="s_p_info">Registered</span>
-                    </li>
-                  </ul>
-                  <ul class="tag_area">
-                    <p>TAGS</p>
-                    <div class="tag_list">
-                      <a href="#" class="tag">Hardware</a>
-                      <a href="#" class="tag">supply</a>
-                      <a href="#" class="tag">accessories</a>
-                      <a href="#" class="tag">Monitors</a>
-                      <a href="#" class="tag">phones</a>
-                      <a href="#" class="tag">+29</a>
-                    </div>
-                  </ul>
-                  <div class="s_btn_area">
-                    <a href="view_supplieer.html" class="btn_sec"><i class="fa-solid fa-eye icons"></i></a>
-                    <a href="edit_supplier.html" class="btn_sec">Edit</a>
-                    <a href="#" class="btn_sec">Delete</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pagination_area mt-4">
-              <p>1-10 of 80 item(s)</p>
-              <nav aria-label="navigation" class="navigation">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true"><i class="bx bx-chevron-left icons"></i></span>
-                    </a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link active" href="#">1</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">3</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true"><i class="bx bx-chevron-right icons"></i></span>
-                    </a>
-                  </li>
+
+          <div class="beed_flow_content_area mt-4">
+            <div class="flow_content_container">
+              <div class="flow_nav">
+                <ul class="nav_menu">
+                  <li><a href=""><span class="number active">1</span>Request</a></li>
+                  <li><a href=""><span class="number active">2</span>Description</a></li>
+                  <li><a href=""><span class="number">3</span>Price quotation</a></li>
                 </ul>
-                <ul class="pagination">
-                  <div class="form-group c-selecet bold no-margin" style="width: 110px">
-                    <select class="form-select">
-                      <option value="">10/page</option>
-                      <option value="">20/page</option>
-                      <option value="">30/page</option>
-                      <option value="">40/page</option>
-                      <option value="">50/page</option>
-                      <option value="">60/page</option>
-                      <option value="">70/page</option>
-                      <option value="">80/page</option>
-                    </select>
+              </div>
+              <div class="flow_form">
+                <div class="form-group">
+                  <label for="exampleInputPhone">Suppliers selected by the buyer *</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Zigzag</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="js-tags">
+                  <div class="tag js-tag" data-index="0">Monitors</div>
+                  <div class="tag js-tag" data-index="0">electronics</div>
+                  <div class="tag js-tag" data-index="0">accessriees</div>
+                  <div class="tag js-tag" data-index="0">office supply</div>
+                </div>
+
+                <div class="mt-3">
+                  <label for="exampleInputPhone">Suppliers selected by beed *</label>
+                  <div class="js-tags">
+                    <div class="tag js-tag active" data-index="0">Monitors</div>
+                    <div class="tag js-tag active" data-index="0">electronics</div>
+                    <div class="tag js-tag active" data-index="0">Accessriees</div>
                   </div>
-                </ul>
-              </nav>
+                </div>
+                <div class="flow_ex_text">
+                  <p>In your communication, provide as much detail as possible about your project or service needs.
+                    Include information such as scope, deadlines, budget constraints, and any specific requirements.</p>
+                </div>
+                <div class="btn_area">
+                  <a href="beed-flow-request-stap-3.html" class="btn_sec mt-2">
+                    Back
+                  </a>
+                  <a href="#" class="btn draft_btn mt-2">
+                    Save as a draft
+                  </a>
+                  <a href="#" class="btn rep_btn mt-2">
+                    Invite
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </div>
-      <!-- User Status Area -->
+
+
+      <!-- nav_user_status -->
+
 
       <div class="nav_user_status" id="nav_user_status">
         <ul>

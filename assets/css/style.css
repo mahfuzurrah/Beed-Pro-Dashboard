@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:wght@400;500;700&display=swap');
 
 @font-face {
   font-family: "SourceSansPro";
@@ -169,6 +169,8 @@ input {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   height: 40px;
+  font-size: var(--normal-font-size);
+  color: var(--description-color);
 }
 
 label {
@@ -341,14 +343,17 @@ textarea::placeholder {
 .form-group {
   margin-top: 10px;
 }
+
 .modal_close_btn {
   border: none !important;
   background: transparent !important;
 }
 
-.modal-footer{
+.modal-footer {
   border: none;
 }
+
+
 
 /* ============ Said Navbar =========== */
 .side_navbar {
@@ -640,13 +645,13 @@ Top Navbar
   color: var(--primary-color);
 }
 
-.top_navbar .left{
+.top_navbar .left {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.top_navbar .left .btn_sec{
+.top_navbar .left .btn_sec {
   border: 1px solid var(--border-color);
   background: transparent;
 }
@@ -664,7 +669,7 @@ Top Navbar
 notification area
 =========== */
 
-.nav_user_status{
+.nav_user_status {
   display: none;
   background: var(--white-color);
   width: 200px;
@@ -677,32 +682,32 @@ notification area
   border: 1px solid var(--border-color)
 }
 
-.nav_user_status.active{
+.nav_user_status.active {
   display: block;
 }
 
-.nav_user_status ul{
+.nav_user_status ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.nav_user_status ul li a{
-display: flex;
-align-items: center;
-gap: 10px;
-font-size: var(--small-font-size);
-font-family: var(--text-bold);
-padding: 8px 12px;
-border-radius: 8px;
+.nav_user_status ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--small-font-size);
+  font-family: var(--text-bold);
+  padding: 8px 12px;
+  border-radius: 8px;
 }
 
-.nav_user_status ul li a:hover{
+.nav_user_status ul li a:hover {
   background: #00A1B31A;
 }
 
-.nav_user_status ul li a .icons{
-font-size: 16px;
+.nav_user_status ul li a .icons {
+  font-size: 16px;
 }
 
 .custom-selector {
@@ -715,7 +720,7 @@ font-size: 16px;
   justify-content: space-between;
 }
 
-.custom-selector .selected-option :hover{
+.custom-selector .selected-option :hover {
   background: #00A1B31A;
 }
 
@@ -725,7 +730,7 @@ font-size: 16px;
   padding: 8px 10px;
 }
 
-.custom-selector .selected-option .option-text:hover{
+.custom-selector .selected-option .option-text:hover {
   background: #00A1B31A;
 }
 
@@ -742,7 +747,7 @@ font-size: 16px;
 }
 
 .option-text,
-.options_list{
+.options_list {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -754,7 +759,7 @@ font-size: 16px;
   transition: background-color 0.2s;
 }
 
-.custom-selector .options div:hover{
+.custom-selector .options div:hover {
   background: #00A1B31A;
 }
 
@@ -918,7 +923,7 @@ Profile css
   cursor: pointer;
 }
 
-.file-label .icons{
+.file-label .icons {
   margin-right: 8px;
   font-size: 24px;
 }
@@ -927,20 +932,21 @@ Profile css
   display: none;
 }
 
-.fileInfoArea{
+.fileInfoArea {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-.fileInfoArea span{
+
+.fileInfoArea span {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
 }
 
-.fileInfoArea{
+.fileInfoArea {
   margin-top: 5px;
   display: flex;
   align-items: center;
@@ -954,4 +960,203 @@ Profile css
   margin: 0;
   background: transparent;
   padding: 0
+}
+
+
+/*===================== beed-flow-request =====================*/
+
+.beed_flow_content_area {
+  width: 100%;
+  height: 100%;
+  background: var(--white-color);
+  padding: 50px 20px;
+}
+
+.flow_content_container {
+  max-width: 630px;
+  margin: auto;
+}
+
+.flow_content_container .flow_form {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.beed_flow_content_area .flow_nav .nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  row-gap: 40px;
+  flex-wrap: wrap;
+}
+
+.beed_flow_content_area .flow_nav .nav_menu li {
+  position: relative;
+}
+
+.beed_flow_content_area .flow_nav .nav_menu li::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background: #E5E7EA;
+  top: 50%;
+  margin-left: 10px;
+
+}
+
+.beed_flow_content_area .flow_nav .nav_menu li:last-child::after {
+  display: none;
+
+}
+
+.beed_flow_content_area .flow_nav .nav_menu span.number {
+  min-width: 50px;
+  min-height: 50px;
+  background: #E5E7EA;
+  padding: 10px 15px;
+  border-radius: 1000px;
+  margin-right: 16px;
+}
+
+.beed_flow_content_area .flow_nav .nav_menu span.number.active {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.beed_flow_content_area .flow_nav .nav_menu a {
+  font-size: var(--normal-font-size);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.js-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.js-tags .tag.js-tag {
+  padding: 2px 8px;
+  background: #3F526F29;
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.js-tags .tag.js-tag.active{
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.js-tags .tag.js-tag:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.flow_ex_text {
+  margin-top: 30px;
+}
+
+.flow_ex_text p {
+  padding: 20px;
+  text-align: center;
+  background: #F4F5F9;
+  color: var(--primary-color)
+}
+
+.rep_btn {
+  max-width: 216px;
+  margin: auto;
+}
+
+.add-p {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.beed_flow_content_area .btn_group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.beed_flow_content_area .btn_group .btn_sec,
+.beed_flow_content_area .btn_group .btn {
+  width: 120px;
+}
+
+.suppliers_list_group.beed_flow_list_group .f-info_group {
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.suppliers_list_group.beed_flow_list_group .f-info_group h1 {
+  font-size: 40px;
+}
+
+.suppliers_list_group.beed_flow_list_group .f-info_group p {
+  font-size: 16px;
+  color: var(--title-color);
+  font-family: var(--text-bold)
+}
+
+.f_green {
+  border-left: 4px solid green;
+}
+
+.f_yellow {
+  border-left: 4px solid var(--secondary-color);
+}
+
+.f_black {
+  border-left: 4px solid var(--title-color);
+}
+
+
+.suppliers_list_group.beed_flow_list_group .f-info_group .active {
+  padding: 4px 8px;
+  background: #009B51;
+  color: var(--white-color);
+  border-radius: 4px;
+}
+
+.suppliers_list_group.beed_flow_list_group .f-info_group .view {
+  padding: 4px 8px;
+  background: #009B5133;
+  color: #009B51;
+  border-radius: 4px;
+}
+
+.btn_area{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn_area .btn_sec,
+.btn_area .btn{
+  width: 100%;
+}
+
+.btn_area .draft_btn{
+  background: var(--secondary-color);
+}
+
+.btn_area .draft_btn:hover{
+  background: #d1a951;
 }

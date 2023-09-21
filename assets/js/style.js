@@ -8,7 +8,6 @@ try {
   });
 } catch (error) {}
 
-
 //////////// Toggle side menu ////////////
 
 try {
@@ -44,7 +43,6 @@ try {
     toggleSmSidebarClass();
   });
 } catch (error) {}
-
 
 //////////// Dropdown Menu ////////////
 try {
@@ -211,7 +209,6 @@ try {
   }
 } catch (error) {}
 
-
 ///////////// User Status ////////////
 
 try {
@@ -234,36 +231,28 @@ try {
       notificationDiv.classList.remove("active");
     }
   });
-
-
-} catch (error) {
-
-}
+} catch (error) {}
 
 ///////////// User Status Flag ////////////
 
 try {
   // JavaScript logic to show/hide options and select an option
-  const optionsDiv = document.getElementById('options');
-  const optionText = document.querySelector('.option-text');
+  const optionsDiv = document.getElementById("options");
+  const optionText = document.querySelector(".option-text");
 
   function toggleOptions() {
-    if (optionsDiv.style.display === 'block') {
-      optionsDiv.style.display = 'none';
+    if (optionsDiv.style.display === "block") {
+      optionsDiv.style.display = "none";
     } else {
-      optionsDiv.style.display = 'block';
+      optionsDiv.style.display = "block";
     }
   }
 
   function selectOption(option) {
     optionText.innerHTML = `<iconify-icon icon="twemoji:flag-liberia"></iconify-icon> ${option}`;
-    optionsDiv.style.display = 'none';
+    optionsDiv.style.display = "none";
   }
-
-} catch (error) {
-
-}
-
+} catch (error) {}
 
 //////////// /Notification Toggle Btn ////////////
 
@@ -271,7 +260,7 @@ try {
   document.addEventListener("click", function (event) {
     var notificationDiv = document.getElementById("notificationDiv");
     var userAreaLink = document.querySelector(".user_area");
-  
+
     if (
       event.target !== notificationDiv &&
       !notificationDiv.contains(event.target) &&
@@ -280,13 +269,12 @@ try {
       notificationDiv.classList.remove("active");
     }
   });
-  
+
   function toggleNotification() {
     var notificationDiv = document.getElementById("notificationDiv");
     notificationDiv.classList.toggle("active");
     event.stopPropagation();
   }
-
 
   function openNotification() {
     var notificationList = document.getElementById("notificationList");
@@ -306,7 +294,6 @@ try {
 } catch (error) {
   console.log("Notification");
 }
-
 
 ///////////// File Upload ////////////
 
@@ -353,21 +340,19 @@ try {
   }
 } catch (error) {}
 
-
-
 ///////////// File Upload ////////////
 
 try {
   function handleFileChange() {
-    const fileInput = document.getElementById('fileInput');
-    const uploadButton = document.getElementById('uploadButton');
-    const fileImage = document.getElementById('fileImage');
-    const textContent = document.getElementById('textContent');
+    const fileInput = document.getElementById("fileInput");
+    const uploadButton = document.getElementById("uploadButton");
+    const fileImage = document.getElementById("fileImage");
+    const textContent = document.getElementById("textContent");
 
     if (fileInput.files.length > 0) {
       // A file has been selected, change button text and type
-      uploadButton.textContent = 'Start';
-      uploadButton.type = 'submit';
+      uploadButton.textContent = "Start";
+      uploadButton.type = "submit";
 
       // Change the image source
       fileImage.innerHTML = '<img src="assets/img/icons/process.svg" alt="" />';
@@ -384,8 +369,52 @@ try {
   }
 
   function chooseFile() {
-    document.getElementById('fileInput').click();
+    document.getElementById("fileInput").click();
   }
-} catch (error) {
+} catch (error) {}
 
-}
+///////////// Input Tag Add ////////////
+
+try {
+  document.addEventListener('DOMContentLoaded', function () {
+    var tags = [];
+    var input = document.querySelector('.js-tag-input');
+    var tagsContainer = document.querySelector('.js-tags');
+
+    input.addEventListener('keydown', function (evt) {
+      if (evt.keyCode === 13) { // Enter key pressed
+        var value = String(evt.target.value);
+
+        if (value.trim() === '') {
+          return;
+        }
+
+        tags.push(value);
+        evt.target.value = '';
+        render(tags, tagsContainer);
+      }
+    });
+
+    function render(tags, el) {
+      el.innerHTML = tags.map(function (tag, i) {
+        return (
+          '<div class="tag js-tag" data-index="' + i + '">' +
+          tag +
+          '<span class="tag-close js-tag-close" data-index="' + i + '">×</span>' +
+          '</div>'
+        );
+      }).join('');
+    }
+
+    // Event delegation to handle tag close button clicks
+    tagsContainer.addEventListener('click', function (evt) {
+      if (evt.target.matches('.js-tag-close')) {
+        var tagIndex = evt.target.getAttribute('data-index');
+        tags.splice(tagIndex, 1);
+        render(tags, tagsContainer);
+      }
+    });
+  });
+} catch (error) {}
+
+
