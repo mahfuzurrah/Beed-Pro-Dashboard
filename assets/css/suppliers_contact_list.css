@@ -81,10 +81,6 @@ Suppliers Contact List
   width: 100%;
 }
 
-.suppliers_con_list .s-info_group.c-info_group {
-  grid-template-columns: repeat(3, 1fr);
-}
-
 .suppliers_con_list .s-info_group ul li {
   display: flex;
   align-items: center;
@@ -97,6 +93,7 @@ Suppliers Contact List
   align-items: center;
   gap: 10px;
   color: var(--description-color);
+  text-transform: uppercase;
 }
 
 .suppliers_con_list .s-info_group ul li span .icons {
@@ -122,6 +119,7 @@ Suppliers Contact List
   padding: 2px 4px;
   border-radius: 4px;
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 .s_list.c_expired span.expired {
