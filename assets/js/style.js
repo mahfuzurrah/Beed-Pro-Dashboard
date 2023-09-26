@@ -415,6 +415,20 @@ try {
       }
     });
   });
-} catch (error) {}
+} catch (error) { }
+
+
+try {
+  const closeButtons = document.querySelectorAll('.hide');
+        closeButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                // Find the parent tag and hide it
+                const parentTag = button.parentElement;
+                parentTag.style.display = 'none';
+            });
+        });
+} catch (error) {
+  
+}
 
 
