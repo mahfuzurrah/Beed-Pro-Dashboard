@@ -1035,6 +1035,7 @@ All Page Common Css Code End
   height: 2px;
   background: #e5e7ea;
   top: 50%;
+  right: -75%;
   margin-left: 10px;
 }
 
@@ -1042,20 +1043,27 @@ All Page Common Css Code End
   display: none;
 }
 
-.beed_flow_content_area .flow_nav .nav_menu span.number {
-  min-width: 50px;
-  min-height: 50px;
-  padding: 10px 15px;
+.beed_flow_content_area .flow_nav .nav_menu .number {
+  min-width: 40px;
+  min-height: 40px;
   border-radius: 1000px;
   margin-right: 16px;
   border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.beed_flow_content_area .flow_nav .nav_menu span.number.active_stap {
+.beed_flow_content_area .flow_nav .nav_menu li a{
+  display: flex;
+  align-items: center;
+}
+
+.beed_flow_content_area .flow_nav .nav_menu .number.active_stap {
   background: #e5e7ea;
 }
 
-.beed_flow_content_area .flow_nav .nav_menu span.number.active {
+.beed_flow_content_area .flow_nav .nav_menu .number.active {
   background: var(--primary-color);
   color: var(--white-color);
 }
