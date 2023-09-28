@@ -1,145 +1,135 @@
 /* @media screen and (max-width: ..px) {} */
 
 @media screen and (max-width: 1250px) {
+  /* ===Suppliers Contact List=== */
+  .overflow_area {
+    overflow-x: auto;
+    padding-bottom: 20px;
+  }
 
-    /* ===Suppliers Contact List=== */
-    .overflow_area {
-        overflow-x: auto;
-        padding-bottom: 20px;
-    }
+  .suppliers_con_list .s-info_group {
+    width: 120%;
+  }
 
-    .suppliers_con_list .s-info_group {
-        width: 120%;
-    }
-
-    /* .suppliers_con_list .s-info_group {
+  /* .suppliers_con_list .s-info_group {
         flex-wrap: wrap;
     } */
 }
 
 @media screen and (max-width: 991px) {
-    .body_container {
-        padding-left: 0;
-    }
+  .body_container {
+    padding-left: 0;
+  }
 
-    /* ===Top Navbar=== */
+  /* ===Top Navbar=== */
 
-    .top_navbar .left .toggle_icon {
-        display: block;
-    }
+  .top_navbar .left .toggle_icon {
+    display: block;
+  }
 
-    /* ===Side Menu=== */
+  /* ===Side Menu=== */
 
-    .side_navbar {
-        left: -250px;
-        z-index: 1;
-        transition: all 0.5s ease-in-out;
-    }
+  .side_navbar {
+    left: -250px;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+  }
 
-    #toggle_icon {
-        position: absolute;
-        right: -50px;
-        width: 48px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: var(--primary-color);
-        border-radius: 8px;
-        margin-top: -5px;
-        right: -65px;
-    }
+  #toggle_icon {
+    position: absolute;
+    right: -50px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    border-radius: 8px;
+    margin-top: -5px;
+    right: -65px;
+  }
 
-    #toggle_icon .icons {
-        color: var(--white-color)
-    }
+  #toggle_icon .icons {
+    color: var(--white-color);
+  }
 
-    .side_navbar.active {
-        left: 0;
-        transition: all 0.5s ease-in-out;
-    }
+  .side_navbar.active {
+    left: 0;
+    transition: all 0.5s ease-in-out;
+  }
 
+  /* ===Suppliers Contact List=== */
 
-    /* ===Suppliers Contact List=== */
+  .suppliers_con_list .s-info_group .tag_area {
+    min-width: 250px;
+  }
 
-    .suppliers_con_list .s-info_group .tag_area {
-        min-width: 250px;
-    }
+  .suppliers_con_list .find_add_suppliers .s_find_info .s_categories,
+  .suppliers_con_list .find_add_suppliers .s_find_info .s_search {
+    width: 100%;
+  }
 
-    .suppliers_con_list .find_add_suppliers .s_find_info .s_categories,
-    .suppliers_con_list .find_add_suppliers .s_find_info .s_search {
-        width: 100%;
-    }
+  /* ===PRICING PAGE=== */
+  .pricing_page .pricing_table_area .pricing_header .text_content img {
+    display: none;
+  }
 
-    /* ===PRICING PAGE=== */
-    .pricing_page .pricing_table_area .pricing_header .text_content img{
-        display: none;
-    }
-
-    .pricing_page .table_area{
-        margin-top: 20px;
-    }
+  .pricing_page .table_area {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  /* ===Suppliers Contact List=== */
+  .suppliers_con_list .s-info_group {
+    width: 170%;
+  }
 
-    /* ===Suppliers Contact List=== */
-    .suppliers_con_list .s-info_group {
-        width: 170%;
-    }
+  .suppliers_con_list .find_add_suppliers .s_add_bulk,
+  .suppliers_con_list .find_add_suppliers {
+    display: block;
+  }
 
-    .suppliers_con_list .find_add_suppliers .s_add_bulk,
-    .suppliers_con_list .find_add_suppliers {
-        display: block;
-    }
-
-    .suppliers_con_list .find_add_suppliers .s_add_bulk .btn_sec,
-    .suppliers_con_list .find_add_suppliers .s_add_bulk .btn {
-        display: block;
-        margin-top: 20px;
-    }
-
-
+  .suppliers_con_list .find_add_suppliers .s_add_bulk .btn_sec,
+  .suppliers_con_list .find_add_suppliers .s_add_bulk .btn {
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  /* ===Top Navbar=== */
+  .top_navbar .text {
+    display: none;
+  }
 
-    /* ===Top Navbar=== */
-    .top_navbar .text {
-        display: none;
-    }
+  .suppliers_con_list .find_add_suppliers .s_find_info {
+    display: block;
+  }
 
-    .suppliers_con_list .find_add_suppliers .s_find_info {
-        display: block;
-    }
+  .find_add_suppliers .s_find_info .s_search {
+    margin-top: 20px;
+  }
 
-    .find_add_suppliers .s_find_info .s_search {
-        margin-top: 20px;
-    }
+  .add_supplier_page .s_add_form {
+    width: 100%;
+  }
 
+  .toast {
+    position: initial !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+  }
 
-    .add_supplier_page .s_add_form {
-        width: 100%;
-    }
-
-    .toast{
-        position: initial !important;
-        align-items: flex-start !important;
-        width: 100% !important;
-    }
-
-    .s_add_info .upload_card{
-        width: 100%;
-    }
-
+  .body_tab_area .upload_card {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
-
-    /* ===notification_area=== */
-    .notification_area{
-        width: auto !important;
-        left: 20px;
-    }
-
+  /* ===notification_area=== */
+  .notification_area {
+    width: auto !important;
+    left: 20px;
+  }
 }

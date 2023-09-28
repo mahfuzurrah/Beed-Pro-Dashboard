@@ -419,16 +419,46 @@ try {
 
 
 try {
-  const closeButtons = document.querySelectorAll('.hide');
-        closeButtons.forEach((button) => {
-            button.addEventListener('click', () => {
-                // Find the parent tag and hide it
-                const parentTag = button.parentElement;
-                parentTag.style.display = 'none';
+  const tags = document.querySelectorAll('.js-tag');
+
+        // Add a click event listener to each tag
+        tags.forEach((tag) => {
+            tag.addEventListener('click', () => {
+                // Toggle the 'active' class on the clicked tag
+                tag.classList.toggle('active');
+            });
+
+            // Add a click event listener to the close button inside each tag
+            const closeButton = tag.querySelector('.js-tag-close');
+            closeButton.addEventListener('click', (event) => {
+                event.stopPropagation(); // Prevent the click event from propagating to the parent tag
+                // Find the parent tag and remove it
+                tag.remove();
             });
         });
 } catch (error) {
-  
+  console.error(error);
 }
 
 
+try {
+// Get all elements with the class "p_tag"
+var pTags = document.querySelectorAll(".p_tag");
+
+// Add click event listeners to each "p_tag" element
+pTags.forEach(function(element) {
+    element.addEventListener("click", function() {
+        // Remove "active" class from all "p_tag" elements
+        pTags.forEach(function(tag) {
+            tag.classList.remove("active");
+        });
+
+        // Add "active" class to the clicked element
+        this.classList.add("active");
+    });
+});
+
+
+} catch (error) {
+  
+}
