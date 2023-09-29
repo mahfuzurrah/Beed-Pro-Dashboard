@@ -338,6 +338,14 @@ textarea::placeholder {
 
 .section_title h1 {
   color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section_title h1 a {
+  display: flex;
+  align-items: center;
 }
 
 .form-group {
@@ -987,6 +995,7 @@ All Page Common Css Code
   height: 100%;
   background: var(--white-color);
   padding: 50px 20px;
+  overflow: hidden;
 }
 
 /* ==============================================
@@ -1054,7 +1063,7 @@ All Page Common Css Code End
   justify-content: center;
 }
 
-.beed_flow_content_area .flow_nav .nav_menu li a{
+.beed_flow_content_area .flow_nav .nav_menu li a {
   display: flex;
   align-items: center;
 }
@@ -1094,6 +1103,15 @@ All Page Common Css Code End
 
 .js-tags .tag.js-tag p {
   color: var(--title-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.details_page .js-tags .tag.js-tag p {
+  color: #4F4F50;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -1252,6 +1270,31 @@ Product Name Page
   width: 100%;
 }
 
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label::before {
+  content: "\2713";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 2px solid var(--border-color);
+  color: transparent;
+  border-radius: 5px;
+}
+
+.checkbox input[type="checkbox"]:checked+label::before {
+  background-color: #3F526F;
+  color: #fff;
+  border: none;
+}
+
+
 .product_name_page .product_name_list .product_list {
   width: 100%;
   border: 1px solid var(--border-color);
@@ -1286,7 +1329,7 @@ Product Name Page
 }
 
 .product_name_page .body_tab_area .btn_area {
-  width: 450px;
+  max-width: 450px;
   margin-left: auto;
 }
 
@@ -1306,4 +1349,38 @@ Product Name Page
 
 .product_name_page .body_tab_area .product_doc_form .form-group span .icons {
   cursor: pointer;
+}
+
+.compare_page .s_header .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.compare_page .s_header .title .price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.compare_page .s_header .title .price h1 {
+  color: #12a4f5;
+  font-size: 36px;
+}
+
+.compare_page .c_box {
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.compare_page .c_box .btn {
+  width: 150px;
+  margin: auto;
+}
+
+.compare_page .c_box .table_area p.table_title {
+  color: var(--title-color);
 }
