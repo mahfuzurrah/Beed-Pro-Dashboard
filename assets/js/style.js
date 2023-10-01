@@ -462,3 +462,27 @@ pTags.forEach(function(element) {
 } catch (error) {
   
 }
+
+
+try {
+  // Get references to the button and all dropdown menus
+const toggleButton = document.getElementById("supp_toggleButton");
+const dropdowns = document.querySelectorAll(".bayer_dropdown");
+
+// Function to toggle all dropdown menus
+function toggleDropdowns() {
+  dropdowns.forEach((dropdown) => {
+    if (dropdown.style.display === "none" || dropdown.style.display === "") {
+      dropdown.style.display = "block";
+    } else {
+      dropdown.style.display = "none";
+    }
+  });
+}
+
+// Add a click event listener to the button to toggle all dropdowns
+toggleButton.addEventListener("click", toggleDropdowns);
+
+} catch (error) {
+  
+}

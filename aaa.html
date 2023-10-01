@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .file-input-label {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+
+        #fileInfo {
+            margin-top: 10px;
+            display: none;
+        }
+
+        #closeIcon {
+            cursor: pointer;
+            color: red;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="fileInput" style="display: none;">
+    <label for="fileInput" id="fileInputLabel" class="file-input-label">
+        <i class="fas fa-upload"></i> Upload a file
+    </label>
+    <div id="fileInfo" style="display: none;">
+        <span id="fileName"></span>
+        <span id="fileSize"></span>
+        <i id="closeIcon" class="fas fa-times"></i>
+    </div>
+    
+    <script src="./assets/js/style.js"></script>
+</body>
+</html>

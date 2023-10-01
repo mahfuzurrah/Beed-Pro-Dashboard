@@ -11,9 +11,6 @@
     width: 120%;
   }
 
-  /* .suppliers_con_list .s-info_group {
-        flex-wrap: wrap;
-    } */
 }
 
 @media screen and (max-width: 991px) {
@@ -82,8 +79,10 @@
 
 @media screen and (max-width: 768px) {
   /* ===Suppliers Contact List=== */
+
+  .bayer_dropdown,
   .suppliers_con_list .s-info_group {
-    width: 170%;
+    width: 200%;
   }
 
   .suppliers_con_list .find_add_suppliers .s_add_bulk,

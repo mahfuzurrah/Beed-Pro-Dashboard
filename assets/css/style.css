@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:wght@400;500;700&family=Source+Sans+3:wght@400;500;600&display=swap');
 
 @font-face {
   font-family: "SourceSansPro";
@@ -678,11 +678,11 @@ Top Navbar
   gap: 20px;
 }
 
-.top_navbar .currency_area .icons{
+.top_navbar .currency_area .icons {
   font-size: 30px;
 }
 
-.top_navbar .currency_area p{
+.top_navbar .currency_area p {
   font-size: 12px;
 }
 
@@ -964,12 +964,6 @@ Profile css
   gap: 10px;
 }
 
-.fileInfoArea {
-  margin-top: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 #deleteFile {
   display: none;
@@ -1187,19 +1181,12 @@ All Page Common Css Code End
   width: 120px;
 }
 
-.suppliers_list_group.beed_flow_list_group .f-info_group {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.suppliers_list_group.beed_flow_list_group .f-info_group h1 {
+.f-info_group h1 {
   font-size: 40px;
 }
 
-.suppliers_list_group.beed_flow_list_group .f-info_group p {
-  font-size: 16px;
+.f-info_group p {
+  font-size: var(--normal-font-size);
   color: var(--title-color);
   font-family: var(--text-bold);
 }
@@ -1225,30 +1212,32 @@ All Page Common Css Code End
   background: #009b51;
   color: var(--white-color);
   border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 12px !important;
 }
 
-.suppliers_list_group.beed_flow_list_group .f-info_group .evaluation {
+.evaluation {
   padding: 4px 8px;
   background: #12a4f5;
   color: var(--white-color);
   border-radius: 4px;
 }
 
-.suppliers_list_group.beed_flow_list_group .f-info_group .draft {
+.draft {
   padding: 4px 8px;
   background: #ffae1133;
-  color: #ffae11;
+  color: #ffae11 !important;
   border-radius: 4px;
 }
 
-.suppliers_list_group.beed_flow_list_group .f-info_group .completed {
+.completed {
   padding: 4px 8px;
   background: #3f526f;
-  color: var(--white-color);
+  color: var(--white-color) !important;
   border-radius: 4px;
 }
 
-.suppliers_list_group.beed_flow_list_group .f-info_group .view {
+.view {
   padding: 4px 8px;
   background: #009b5133;
   color: #009b51;
@@ -1414,4 +1403,63 @@ Product Name Page
 .proposal_send_area .btn {
   width: 120px;
   margin: auto;
+}
+
+/* ==============supplyer============= */
+
+.collum_3{
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  grid-gap: 30px !important;
+  row-gap: 10px !important;
+  margin-top: 10px;
+}
+
+.collum_4{
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  grid-gap: 30px !important;
+  row-gap: 10px !important;
+  margin-top: 10px;
+}
+
+.bayer_dropdown{
+  display: none;
+}
+
+
+.bayer_dropdown .bayer_dropdown_from span.flex_label {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bayer_dropdown .proposal_option {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.bayer_dropdown .proposal_option span{
+  color: var(--border-color);
+}
+
+.bayer_dropdown .proposal_option a{
+  text-transform: uppercase;
+  color: #12a4f5;
+}
+
+.bayer_dropdown .btn_area{
+  max-width: 250px;
+  margin: auto;
+}
+
+#supp_toggleButton{
+  cursor: pointer;
+}
+
+.bayer_dropdown .upload-container{
+width: max-content;
 }

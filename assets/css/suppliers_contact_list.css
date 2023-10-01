@@ -60,9 +60,11 @@ Suppliers Contact List
   gap: 0;
 }
 
-/* .suppliers_con_list .suppliers_list_group .s_list .s_header .title h2 {
-  margin-right: 5px;
-} */
+.suppliers_con_list .suppliers_list_group .s_list .s_header .title h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .suppliers_con_list .suppliers_list_group .s_list .s_header .title .icons {
   font-size: 20px;
@@ -74,12 +76,13 @@ Suppliers Contact List
   color: var(--secondary-color);
 }
 
-.suppliers_con_list .s-info_group {
+/* .suppliers_con_list .s-info_group {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
   width: 100%;
-}
+  margin-top: 10px;
+} */
 
 .suppliers_con_list .s-info_group ul li {
   display: flex;
@@ -94,47 +97,57 @@ Suppliers Contact List
   gap: 10px;
   color: var(--description-color);
   text-transform: uppercase;
+  min-width: 120px;
 }
 
-.suppliers_con_list .s-info_group ul li span .icons {
-  font-size: 18px;
-}
-
-.suppliers_con_list .s-info_group span.s_p_info {
-  color: var(--title-color);
+.suppliers_con_list .s-info_group ul li .s_p_info {
   font-family: var(--text-semibold);
+  color: #4F4F50;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
-.s-info_group.c-info_group span.s_p_info {
-  color: #4F4F50
+.suppliers_con_list .s-info_group ul li .icons {
+  font-size: 18px;
 }
 
 .s_list.c_renewed {
   border-left: 4px solid #FFAE11;
 }
 
-.s_list.c_renewed span.renewed,
-.s_list.c_expired span.expired,
-.s_list.c_current span.current {
+.blue,
+.renewed,
+.expired,
+.current,
+.completed {
   padding: 2px 4px;
   border-radius: 4px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
-.s_list.c_expired span.expired {
+.expired {
   background: #f3115548;
   color: #F31155;
 }
 
-.s_list.c_current span.current {
+.current {
   background: #009b5042;
   color: #009B51;
 }
 
-.s_list.c_renewed span.renewed {
+.renewed {
   background: #ffb0113f;
   color: #FFAE11;
+}
+
+.blue{
+  background: #12A4F5;
+  color: var(--white-color) !important;
 }
 
 .s_list.c_expired {
@@ -145,28 +158,28 @@ Suppliers Contact List
   border-left: 4px solid #74D062 !important;
 }
 
-.btn_review{
+.btn_review {
   background: #009B51;
   color: var(--white-color);
 }
 
-.btn_process{
+.btn_process {
   background: var(--secondary-color);
   color: var(--primary-color);
 }
 
-.btn_process span{
+.btn_process span {
   margin-right: 10px;
   width: 16px;
   height: 16px;
 }
 
-.btn_process:hover{
+.btn_process:hover {
   background: #d1aa56;
   color: var(--primary-color);
 }
 
-.btn_review:hover{
+.btn_review:hover {
   background: #01924c;
   color: var(--white-color);
 }
@@ -195,9 +208,14 @@ Suppliers Contact List
 
 .suppliers_con_list .s-info_group .s_btn_area {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: flex-end;
   gap: 15px;
+  flex-direction: column;
+}
+
+.suppliers_con_list .s-info_group .s_btn_area.c_list_icons {
+  flex-direction: row;
 }
 
 .suppliers_con_list .s-info_group .s_btn_area .btn_sec .icons {
