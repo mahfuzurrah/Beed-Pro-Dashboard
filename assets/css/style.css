@@ -1459,7 +1459,7 @@ Product Name Page
   margin: auto;
 }
 
-#supp_toggleButton{
+.supp_toggleButton{
   cursor: pointer;
 }
 
