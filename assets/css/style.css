@@ -1207,6 +1207,7 @@ All Page Common Css Code End
   border-left: 4px solid var(--title-color) !important;
 }
 
+
 .suppliers_list_group.beed_flow_list_group .f-info_group .active {
   padding: 4px 8px;
   background: #009b51;
@@ -1441,6 +1442,8 @@ Product Name Page
   width: 100%;
   margin-top: 30px;
 }
+
+
 
 .bayer_dropdown .proposal_option span{
   color: var(--border-color);

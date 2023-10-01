@@ -119,6 +119,7 @@ Suppliers Contact List
   border-left: 4px solid #FFAE11;
 }
 
+.s_p_info.active,
 .blue,
 .renewed,
 .expired,
@@ -147,6 +148,11 @@ Suppliers Contact List
 
 .blue{
   background: #12A4F5;
+  color: var(--white-color) !important;
+}
+
+.s_p_info.active{
+  background: #009b51;
   color: var(--white-color) !important;
 }
 

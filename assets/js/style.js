@@ -465,24 +465,27 @@ pTags.forEach(function(element) {
 
 
 try {
-  // Get references to the button and all dropdown menus
-const toggleButton = document.getElementById("supp_toggleButton");
-const dropdowns = document.querySelectorAll(".bayer_dropdown");
+  // Get references to all toggle buttons and dropdown menus
+  const toggleButtons = document.querySelectorAll(".supp_toggleButton");
+  const dropdowns = document.querySelectorAll(".bayer_dropdown");
 
-// Function to toggle all dropdown menus
-function toggleDropdowns() {
-  dropdowns.forEach((dropdown) => {
+  // Function to toggle a specific dropdown menu
+  function toggleDropdown(event) {
+    const button = event.target;
+    const dropdown = button.closest(".s_list").querySelector(".bayer_dropdown");
+
     if (dropdown.style.display === "none" || dropdown.style.display === "") {
       dropdown.style.display = "block";
     } else {
       dropdown.style.display = "none";
     }
+  }
+
+  // Add a click event listener to each toggle button
+  toggleButtons.forEach((toggleButton) => {
+    toggleButton.addEventListener("click", toggleDropdown);
   });
-}
-
-// Add a click event listener to the button to toggle all dropdowns
-toggleButton.addEventListener("click", toggleDropdowns);
-
 } catch (error) {
-  
+  // Handle any errors that may occur
+  console.error(error);
 }
