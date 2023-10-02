@@ -143,12 +143,12 @@ Suppliers Contact List
   color: #FFAE11 !important;
 }
 
-.blue{
+.blue {
   background: #12A4F5;
   color: var(--white-color) !important;
 }
 
-.s_p_info.active{
+.s_p_info.active {
   background: #009b51;
   color: var(--white-color) !important;
 }
@@ -203,11 +203,23 @@ Suppliers Contact List
 .suppliers_con_list .s-info_group .tag_area .tag_list .tag {
   background: rgba(18, 164, 245, 0.2);
   padding: 3px 5px;
+  border-radius: 2px;
+  width: 70px;
+}
+
+.suppliers_con_list .s-info_group .tag_area .tag_list .tag p {
   color: #12A4F5;
   font-size: 12px;
-  border-radius: 2px;
   text-transform: uppercase;
+  width: 60px;
+  margin:0 auto;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+  text-align: left !important
 }
+
 
 .suppliers_con_list .s-info_group .s_btn_area {
   display: flex;

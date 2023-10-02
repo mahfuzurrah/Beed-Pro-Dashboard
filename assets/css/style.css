@@ -1224,7 +1224,7 @@ All Page Common Css Code End
 .evaluation {
   padding: 4px 8px;
   background: #12a4f5;
-  color: var(--white-color);
+  color: var(--white-color) !important;
   border-radius: 4px;
 }
 
@@ -1317,16 +1317,6 @@ Product Name Page
   grid-gap: 30px;
   width: 100%;
 }
-
-/* .product_name_page .product_name_list .product-info_group .qnumber h1 {
-  font-size: 40px;
-}
-
-.product_name_page .product_name_list .product-info_group .qnumber p {
-  font-size: 16px;
-  color: var(--title-color);
-  font-family: var(--text-bold);
-} */
 
 .product_name_page .product_name_list .product_list.f_blue {
   border: 2px solid #12A4F533;
