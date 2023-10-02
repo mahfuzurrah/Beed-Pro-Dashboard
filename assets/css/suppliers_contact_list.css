@@ -217,7 +217,6 @@ Suppliers Contact List
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  gap: 15px;
   flex-direction: column;
 }
 

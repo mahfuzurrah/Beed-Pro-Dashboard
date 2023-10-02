@@ -1182,7 +1182,7 @@ All Page Common Css Code End
 }
 
 .f-info_group h1 {
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .f-info_group p {
@@ -1314,11 +1314,7 @@ Product Name Page
   width: 100%;
 }
 
-.product_name_page .product_name_list .product-info_group .qnumber {
-  text-align: right;
-}
-
-.product_name_page .product_name_list .product-info_group .qnumber h1 {
+/* .product_name_page .product_name_list .product-info_group .qnumber h1 {
   font-size: 40px;
 }
 
@@ -1326,7 +1322,7 @@ Product Name Page
   font-size: 16px;
   color: var(--title-color);
   font-family: var(--text-bold);
-}
+} */
 
 .product_name_page .product_name_list .product_list.f_blue {
   border: 2px solid #12A4F533;
@@ -1413,7 +1409,6 @@ Product Name Page
   grid-template-columns: repeat(2, 1fr) !important;
   grid-gap: 30px !important;
   row-gap: 10px !important;
-  margin-top: 10px;
 }
 
 .collum_3{
@@ -1421,7 +1416,6 @@ Product Name Page
   grid-template-columns: repeat(3, 1fr) !important;
   grid-gap: 30px !important;
   row-gap: 10px !important;
-  margin-top: 10px;
 }
 
 .collum_4{
@@ -1429,7 +1423,7 @@ Product Name Page
   grid-template-columns: repeat(4, 1fr) !important;
   grid-gap: 30px !important;
   row-gap: 10px !important;
-  margin-top: 10px;
+  align-items: end;
 }
 
 .bayer_dropdown{

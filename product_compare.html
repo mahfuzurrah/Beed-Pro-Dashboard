@@ -1,455 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Supplier</title>
     <link rel="icon" type="image/x-icon" href="assets/img/fav.png" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main">
-        <div class="side_navbar toggle_body new_navbar" id="toggle_content">
-            <div class="toggle_icon" id="toggle_icon">
-                <i class="bx bx-menu-alt-left icons"></i>
+      <div class="side_navbar toggle_body new_navbar" id="toggle_content">
+        <div class="toggle_icon" id="toggle_icon">
+          <i class="bx bx-menu-alt-left icons"></i>
+        </div>
+        <div class="logo_area">
+          <a href="index.html"
+            ><img class="logo" src="assets/img/logo.svg" alt="Logo"
+          /></a>
+          <a href="index.html"
+            ><img class="logo sm_logo" src="assets/img/sm_logo.svg" alt="Logo"
+          /></a>
+        </div>
+        <hr class="mt-2" />
+        <div class="nav_list_area">
+          <ul class="menu_list">
+            <li class="nav_list">
+              <a
+                href="#"
+                class="nav_link active"
+                onclick="toggleNavDropdown('sub_menu1')"
+              >
+                <span><i class="bx bx-home icons"></i>Pricing</span>
+                <i class="bx bx-chevron-down icons"></i>
+              </a>
+              <ul class="sub_menu sub_nav_bg" id="sub_menu1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+              </ul>
+            </li>
+            <p class="nav_title mt-5">Main Menu</p>
+            <li class="nav_list">
+              <a
+                href="#"
+                class="nav_link"
+                onclick="toggleNavDropdown('sub_menu2')"
+              >
+                <span><i class="bx bx-layer icons"></i>Beed Flow</span>
+                <i class="bx bx-chevron-down icons"></i>
+              </a>
+              <ul class="sub_menu sub_nav_bg" id="sub_menu2">
+                <li><a href="#">Beed Deal</a></li>
+                <li><a href="#">Beed Doc</a></li>
+              </ul>
+            </li>
+            <p class="nav_title mt-5">Additional</p>
+            <li class="nav_list">
+              <a
+                href="#"
+                class="nav_link"
+                onclick="toggleNavDropdown('sub_menu3')"
+              >
+                <span><i class="bx bx-layer icons"></i>Suppliers</span>
+                <i class="bx bx-chevron-down icons"></i>
+              </a>
+              <ul class="sub_menu sub_nav_bg" id="sub_menu3">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+              </ul>
+            </li>
+            <li class="nav_list">
+              <a
+                href="#"
+                class="nav_link"
+                onclick="toggleNavDropdown('sub_menu4')"
+              >
+                <span><i class="bx bx-layer icons"></i>Contracts</span>
+                <i class="bx bx-chevron-down icons"></i>
+              </a>
+              <ul class="sub_menu sub_nav_bg" id="sub_menu4">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+              </ul>
+            </li>
+            <li class="nav_list">
+              <a
+                href="#"
+                class="nav_link"
+                onclick="toggleNavDropdown('sub_menu5')"
+              >
+                <span><i class="bx bx-layer icons"></i>Name</span>
+                <i class="bx bx-chevron-down icons"></i>
+              </a>
+              <ul class="sub_menu sub_nav_bg" id="sub_menu5">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+              </ul>
+            </li>
+            <li class="nav_list">
+              <a
+                href="#"
+                class="nav_link"
+                onclick="toggleNavDropdown('sub_menu6')"
+              >
+                <span
+                  ><i class="bx bx-home icons"></i>Documentation
+                  <span class="side_notifi">new</span></span
+                >
+                <i class="bx bx-chevron-down icons"></i>
+              </a>
+              <ul class="sub_menu sub_nav_bg" id="sub_menu6">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="body_container toggle_body">
+        <!-- top_navbar -->
+        <div class="top_navbar">
+          <div class="left">
+            <div class="toggle_menu" id="toggle_side_menu">
+              <i class="bx bx-menu icons"></i>
             </div>
-            <div class="logo_area">
-                <a href="index.html"><img class="logo" src="assets/img/logo.svg" alt="Logo" /></a>
-                <a href="index.html"><img class="logo sm_logo" src="assets/img/sm_logo.svg" alt="Logo" /></a>
+          </div>
+          <div class="right">
+            <div class="text">
+              <p>Welcome to the Beed.Pro!</p>
+              <p class="company_name">Company Name</p>
             </div>
+            <div class="top_icon_group">
+              <div class="user">
+                <a href="#" class="user_area" onclick="toggleUserStatus()">
+                  <i class="bx bx-user-circle icons"></i>
+                </a>
+                <div class="status">
+                  <i class="bx bxs-check-circle icons green"></i>
+                  <i class="bx bxs-x-circle icons red"></i>
+                </div>
+              </div>
+              <div class="user">
+                <a href="#" class="user_area" onclick="toggleNotification()">
+                  <i class="bx bx-bell icons"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <!-- body -->
+          <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span><i class="bx bx-chevron-right icons"></i></span>
+            <a href="beed-flow-request.html" class="active">Beed Flow</a>
+          </div>
+          <section class="product_name_page compare_page">
+            <div class="section_title">
+              <h1>
+                <a href="product_name.html">
+                  <iconify-icon
+                    icon="ion:chevron-back-outline"
+                  ></iconify-icon> </a
+                >Compare
+              </h1>
+              <hr class="mt-4" />
+            </div>
+            <p class="mt-3">
+              Both the Samsung S27AS00UJU and Dell U3421WE displays are suitable
+              for graphic designers. However, they have different features and
+              specifications, so the best choice depends on your specific needs
+              and preferences The Samsung S27A800UJU has a higher resolution of
+              3840 x 2160 pixels, providing more screen real estate for detailed
+              design work. It also has a slightly smaller screen size of 27
+              inches but has a 16:9 aspect ratio, which is suitable for video
+              editing and other multimediawork. This monitor s brightness
+              level:s and co or accuracy are also notable, mak·ng it ideal for
+              color-sensitive work.
+            </p>
+            <div class="row mt-2">
+              <div class="col-lg-6">
+                <div class="c_box">
+                  <div class="product_name_list">
+                    <div class="product_list f_blue">
+                      <div class="s_header">
+                        <div class="title">
+                          <h2>Supplier 1</h2>
+                          <div class="price">
+                            <img src="assets/img/icons/badge.svg" alt="" />
+                            <h1>$256</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="overflow_area">
+                        <div class="product-info_group c_red mt-2">
+                          <ul>
+                            <li>
+                              <b>Product Type</b>
+                            </li>
+                            <li>
+                              <p>Pen</p>
+                            </li>
+                            <li>
+                              <p>Mouse</p>
+                            </li>
+                            <li>
+                              <p>Paper</p>
+                            </li>
+                            <li>
+                              <p>Sticker</p>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <b>Products Quantity</b>
+                            </li>
+                            <li>
+                              <p>89</p>
+                            </li>
+                            <li>
+                              <p>34</p>
+                            </li>
+                            <li>
+                              <p>-</p>
+                            </li>
+                            <li>
+                              <p>-</p>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <b>Price</b>
+                            </li>
+                            <li>
+                              <p>3400</p>
+                            </li>
+                            <li>
+                              <p>1200</p>
+                            </li>
+                            <li>
+                              <p>-</p>
+                            </li>
+                            <li>
+                              <p>-</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table_area">
+                    <p class="table_title mt-3">
+                      All core features, including:
+                    </p>
+                    <table class="table table-bordered mt-2">
+                      <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col">Dell 876</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Display Size</td>
+                          <td>27 inches</td>
+                        </tr>
+                        <tr>
+                          <td>Display Type</td>
+                          <td>IPS</td>
+                        </tr>
+                        <tr>
+                          <td>Resolution</td>
+                          <td>2560x1440</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button class="btn">Choose</button>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="c_box">
+                  <div class="product_name_list">
+                    <div class="product_list f_yellow">
+                      <div class="s_header">
+                        <div class="title">
+                          <h2>Supplier 12</h2>
+                          <div class="price">
+                            <h1>$256</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="overflow_area">
+                        <div class="product-info_group c_red mt-2">
+                          <ul>
+                            <li>
+                              <b>Product Type</b>
+                            </li>
+                            <li>
+                              <p>Pen</p>
+                            </li>
+                            <li>
+                              <p>Mouse</p>
+                            </li>
+                            <li>
+                              <p>Paper</p>
+                            </li>
+                            <li>
+                              <p>Sticker</p>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <b>Products Quantity</b>
+                            </li>
+                            <li>
+                              <p>89</p>
+                            </li>
+                            <li>
+                              <p>34</p>
+                            </li>
+                            <li>
+                              <p>-</p>
+                            </li>
+                            <li>
+                              <p>-</p>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <b>Price</b>
+                            </li>
+                            <li>
+                              <p>3400</p>
+                            </li>
+                            <li>
+                              <p>1200</p>
+                            </li>
+                            <li>
+                              <p>-</p>
+                            </li>
+                            <li>
+                              <p>-</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table_area">
+                    <p class="table_title mt-3">
+                      All core features, including:
+                    </p>
+                    <table class="table table-bordered mt-2">
+                      <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col">Dell 876</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Display Size</td>
+                          <td>27 inches</td>
+                        </tr>
+                        <tr>
+                          <td>Display Type</td>
+                          <td>IPS</td>
+                        </tr>
+                        <tr>
+                          <td>Resolution</td>
+                          <td>2560x1440</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button class="btn">Choose</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- User Status Area -->
+
+        <div class="nav_user_status" id="nav_user_status">
+          <ul>
+            <li>
+              <a href=""><i class="fa-solid fa-user-gear icons"></i>Profile</a>
+            </li>
+            <div class="custom-selector">
+              <div class="selected-option" onclick="toggleOptions()">
+                <div class="option-text">
+                  <iconify-icon icon="twemoji:flag-liberia"></iconify-icon>
+                  English
+                </div>
+              </div>
+              <div class="options" id="options">
+                <div class="options_list" onclick="selectOption('English')">
+                  <iconify-icon icon="twemoji:flag-liberia"></iconify-icon>
+                  English
+                </div>
+                <div class="options_list" onclick="selectOption('Spanish')">
+                  <iconify-icon icon="twemoji:flag-germany"></iconify-icon>
+                  German
+                </div>
+                <div class="options_list" onclick="selectOption('French')">
+                  <iconify-icon
+                    icon="emojione-v1:flag-for-portugal"
+                  ></iconify-icon>
+                  Portugues
+                </div>
+                <div class="options_list" onclick="selectOption('German')">
+                  <iconify-icon
+                    icon="twemoji:flag-french-polynesia"
+                  ></iconify-icon>
+                  French
+                </div>
+              </div>
+            </div>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-arrow-right-to-bracket icons"></i>Log
+                out</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- notification area -->
+        <div class="notification_area" id="notificationDiv">
+          <!-- Notification List -->
+          <div class="notification_list" id="notificationList">
+            <div class="notifi_item" onclick="openNotification()">
+              <div class="notifi_header read">
+                <h6 class="notifi_title">
+                  Title of the message should be here
+                </h6>
+                <p>03.08.2023</p>
+              </div>
+              <p>
+                Radzen is a desktop tool that gives you the power to create line
+                of business applications fast.
+              </p>
+            </div>
+            <div class="notifi_item" onclick="openNotification()">
+              <div class="notifi_header unread">
+                <h6 class="notifi_title">
+                  Title of the message should be here
+                </h6>
+                <p>03.08.2023</p>
+              </div>
+              <p>
+                Radzen is a desktop tool that gives you the power to create line
+                of business applications fast.
+              </p>
+            </div>
+          </div>
+
+          <!-- Open Single notification -->
+          <div
+            class="single_notification"
+            id="single_notification"
+            style="display: none"
+          >
+            <a href="#" id="backButton" onclick="backNotification()"
+              ><i class="bx bx-chevron-left icons"></i>Back</a
+            >
             <hr class="mt-2" />
-            <div class="nav_list_area">
-                <ul class="menu_list">
-                    <li class="nav_list">
-                        <a href="#" class="nav_link active" onclick="toggleNavDropdown('sub_menu1')">
-                            <span><i class="bx bx-home icons"></i>Pricing</span>
-                            <i class="bx bx-chevron-down icons"></i>
-                        </a>
-                        <ul class="sub_menu sub_nav_bg" id="sub_menu1">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Home</a></li>
-                        </ul>
-                    </li>
-                    <p class="nav_title mt-5">Main Menu</p>
-                    <li class="nav_list">
-                        <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu2')">
-                            <span><i class="bx bx-layer icons"></i>Beed Flow</span>
-                            <i class="bx bx-chevron-down icons"></i>
-                        </a>
-                        <ul class="sub_menu sub_nav_bg" id="sub_menu2">
-                            <li><a href="#">Beed Deal</a></li>
-                            <li><a href="#">Beed Doc</a></li>
-                        </ul>
-                    </li>
-                    <p class="nav_title mt-5">Additional</p>
-                    <li class="nav_list">
-                        <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu3')">
-                            <span><i class="bx bx-layer icons"></i>Suppliers</span>
-                            <i class="bx bx-chevron-down icons"></i>
-                        </a>
-                        <ul class="sub_menu sub_nav_bg" id="sub_menu3">
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu4')">
-                            <span><i class="bx bx-layer icons"></i>Contracts</span>
-                            <i class="bx bx-chevron-down icons"></i>
-                        </a>
-                        <ul class="sub_menu sub_nav_bg" id="sub_menu4">
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu5')">
-                            <span><i class="bx bx-layer icons"></i>Name</span>
-                            <i class="bx bx-chevron-down icons"></i>
-                        </a>
-                        <ul class="sub_menu sub_nav_bg" id="sub_menu5">
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu6')">
-                            <span><i class="bx bx-home icons"></i>Documentation
-                                <span class="side_notifi">new</span></span>
-                            <i class="bx bx-chevron-down icons"></i>
-                        </a>
-                        <ul class="sub_menu sub_nav_bg" id="sub_menu6">
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="notifi_item">
+              <div class="notifi_header">
+                <h6 class="notifi_title">
+                  Title of the message should be here
+                </h6>
+                <p>03.08.2023</p>
+              </div>
+              <p>
+                Radzen is a desktop tool that gives you Radzen is a desktop tool
+                that gives you the power to create line of business applications
+                fast. the power to create line of business applications fast.
+                Radzen is a desktop tool that gives you Radzen is a desktop tool
+                that gives you the power to create line of business applications
+                fast. the power to create line of business applications
+                fast.Radzen is a desktop tool that gives you Radzen is a desktop
+                tool that gives you the power to create line of business
+                applications fast. the power to create line of business
+                applications fast.
+              </p>
             </div>
+          </div>
         </div>
-        <div class="body_container toggle_body">
-            <!-- top_navbar -->
-            <div class="top_navbar">
-                <div class="left">
-                    <div class="toggle_menu" id="toggle_side_menu">
-                        <i class="bx bx-menu icons"></i>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="text">
-                        <p>Welcome to the Beed.Pro!</p>
-                        <p class="company_name">Company Name</p>
-                    </div>
-                    <div class="top_icon_group">
-                        <div class="user">
-                            <a href="#" class="user_area" onclick="toggleUserStatus()">
-                                <i class="bx bx-user-circle icons"></i>
-                            </a>
-                            <div class="status">
-                                <i class="bx bxs-check-circle icons green"></i>
-                                <i class="bx bxs-x-circle icons red"></i>
-                            </div>
-                        </div>
-                        <div class="user">
-                            <a href="#" class="user_area" onclick="toggleNotification()">
-                                <i class="bx bx-bell icons"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <!-- body -->
-                <div class="breadcrumb">
-                    <a href="index.html">Home</a>
-                    <span><i class="bx bx-chevron-right icons"></i></span>
-                    <a href="beed-flow-request.html" class="active">Beed Flow</a>
-                </div>
-                <section class="product_name_page compare_page">
-                    <div class="section_title">
-                        <h1><a href="product_name.html">
-                                <iconify-icon icon="ion:chevron-back-outline"></iconify-icon>
-                            </a>Compare</h1>
-                        <hr class="mt-4" />
-                    </div>
-                    <p class="mt-3">Both the Samsung S27AS00UJU and Dell U3421WE displays are suitable for graphic designers.
-                        However, they have different features and specifications, so the best choice
-                        depends on your specific needs and preferences
-                        The Samsung S27A800UJU has a higher resolution of 3840 x 2160 pixels, providing more screen real
-                        estate for detailed design work. It also has a slightly smaller screen size of 27
-                        inches but has a 16:9 aspect ratio, which is suitable for video editing and other
-                        multimediawork. This monitor s brightness level:s and co or accuracy are also notable, mak·ng it
-                        ideal
-                        for color-sensitive work.</p>
-                    <div class="row mt-2">
-                        <div class="col-lg-6">
-                            <div class="c_box">
-                                <div class="product_name_list">
-                                    <div class="product_list f_blue">
-                                        <div class="s_header">
-                                            <div class="title">
-                                                <h2>Supplier 1 </h2>
-                                                <div class="price">
-                                                    <img src="assets/img/icons/badge.svg" alt="">
-                                                    <h1>$256</h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="overflow_area">
-                                            <div class="product-info_group c_red mt-2">
-                                                <ul>
-                                                    <li>
-                                                        <b>Product Type</b>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>Pen</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>Mouse</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>Paper</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>Sticker</p>
-                                                    </li>
-                                                </ul>
-                                                <ul>
-                                                    <li>
-                                                        <b>Products Quantity</b>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>89</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>34</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>-</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>-</p>
-                                                    </li>
-                                                </ul>
-                                                <ul>
-                                                    <li>
-                                                        <b>Price</b>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>3400</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>1200</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>-</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>-</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table_area">
-                                    <p class="table_title mt-3">All core features, including:</p>
-                                    <table class="table table-bordered mt-2">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Dell 876</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Display Size</td>
-                                                <td>27 inches</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Display Type</td>
-                                                <td>IPS</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Resolution</td>
-                                                <td>2560x1440</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <button class="btn">Choose</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="c_box">
-                                <div class="product_name_list">
-                                    <div class="product_list f_yellow">
-                                        <div class="s_header">
-                                            <div class="title">
-                                                <h2>Supplier 12</h2>
-                                                <div class="price">
-                                                    <h1>$256</h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="overflow_area">
-                                            <div class="product-info_group c_red mt-2">
-                                                <ul>
-                                                    <li>
-                                                        <b>Product Type</b>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>Pen</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>Mouse</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>Paper</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>Sticker</p>
-                                                    </li>
-                                                </ul>
-                                                <ul>
-                                                    <li>
-                                                        <b>Products Quantity</b>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>89</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>34</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>-</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>-</p>
-                                                    </li>
-                                                </ul>
-                                                <ul>
-                                                    <li>
-                                                        <b>Price</b>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>3400</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>1200</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>-</p>
-                                                    </li>
-                                                    <li class="mt-1">
-                                                        <p>-</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table_area">
-                                    <p class="table_title mt-3">All core features, including:</p>
-                                    <table class="table table-bordered mt-2">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Dell 876</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Display Size</td>
-                                                <td>27 inches</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Display Type</td>
-                                                <td>IPS</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Resolution</td>
-                                                <td>2560x1440</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <button class="btn">Choose</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+      </div>
 
-            <!-- User Status Area -->
-
-            <div class="nav_user_status" id="nav_user_status">
-                <ul>
-                    <li>
-                        <a href=""><i class="fa-solid fa-user-gear icons"></i>Profile</a>
-                    </li>
-                    <div class="custom-selector">
-                        <div class="selected-option" onclick="toggleOptions()">
-                            <div class="option-text">
-                                <iconify-icon icon="twemoji:flag-liberia"></iconify-icon>
-                                English
-                            </div>
-                        </div>
-                        <div class="options" id="options">
-                            <div class="options_list" onclick="selectOption('English')">
-                                <iconify-icon icon="twemoji:flag-liberia"></iconify-icon>
-                                English
-                            </div>
-                            <div class="options_list" onclick="selectOption('Spanish')">
-                                <iconify-icon icon="twemoji:flag-germany"></iconify-icon>
-                                German
-                            </div>
-                            <div class="options_list" onclick="selectOption('French')">
-                                <iconify-icon icon="emojione-v1:flag-for-portugal"></iconify-icon>
-                                Portugues
-                            </div>
-                            <div class="options_list" onclick="selectOption('German')">
-                                <iconify-icon icon="twemoji:flag-french-polynesia"></iconify-icon>
-                                French
-                            </div>
-                        </div>
-                    </div>
-                    <li>
-                        <a href=""><i class="fa-solid fa-arrow-right-to-bracket icons"></i>Log
-                            out</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- notification area -->
-            <div class="notification_area" id="notificationDiv">
-                <!-- Notification List -->
-                <div class="notification_list" id="notificationList">
-                    <div class="notifi_item" onclick="openNotification()">
-                        <div class="notifi_header read">
-                            <h6 class="notifi_title">
-                                Title of the message should be here
-                            </h6>
-                            <p>03.08.2023</p>
-                        </div>
-                        <p>
-                            Radzen is a desktop tool that gives you the power to create line
-                            of business applications fast.
-                        </p>
-                    </div>
-                    <div class="notifi_item" onclick="openNotification()">
-                        <div class="notifi_header unread">
-                            <h6 class="notifi_title">
-                                Title of the message should be here
-                            </h6>
-                            <p>03.08.2023</p>
-                        </div>
-                        <p>
-                            Radzen is a desktop tool that gives you the power to create line
-                            of business applications fast.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Open Single notification -->
-                <div class="single_notification" id="single_notification" style="display: none">
-                    <a href="#" id="backButton" onclick="backNotification()"><i
-                            class="bx bx-chevron-left icons"></i>Back</a>
-                    <hr class="mt-2" />
-                    <div class="notifi_item">
-                        <div class="notifi_header">
-                            <h6 class="notifi_title">
-                                Title of the message should be here
-                            </h6>
-                            <p>03.08.2023</p>
-                        </div>
-                        <p>
-                            Radzen is a desktop tool that gives you Radzen is a desktop tool
-                            that gives you the power to create line of business applications
-                            fast. the power to create line of business applications fast.
-                            Radzen is a desktop tool that gives you Radzen is a desktop tool
-                            that gives you the power to create line of business applications
-                            fast. the power to create line of business applications
-                            fast.Radzen is a desktop tool that gives you Radzen is a desktop
-                            tool that gives you the power to create line of business
-                            applications fast. the power to create line of business
-                            applications fast.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="side_ex_bg">
-            <img src="assets/img/Background Gradient.svg" alt="" />
-        </div>
+      <div class="side_ex_bg">
+        <img src="assets/img/Background Gradient.svg" alt="" />
+      </div>
     </div>
 
     <!-- Js Part -->
@@ -461,6 +515,5 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/style.js"></script>
-</body>
-
+  </body>
 </html>
