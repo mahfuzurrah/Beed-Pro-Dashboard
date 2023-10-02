@@ -77,13 +77,9 @@ Suppliers Contact List
   color: var(--secondary-color);
 }
 
-/* .suppliers_con_list .s-info_group {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  width: 100%;
-  margin-top: 10px;
-} */
+.suppliers_con_list .s-info_group {
+  margin-top: 16px;
+}
 
 .suppliers_con_list .s-info_group ul li {
   display: flex;
@@ -223,6 +219,7 @@ Suppliers Contact List
 .suppliers_con_list .s-info_group .s_btn_area.c_list_icons {
   flex-direction: row;
   align-items: center;
+  gap: 10px;
 }
 
 .suppliers_con_list .s-info_group .s_btn_area .btn_sec .icons {

@@ -1181,6 +1181,10 @@ All Page Common Css Code End
   width: 120px;
 }
 
+.s-info_group.f-info_group{
+  margin: -5px !important;
+}
+
 .f-info_group h1 {
   font-size: 36px;
 }
@@ -1409,6 +1413,7 @@ Product Name Page
   grid-template-columns: repeat(2, 1fr) !important;
   grid-gap: 30px !important;
   row-gap: 10px !important;
+  align-items: end;
 }
 
 .collum_3{
@@ -1416,6 +1421,7 @@ Product Name Page
   grid-template-columns: repeat(3, 1fr) !important;
   grid-gap: 30px !important;
   row-gap: 10px !important;
+  align-items: end;
 }
 
 .collum_4{
