@@ -7,6 +7,7 @@ Suppliers Contact List
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .suppliers_con_list .find_add_suppliers .s_find_info,

@@ -311,7 +311,7 @@ textarea::placeholder {
 }
 
 .container-fluid {
-  padding: 30px 30px;
+  padding: 40px 50px;
   height: 100%;
 }
 
@@ -1407,6 +1407,14 @@ Product Name Page
 }
 
 /* ==============supplyer============= */
+
+.collum_2{
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  grid-gap: 30px !important;
+  row-gap: 10px !important;
+  margin-top: 10px;
+}
 
 .collum_3{
   display: grid !important;
