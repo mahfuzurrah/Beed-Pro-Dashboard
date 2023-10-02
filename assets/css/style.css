@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:wght@400;500;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:wght@400;500;700&family=Source+Sans+3:wght@400;500;600&display=swap");
 
 @font-face {
   font-family: "SourceSansPro";
@@ -177,7 +177,6 @@ label {
   margin-bottom: 5px;
   font-size: var(--small-font-size);
   color: #4f4f50;
-  font-weight: 600;
 }
 
 hr {
@@ -671,7 +670,6 @@ Top Navbar
   font-size: 30px;
 }
 
-
 .top_navbar .currency_area {
   display: flex;
   align-items: center;
@@ -964,7 +962,6 @@ Profile css
   gap: 10px;
 }
 
-
 #deleteFile {
   display: none;
   border-radius: 5px;
@@ -1011,8 +1008,6 @@ All Page Common Css Code
 All Page Common Css Code End
 ============================================= */
 
-
-
 /*===================== beed-flow-request =====================*/
 
 .beed_flow_content_area {
@@ -1028,7 +1023,13 @@ All Page Common Css Code End
 }
 
 .flow_content_container .flow_form {
-  max-width: 500px;
+  max-width: 420px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.flow_content_container .flow_form.desc {
+  max-width: 720px;
   margin: auto;
   margin-top: 50px;
 }
@@ -1102,12 +1103,32 @@ All Page Common Css Code End
 
 .js-tags .tag.js-tag {
   padding: 2px 8px;
+  max-height: 24px;
   background: #3f526f29;
   display: flex;
   align-items: center;
-  gap: 8px;
-  border-radius: 2px;
+  gap: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.js-tags .tag.js-tag.p_tag{
+  padding: 12px 8px;
+  max-height: 24px;
+  background: #3f526f29;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .js-tags .tag.js-tag p {
@@ -1115,12 +1136,13 @@ All Page Common Css Code End
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 0 !important;
 }
 
 .details_page .js-tags .tag.js-tag p {
-  color: #4F4F50;
+  color: #4f4f50;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -1181,7 +1203,7 @@ All Page Common Css Code End
   width: 120px;
 }
 
-.s-info_group.f-info_group{
+.s-info_group.f-info_group {
   margin: -5px !important;
 }
 
@@ -1210,7 +1232,6 @@ All Page Common Css Code End
 .f_black {
   border-left: 4px solid var(--title-color) !important;
 }
-
 
 .suppliers_list_group.beed_flow_list_group .f-info_group .active {
   padding: 4px 8px;
@@ -1297,29 +1318,29 @@ Product Name Page
   border-radius: 5px;
 }
 
-.checkbox input[type="checkbox"]:checked+label::before {
-  background-color: #3F526F;
+.checkbox input[type="checkbox"]:checked + label::before {
+  background-color: #3f526f;
   color: #fff;
   border: none;
 }
-
 
 .product_name_page .product_name_list .product_list {
   width: 100%;
   border: 1px solid var(--border-color);
   padding: 20px;
   border-radius: 8px;
+  overflow-x: auto;
 }
 
 .product_name_page .product_name_list .product-info_group {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .product_name_page .product_name_list .product_list.f_blue {
-  border: 2px solid #12A4F533;
+  border: 2px solid #12a4f533;
   background: #12a6f50c;
 }
 
@@ -1376,6 +1397,10 @@ Product Name Page
   margin: auto;
 }
 
+.compare_page .c_box .table_area{
+  max-width: 320px;
+}
+
 .compare_page .c_box .table_area p.table_title {
   color: var(--title-color);
 }
@@ -1383,12 +1408,14 @@ Product Name Page
 .proposal_send_area {
   max-width: 450px;
   margin: auto;
+  padding: 120px 0;
 }
 
 .proposal_send_area .proposal_text {
   margin-top: 30px;
   padding: 16px;
-  background: #F4F5F9;
+  background: #f4f5f9;
+  text-align: center;
 }
 
 .proposal_send_area .btn {
@@ -1398,7 +1425,7 @@ Product Name Page
 
 /* ==============supplyer============= */
 
-.collum_2{
+.collum_2 {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
   grid-gap: 30px !important;
@@ -1406,7 +1433,7 @@ Product Name Page
   align-items: end;
 }
 
-.collum_3{
+.collum_3 {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
   grid-gap: 30px !important;
@@ -1414,7 +1441,7 @@ Product Name Page
   align-items: end;
 }
 
-.collum_4{
+.collum_4 {
   display: grid !important;
   grid-template-columns: repeat(4, 1fr) !important;
   grid-gap: 30px !important;
@@ -1422,10 +1449,9 @@ Product Name Page
   align-items: end;
 }
 
-.bayer_dropdown{
+.bayer_dropdown {
   display: none;
 }
-
 
 .bayer_dropdown .bayer_dropdown_from span.flex_label {
   display: flex;
@@ -1441,26 +1467,24 @@ Product Name Page
   margin-top: 30px;
 }
 
-
-
-.bayer_dropdown .proposal_option span{
+.bayer_dropdown .proposal_option span {
   color: var(--border-color);
 }
 
-.bayer_dropdown .proposal_option a{
+.bayer_dropdown .proposal_option a {
   text-transform: uppercase;
   color: #12a4f5;
 }
 
-.bayer_dropdown .btn_area{
+.bayer_dropdown .btn_area {
   max-width: 250px;
   margin: auto;
 }
 
-.supp_toggleButton{
+.supp_toggleButton {
   cursor: pointer;
 }
 
-.bayer_dropdown .upload-container{
-width: max-content;
+.bayer_dropdown .upload-container {
+  width: max-content;
 }

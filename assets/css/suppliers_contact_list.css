@@ -120,6 +120,7 @@ Suppliers Contact List
 .blue,
 .renewed,
 .expired,
+.exp,
 .current,
 .completed {
   padding: 2px 4px;
@@ -129,8 +130,13 @@ Suppliers Contact List
 }
 
 .expired {
-  background: #F311551A;
-  color: #F31155 !important;
+  background: #F31155;
+  color: var(--white-color) !important;
+}
+
+.exp {
+  background: #AFAFB2;
+  color: var(--white-color) !important;
 }
 
 .current {
