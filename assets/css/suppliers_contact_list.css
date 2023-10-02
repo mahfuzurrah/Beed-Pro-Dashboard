@@ -215,7 +215,7 @@ Suppliers Contact List
 
 .suppliers_con_list .s-info_group .s_btn_area {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: flex-end;
   gap: 15px;
   flex-direction: column;
