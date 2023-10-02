@@ -129,18 +129,18 @@ Suppliers Contact List
 }
 
 .expired {
-  background: #f3115548;
-  color: #F31155;
+  background: #F311551A;
+  color: #F31155 !important;
 }
 
 .current {
   background: #009b5042;
-  color: #009B51;
+  color: #009B51 !important;
 }
 
 .renewed {
   background: #ffb0113f;
-  color: #FFAE11;
+  color: #FFAE11 !important;
 }
 
 .blue{
