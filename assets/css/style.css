@@ -1207,10 +1207,13 @@ All Page Common Css Code End
   margin: -5px !important;
 }
 
+
+.s_btn_area h1,
 .f-info_group h1 {
   font-size: 36px;
 }
 
+.s_btn_area p,
 .f-info_group p {
   font-size: var(--normal-font-size);
   color: var(--title-color);
@@ -1332,11 +1335,12 @@ Product Name Page
   overflow-x: auto;
 }
 
-.product_name_page .product_name_list .product-info_group {
+
+.product_name_page .product_name_list .product-info_group ul.qnumber.s_btn_area{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+  flex-direction: column;
+  align-items: flex-end;
+  
 }
 
 .product_name_page .product_name_list .product_list.f_blue {
