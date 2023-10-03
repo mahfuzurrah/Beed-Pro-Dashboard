@@ -1213,6 +1213,21 @@ All Page Common Css Code End
   font-size: 36px;
 }
 
+
+.toggle-button {
+  display: none;
+}
+
+.toggle-button.visible {
+  display: inline-block;
+}
+
+.show-more-button {
+  display: inline-block;
+}
+
+
+
 .s_btn_area p,
 .f-info_group p {
   font-size: var(--normal-font-size);

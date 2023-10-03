@@ -489,3 +489,59 @@ try {
   // Handle any errors that may occur
   console.error(error);
 }
+
+
+
+try {
+  const tags = document.querySelectorAll('.tag');
+  const buttonContainer = document.getElementById('button-container');
+  
+  // Calculate the number of hidden tags
+  function calculateHiddenCount() {
+    const totalTags = tags.length;
+    const hiddenTags = document.querySelectorAll('.hidden').length;
+    return hiddenTags;
+  }
+  
+  // Update the "+X more" tag
+  function updateShowMoreTag() {
+    const hiddenCount = calculateHiddenCount();
+    if (hiddenCount > 0) {
+      const showMoreTag = document.createElement('a');
+      showMoreTag.href = '#'; // Add a link destination if needed
+      showMoreTag.textContent = `+${hiddenCount} more`;
+      showMoreTag.classList.add('tag', 'show-more-tag');
+  
+      // Remove any existing "+X more" tag
+      const existingShowMoreTag = document.querySelector('.show-more-tag');
+      if (existingShowMoreTag) {
+        existingShowMoreTag.remove();
+      }
+  
+      // Add the new "+X more" tag to the container
+      buttonContainer.appendChild(showMoreTag);
+    } else {
+      // Remove the "+X more" tag if no tags are hidden
+      const existingShowMoreTag = document.querySelector('.show-more-tag');
+      if (existingShowMoreTag) {
+        existingShowMoreTag.remove();
+      }
+    }
+  }
+  
+  // Initially show the first 4 tags
+  tags.forEach((tag, index) => {
+    if (index < 5) {
+      tag.classList.remove('hidden');
+    } else {
+      tag.classList.add('hidden');
+    }
+  });
+  
+  // Update the "+X more" tag
+  updateShowMoreTag();
+  
+
+} catch (error) {
+  
+}
