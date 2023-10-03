@@ -1358,6 +1358,32 @@ Product Name Page
   
 }
 
+.s_btn_area .d_proposal{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #EEF0F2;
+  margin-top: 8px;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  border-radius: 8px;
+}
+
+.s_btn_area .d_proposal .icons{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #EEF0F2;
+  margin-top: 8px;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  border-radius: 8px;
+}
+
 .product_name_page .product_name_list .product_list.f_blue {
   border: 2px solid #12a4f533;
   background: #12a6f50c;
@@ -1387,6 +1413,13 @@ Product Name Page
 }
 
 .compare_page .s_header .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.compare_page .product_name_list .product-info_group{
   display: flex;
   align-items: center;
   justify-content: space-between;
