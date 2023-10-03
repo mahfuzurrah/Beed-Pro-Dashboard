@@ -1433,9 +1433,16 @@ Product Name Page
 }
 
 .compare_page .s_header .title .price h1 {
+  color: #3F526F;
+  font-size: 36px;
+}
+
+.compare_page .s_header .title .price h1.active {
   color: #12a4f5;
   font-size: 36px;
 }
+
+
 
 .compare_page .c_box {
   padding: 20px;
