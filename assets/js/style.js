@@ -415,52 +415,52 @@ try {
       }
     });
   });
-} catch (error) { }
+} catch (error) {}
 
 
 try {
   const tags = document.querySelectorAll('.js-tag');
 
-        // Add a click event listener to each tag
-        tags.forEach((tag) => {
-            tag.addEventListener('click', () => {
-                // Toggle the 'active' class on the clicked tag
-                tag.classList.toggle('active');
-            });
+  // Add a click event listener to each tag
+  tags.forEach((tag) => {
+    tag.addEventListener('click', () => {
+      // Toggle the 'active' class on the clicked tag
+      tag.classList.toggle('active');
+    });
 
-            // Add a click event listener to the close button inside each tag
-            const closeButton = tag.querySelector('.js-tag-close');
-            closeButton.addEventListener('click', (event) => {
-                event.stopPropagation(); // Prevent the click event from propagating to the parent tag
-                // Find the parent tag and remove it
-                tag.remove();
-            });
-        });
+    // Add a click event listener to the close button inside each tag
+    const closeButton = tag.querySelector('.js-tag-close');
+    closeButton.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent the click event from propagating to the parent tag
+      // Find the parent tag and remove it
+      tag.remove();
+    });
+  });
 } catch (error) {
   console.error(error);
 }
 
 
 try {
-// Get all elements with the class "p_tag"
-var pTags = document.querySelectorAll(".p_tag");
+  // Get all elements with the class "p_tag"
+  var pTags = document.querySelectorAll(".p_tag");
 
-// Add click event listeners to each "p_tag" element
-pTags.forEach(function(element) {
-    element.addEventListener("click", function() {
-        // Remove "active" class from all "p_tag" elements
-        pTags.forEach(function(tag) {
-            tag.classList.remove("active");
-        });
+  // Add click event listeners to each "p_tag" element
+  pTags.forEach(function (element) {
+    element.addEventListener("click", function () {
+      // Remove "active" class from all "p_tag" elements
+      pTags.forEach(function (tag) {
+        tag.classList.remove("active");
+      });
 
-        // Add "active" class to the clicked element
-        this.classList.add("active");
+      // Add "active" class to the clicked element
+      this.classList.add("active");
     });
-});
+  });
 
 
 } catch (error) {
-  
+
 }
 
 
@@ -495,14 +495,14 @@ try {
 try {
   const tags = document.querySelectorAll('.tag');
   const buttonContainer = document.getElementById('button-container');
-  
+
   // Calculate the number of hidden tags
   function calculateHiddenCount() {
     const totalTags = tags.length;
     const hiddenTags = document.querySelectorAll('.hidden').length;
     return hiddenTags;
   }
-  
+
   // Update the "+X more" tag
   function updateShowMoreTag() {
     const hiddenCount = calculateHiddenCount();
@@ -511,13 +511,13 @@ try {
       showMoreTag.href = '#'; // Add a link destination if needed
       showMoreTag.textContent = `+${hiddenCount} more`;
       showMoreTag.classList.add('tag', 'show-more-tag');
-  
+
       // Remove any existing "+X more" tag
       const existingShowMoreTag = document.querySelector('.show-more-tag');
       if (existingShowMoreTag) {
         existingShowMoreTag.remove();
       }
-  
+
       // Add the new "+X more" tag to the container
       buttonContainer.appendChild(showMoreTag);
     } else {
@@ -528,7 +528,7 @@ try {
       }
     }
   }
-  
+
   // Initially show the first 4 tags
   tags.forEach((tag, index) => {
     if (index < 5) {
@@ -537,11 +537,11 @@ try {
       tag.classList.add('hidden');
     }
   });
-  
+
   // Update the "+X more" tag
   updateShowMoreTag();
-  
+
 
 } catch (error) {
-  
+
 }
