@@ -77,10 +77,6 @@ Suppliers Contact List
   color: var(--secondary-color);
 }
 
-.suppliers_con_list .s-info_group {
-  margin-top: 16px;
-}
-
 .suppliers_con_list .s-info_group ul li {
   display: flex;
   align-items: center;

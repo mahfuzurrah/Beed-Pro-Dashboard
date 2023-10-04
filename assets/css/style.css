@@ -345,6 +345,13 @@ textarea::placeholder {
 .section_title h1 a {
   display: flex;
   align-items: center;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.section_title h1 a:hover {
+  background: var(--white-color);
+transition: all 0.5s ease-in-out;
 }
 
 .form-group {
@@ -1358,6 +1365,13 @@ Product Name Page
   
 }
 
+.product_name_list .p_title_bid{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .s_btn_area .d_proposal{
   display: flex;
   align-items: center;
@@ -1546,4 +1560,10 @@ Product Name Page
 
 .bayer_dropdown .upload-container {
   width: max-content;
+}
+
+
+.product-info_group,
+.suppliers_con_list .s-info_group {
+  margin-top: 16px !important;
 }
