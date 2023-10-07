@@ -351,7 +351,7 @@ textarea::placeholder {
 
 .section_title h1 a:hover {
   background: var(--white-color);
-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .form-group {
@@ -700,7 +700,7 @@ notification area
   background: var(--white-color);
   width: 200px;
   border-radius: 8px;
-  position: absolute;
+  position: fixed;
   right: 40px;
   transform: translateX(-40px);
   margin-top: 20px;
@@ -793,7 +793,7 @@ notification area
 
 .notification_area {
   width: 400px;
-  position: absolute;
+  position: fixed;
   top: 90px;
   right: 20px;
   background: var(--white-color);
@@ -1025,7 +1025,7 @@ All Page Common Css Code End
 }
 
 .flow_content_container {
-  max-width: 630px;
+  max-width: 730px;
   margin: auto;
 }
 
@@ -1039,34 +1039,40 @@ All Page Common Css Code End
   max-width: 720px;
   margin: auto;
   margin-top: 50px;
+
 }
 
 .beed_flow_content_area .flow_nav .nav_menu {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   justify-content: space-between;
   row-gap: 40px;
-  flex-wrap: wrap;
 }
 
 .beed_flow_content_area .flow_nav .nav_menu li {
-  position: relative;
+ width: 250px;
 }
 
-.beed_flow_content_area .flow_nav .nav_menu li::after {
-  content: "";
-  position: absolute;
-  width: 70%;
-  height: 2px;
+.beed_flow_content_area .flow_nav .nav_menu li:nth-child(2) {
+  width: 260px;
+}
+
+.beed_flow_content_area .flow_nav .nav_menu li:last-child {
+ width: auto;
+}
+
+.beed_flow_content_area .flow_nav .nav_menu li a{
+  display: flex;
+  align-items: center;
+}
+
+.beed_flow_content_area .flow_nav .nav_menu li .line {
   background: #e5e7ea;
-  top: 50%;
-  right: -75%;
+  flex-grow: 1;
+  height: 2px;
+  width: fit-content;
   margin-left: 10px;
-}
-
-.beed_flow_content_area .flow_nav .nav_menu li:last-child::after {
-  display: none;
 }
 
 .beed_flow_content_area .flow_nav .nav_menu .number {
@@ -1080,10 +1086,6 @@ All Page Common Css Code End
   justify-content: center;
 }
 
-.beed_flow_content_area .flow_nav .nav_menu li a {
-  display: flex;
-  align-items: center;
-}
 
 .beed_flow_content_area .flow_nav .nav_menu .number.active_stap {
   background: #e5e7ea;
@@ -1095,9 +1097,10 @@ All Page Common Css Code End
 }
 
 .beed_flow_content_area .flow_nav .nav_menu a {
-  font-size: var(--normal-font-size);
+  font-size: 14px;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
+  color: #4D4D4D !important;
 }
 
 .js-tags {
@@ -1123,7 +1126,7 @@ All Page Common Css Code End
   font-size: 12px;
 }
 
-.js-tags .tag.js-tag.p_tag{
+.js-tags .tag.js-tag.p_tag {
   padding: 12px 8px;
   max-height: 24px;
   background: #3f526f29;
@@ -1343,7 +1346,7 @@ Product Name Page
   border-radius: 5px;
 }
 
-.checkbox input[type="checkbox"]:checked + label::before {
+.checkbox input[type="checkbox"]:checked+label::before {
   background-color: #3f526f;
   color: #fff;
   border: none;
@@ -1358,21 +1361,21 @@ Product Name Page
 }
 
 
-.product_name_page .product_name_list .product-info_group ul.qnumber.s_btn_area{
+.product_name_page .product_name_list .product-info_group ul.qnumber.s_btn_area {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  
+
 }
 
-.product_name_list .p_title_bid{
+.product_name_list .p_title_bid {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
 
-.s_btn_area .d_proposal{
+.s_btn_area .d_proposal {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1385,7 +1388,7 @@ Product Name Page
   border-radius: 8px;
 }
 
-.s_btn_area .d_proposal .icons{
+.s_btn_area .d_proposal .icons {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1433,7 +1436,7 @@ Product Name Page
   gap: 30px;
 }
 
-.compare_page .product_name_list .product-info_group{
+.compare_page .product_name_list .product-info_group {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1470,7 +1473,7 @@ Product Name Page
   margin: auto;
 }
 
-.compare_page .c_box .table_area{
+.compare_page .c_box .table_area {
   max-width: 320px;
 }
 

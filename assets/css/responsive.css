@@ -10,7 +10,6 @@
   .suppliers_con_list .s-info_group {
     width: 120%;
   }
-
 }
 
 @media screen and (max-width: 991px) {
@@ -74,7 +73,6 @@
   .pricing_page .table_area {
     margin-top: 20px;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -96,11 +94,10 @@
     margin-top: 20px;
   }
 
-   /* ===PRODUCTS PAGE=== */
-   .product_name_page .product_name_list .product-info_group{
+  /* ===PRODUCTS PAGE=== */
+  .product_name_page .product_name_list .product-info_group {
     width: 150%;
-   }
-
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -132,18 +129,30 @@
   }
 
   /* ===PRODUCTS PAGE=== */
-  .product_name_page .product_name_list .product-info_group{
+  .product_name_page .product_name_list .product-info_group {
     width: 200%;
-   }
+  }
 
-   .product_name_page .product_name_list{
+  .product_name_page .product_name_list {
     gap: 10px;
-   }
+  }
 
-   .product_name_page .body_tab_area .btn_area {
+  .product_name_page .body_tab_area .btn_area {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .beed_flow_content_area .flow_nav .nav_menu {
+    flex-wrap: wrap;
+  }
+
+  .beed_flow_content_area .flow_nav .nav_menu li{
+    width: 100%;
+  }
+
+  .beed_flow_content_area .flow_nav .nav_menu li:nth-child(2) {
+    width: 100%;
   }
 }
 
