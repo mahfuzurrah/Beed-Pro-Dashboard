@@ -1570,3 +1570,194 @@ Product Name Page
 .suppliers_con_list .s-info_group {
   margin-top: 16px !important;
 }
+
+
+.LYNX-overview #overview .wrapper {
+  margin-top: 30px;
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+.LYNX-overview #overview .wrapper .big-chart .box {
+  background: var(--white-color);
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.LYNX-overview #overview .wrapper .big-chart .box.chart-li li {
+  padding: 6px 0;
+}
+
+.LYNX-overview #overview .wrapper .big-chart .box.chart-li {
+  overflow: auto;
+}
+
+.LYNX-overview #overview .wrapper .big-chart .box h3 {
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--title-text-color);
+}
+
+.LYNX-overview #overview .wrapper .big-chart .chart {
+  padding: 0 20px;
+}
+
+
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  margin: 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list.header-list {
+  border: none;
+  padding-top: 0;
+  width: 85%;
+  margin-left: auto;
+}
+
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list.header-list
+  li {
+  text-align: left;
+  color: var(--title-text-color) !important;
+  font-weight: 600;
+  cursor: default;
+}
+
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li {
+  font-size: 14px;
+  list-style: none;
+  color: var(--description-color);
+  text-align: left;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li {
+    font-size: 14px;
+    list-style: none;
+    color: var(--description-color);
+    text-align: left;
+    cursor: pointer;
+    min-width: 80px;
+  }
+
+  .LYNX-overview
+    #overview
+    .wrapper
+    .big-chart
+    .box
+    .tabile-list
+    .list
+    li.color-box {
+    margin-right: 55px !important;
+  }
+}
+
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list {
+  overflow: auto;
+  min-width: 450px;
+}
+
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li:hover {
+  font-weight: 600;
+  color: var(--title-text-color);
+}
+
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li:nth-child(1) {
+  margin-left: 0;
+}
+
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box {
+  min-width: 20px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box.color-100 {
+  background: #cd0606;
+}
+
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box.color-200 {
+  background: #00ab79;
+}
+
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box.color-300 {
+  background: #e0e324;
+}
+
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box.color-400 {
+  background: #00ab79;
+}
+
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box.color-500 {
+  background: #cd0606;
+}
