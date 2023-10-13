@@ -1,5 +1,13 @@
 /* @media screen and (max-width: ..px) {} */
 
+@media screen and (max-width: 1450px) {
+  /* ===Suppliers Contact List=== */
+  .overflow_area {
+    overflow-x: auto;
+    padding-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 1250px) {
   /* ===Suppliers Contact List=== */
   .overflow_area {

@@ -545,3 +545,94 @@ try {
 } catch (error) {
 
 }
+
+try {
+
+
+  const fileInput = document.getElementById("fileInput");
+        const fileList = document.getElementById("fileList");
+
+        fileInput.addEventListener("change", function () {
+            const files = fileInput.files;
+            if (files.length > 0) {
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    const fileItem = document.createElement("div");
+                    fileItem.classList.add("file-item");
+
+                    const starCheckboxContainer = document.createElement("div");
+                    starCheckboxContainer.classList.add("star-checkbox-container");
+                    
+                    const starCheckbox = document.createElement("input");
+                    starCheckbox.type = "checkbox";
+                    starCheckbox.classList.add("star-checkbox");
+                    starCheckbox.addEventListener("click", function (e) {
+                        // Handle the checkbox click event here
+                        if (starCheckbox.checked) {
+                            // File is starred
+                        } else {
+                            // File is unstarred
+                        }
+                    });
+                    starCheckboxContainer.appendChild(starCheckbox);
+                    fileItem.appendChild(starCheckboxContainer);
+
+                    const fileInfoActions = document.createElement("div");
+                    fileInfoActions.classList.add("file-info-actions");
+
+                    const fileInfo = document.createElement("div");
+                    fileInfo.classList.add("file-info");
+
+                    const icon = document.createElement("img");
+                    icon.src = "assets/img/icons/Attachment.svg";
+                    icon.alt = "Attachment Icon";
+                    fileInfo.appendChild(icon);
+
+                    const fileName = document.createElement("div");
+                    fileName.textContent = file.name;
+                    fileInfo.appendChild(fileName);
+
+                    fileInfoActions.appendChild(fileInfo);
+
+                    const fileActions = document.createElement("div");
+                    fileActions.classList.add("file-actions");
+
+                    const fileSize = document.createElement("div");
+                    fileSize.textContent = formatFileSize(file.size);
+                    fileActions.appendChild(fileSize);
+
+                    const closeIcon = document.createElement("span");
+                    closeIcon.classList.add("close-icon");
+                    closeIcon.innerHTML = "&#x2716;"; // Unicode character for a close icon
+                    closeIcon.addEventListener("click", function () {
+                        fileItem.remove(); // Remove the file item when the close icon is clicked
+                    });
+                    fileActions.appendChild(closeIcon);
+
+                    fileInfoActions.appendChild(fileActions);
+
+                    fileItem.appendChild(fileInfoActions);
+
+                    fileList.appendChild(fileItem);
+                }
+            }
+        });
+
+        function formatFileSize(bytes) {
+            if (bytes === 0) return "0 Bytes";
+
+            const k = 1024;
+            const sizes = ["Bytes", "KB", "MB", "GB", "TB"];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + " " + sizes[i];
+        }
+
+
+
+
+
+
+} catch (error) {
+  
+}

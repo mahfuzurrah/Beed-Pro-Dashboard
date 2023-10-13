@@ -1051,7 +1051,7 @@ All Page Common Css Code End
 }
 
 .beed_flow_content_area .flow_nav .nav_menu li {
- width: 250px;
+  width: 250px;
 }
 
 .beed_flow_content_area .flow_nav .nav_menu li:nth-child(2) {
@@ -1059,10 +1059,10 @@ All Page Common Css Code End
 }
 
 .beed_flow_content_area .flow_nav .nav_menu li:last-child {
- width: auto;
+  width: auto;
 }
 
-.beed_flow_content_area .flow_nav .nav_menu li a{
+.beed_flow_content_area .flow_nav .nav_menu li a {
   display: flex;
   align-items: center;
 }
@@ -1616,27 +1616,14 @@ Product Name Page
   border-top: 1px solid var(--border-color);
 }
 
-.LYNX-overview
-  #overview
-  .wrapper
-  .big-chart
-  .box
-  .tabile-list
-  .list.header-list {
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list.header-list {
   border: none;
   padding-top: 0;
   width: 85%;
   margin-left: auto;
 }
 
-.LYNX-overview
-  #overview
-  .wrapper
-  .big-chart
-  .box
-  .tabile-list
-  .list.header-list
-  li {
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list.header-list li {
   text-align: left;
   color: var(--title-text-color) !important;
   font-weight: 600;
@@ -1661,14 +1648,7 @@ Product Name Page
     min-width: 80px;
   }
 
-  .LYNX-overview
-    #overview
-    .wrapper
-    .big-chart
-    .box
-    .tabile-list
-    .list
-    li.color-box {
+  .LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box {
     margin-right: 55px !important;
   }
 }
@@ -1683,81 +1663,105 @@ Product Name Page
   color: var(--title-text-color);
 }
 
-.LYNX-overview
-  #overview
-  .wrapper
-  .big-chart
-  .box
-  .tabile-list
-  .list
-  li:nth-child(1) {
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li:nth-child(1) {
   margin-left: 0;
 }
 
-.LYNX-overview
-  #overview
-  .wrapper
-  .big-chart
-  .box
-  .tabile-list
-  .list
-  li.color-box {
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box {
   min-width: 20px;
   height: 10px;
   margin-right: 10px;
 }
 
-.LYNX-overview
-  #overview
-  .wrapper
-  .big-chart
-  .box
-  .tabile-list
-  .list
-  li.color-box.color-100 {
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box.color-100 {
   background: #cd0606;
 }
 
-.LYNX-overview
-  #overview
-  .wrapper
-  .big-chart
-  .box
-  .tabile-list
-  .list
-  li.color-box.color-200 {
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box.color-200 {
   background: #00ab79;
 }
 
-.LYNX-overview
-  #overview
-  .wrapper
-  .big-chart
-  .box
-  .tabile-list
-  .list
-  li.color-box.color-300 {
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box.color-300 {
   background: #e0e324;
 }
 
-.LYNX-overview
-  #overview
-  .wrapper
-  .big-chart
-  .box
-  .tabile-list
-  .list
-  li.color-box.color-400 {
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box.color-400 {
   background: #00ab79;
 }
 
-.LYNX-overview
-  #overview
-  .wrapper
-  .big-chart
-  .box
-  .tabile-list
-  .list
-  li.color-box.color-500 {
+.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box.color-500 {
   background: #cd0606;
+}
+
+.upload_card .pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.upload_card .pagination .page-item a{
+  border: none !important;
+  background: #E9EAED;
+  border-radius: 4px !important;
+  padding: 5px 12px;
+  color: #4F4F50;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.upload_card .pagination .page-item a:hover,
+.upload_card .pagination .page-item a.active{
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.upload_card_2 .btn_area{
+width: 100%;
+}
+
+.upload_card_2 .btn_area .btn_sec.btn_y{
+background-color: var(--secondary-color);
+min-width: 140px;
+color: var(--white-color);
+cursor: pointer;
+}
+
+.upload_card_2 .btn_area .btn_sec.btn_y label{
+color: var(--white-color);
+}
+
+.upload_card_2 .btn_area .btn_sec.btn_y .file-input{
+margin-top: 20px;
+}
+
+.upload_file_list{
+  width: 100%;
+}
+
+.upload_card_2 .file-item{
+display: flex;
+align-items: center;
+gap: 30px;
+}
+
+.upload_card_2 .file-info-actions{
+  padding: 5px;
+  border-bottom: 1px solid #00A1B3;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  }
+
+.upload_card_2 .file-info,
+.upload_card_2 .file-actions{
+  display: inline-flex;
+  align-items: center;
+}
+
+.upload_card_2 .file-actions{
+  gap: 20px;
 }
