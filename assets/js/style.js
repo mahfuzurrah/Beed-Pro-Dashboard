@@ -550,7 +550,13 @@ try {
 
 
   const fileInput = document.getElementById("fileInput");
+        const uploadButton = document.getElementById("uploadButton");
         const fileList = document.getElementById("fileList");
+        let starCounter = 0; // Unique counter for star checkboxes
+
+        uploadButton.addEventListener("click", function () {
+            fileInput.click(); // Trigger a click event on the hidden file input
+        });
 
         fileInput.addEventListener("change", function () {
             const files = fileInput.files;
@@ -562,19 +568,18 @@ try {
 
                     const starCheckboxContainer = document.createElement("div");
                     starCheckboxContainer.classList.add("star-checkbox-container");
-                    
-                    const starCheckbox = document.createElement("input");
-                    starCheckbox.type = "checkbox";
-                    starCheckbox.classList.add("star-checkbox");
-                    starCheckbox.addEventListener("click", function (e) {
-                        // Handle the checkbox click event here
-                        if (starCheckbox.checked) {
-                            // File is starred
-                        } else {
-                            // File is unstarred
-                        }
-                    });
-                    starCheckboxContainer.appendChild(starCheckbox);
+
+                    // Generate unique IDs and labels for star rating
+                    starCounter++; // Increment the counter
+                    const starId = `star${starCounter}`;
+
+                    // Add the star rating component
+                    starCheckboxContainer.innerHTML = `
+                        <div class="star-wrapper">
+                            <input type="checkbox" id="${starId}" value="1" />
+                            <label for="${starId}"></label>
+                        </div>`;
+
                     fileItem.appendChild(starCheckboxContainer);
 
                     const fileInfoActions = document.createElement("div");
@@ -603,9 +608,9 @@ try {
 
                     const closeIcon = document.createElement("span");
                     closeIcon.classList.add("close-icon");
-                    closeIcon.innerHTML = "&#x2716;"; // Unicode character for a close icon
+                    closeIcon.innerHTML = "&#x2716;";
                     closeIcon.addEventListener("click", function () {
-                        fileItem.remove(); // Remove the file item when the close icon is clicked
+                        fileItem.remove();
                     });
                     fileActions.appendChild(closeIcon);
 
@@ -634,5 +639,5 @@ try {
 
 
 } catch (error) {
-  
+
 }

@@ -1699,7 +1699,7 @@ Product Name Page
   gap: 8px;
 }
 
-.upload_card .pagination .page-item a{
+.upload_card .pagination .page-item a {
   border: none !important;
   background: #E9EAED;
   border-radius: 4px !important;
@@ -1711,41 +1711,48 @@ Product Name Page
 }
 
 .upload_card .pagination .page-item a:hover,
-.upload_card .pagination .page-item a.active{
+.upload_card .pagination .page-item a.active {
   background: var(--primary-color);
   color: var(--white-color);
 }
 
-.upload_card_2 .btn_area{
-width: 100%;
+.upload_card_2 {
+  align-items: normal !important;
+  gap: 0 !important;
 }
 
-.upload_card_2 .btn_area .btn_sec.btn_y{
-background-color: var(--secondary-color);
-min-width: 140px;
-color: var(--white-color);
-cursor: pointer;
-}
-
-.upload_card_2 .btn_area .btn_sec.btn_y label{
-color: var(--white-color);
-}
-
-.upload_card_2 .btn_area .btn_sec.btn_y .file-input{
-margin-top: 20px;
-}
-
-.upload_file_list{
+.upload_card_2 .btn_area {
   width: 100%;
 }
 
-.upload_card_2 .file-item{
-display: flex;
-align-items: center;
-gap: 30px;
+.upload_card_2 .btn_area .btn_sec.btn_y {
+  background-color: var(--secondary-color);
+  min-width: 140px;
+  color: var(--white-color);
+  cursor: pointer;
 }
 
-.upload_card_2 .file-info-actions{
+.upload_card_2 .btn_area .btn_sec.btn_y label {
+  color: var(--white-color);
+  cursor: pointer;
+  margin: 0;
+}
+
+.upload_card_2 .btn_area .btn_sec.btn_y .file-input {
+  margin-top: 20px;
+}
+
+.upload_file_list {
+  width: 100%;
+}
+
+.upload_card_2 .file-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.upload_card_2 .file-info-actions {
   padding: 5px;
   border-bottom: 1px solid #00A1B3;
   display: flex;
@@ -1754,14 +1761,72 @@ gap: 30px;
   justify-content: space-between;
   width: 100%;
   margin-top: 10px;
-  }
+  position: relative;
+}
+
+.upload_card_2 .file-info-actions::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background: #3f526f1a;
+  left: -25px;
+}
 
 .upload_card_2 .file-info,
-.upload_card_2 .file-actions{
+.upload_card_2 .file-actions {
   display: inline-flex;
   align-items: center;
 }
 
-.upload_card_2 .file-actions{
+.upload_card_2 .file-actions {
   gap: 20px;
+}
+
+
+.upload_card_2 .btn.up_next{
+background: #3f526f96;
+}
+
+.upload_card_2 .btn{
+  width: 100% !important;
+}
+
+.star-checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  
+}
+
+
+/* Add CSS for star rating */
+.star-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+/* Hide the actual checkbox */
+.star-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.star-wrapper label {
+  position: relative;
+  bottom: -5px;
+}
+
+/* Style for the star icon */
+.star-wrapper label:before {
+  content: "\2606";
+  font-size: 24px;
+}
+
+/* Change star color when checked */
+.star-wrapper input[type="checkbox"]:checked + label:before {
+  content: "\2605";
+  color: var(--primary-color);
 }
