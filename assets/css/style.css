@@ -1784,16 +1784,16 @@ Product Name Page
 }
 
 
-.upload_card_2 .btn.up_next{
-background: #3f526f96;
+.upload_card_2 .btn.up_next {
+  background: #3f526f96;
 }
 
-.upload_card_2 .btn{
+.upload_card_2 .btn {
   width: 100% !important;
 }
 
-.file-item_red .file-info .file_name{
-color: #F31155;
+.file-item_red .file-info .file_name {
+  color: #F31155;
 }
 
 .star-checkbox-container {
@@ -1803,7 +1803,7 @@ color: #F31155;
   width: 20px;
   height: 20px;
   margin-right: 20px;
-  
+
 }
 
 
@@ -1838,7 +1838,7 @@ color: #F31155;
 }
 
 /* Change star color when checked */
-.star-wrapper input[type="checkbox"]:checked + label:before {
+.star-wrapper input[type="checkbox"]:checked+label:before {
   content: "\2605";
   color: var(--primary-color);
 }
