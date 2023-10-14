@@ -1792,6 +1792,10 @@ background: #3f526f96;
   width: 100% !important;
 }
 
+.file-item_red .file-info .file_name{
+color: #F31155;
+}
+
 .star-checkbox-container {
   display: flex;
   align-items: center;
@@ -1821,8 +1825,15 @@ background: #3f526f96;
 
 /* Style for the star icon */
 .star-wrapper label:before {
-  content: "\2606";
+  content: "\2605";
   font-size: 24px;
+  color: #3f526f41;
+}
+
+.star-wrapper .light_grey:before {
+  content: "\2605";
+  font-size: 24px;
+  color: active-checkbox !important
 }
 
 /* Change star color when checked */
