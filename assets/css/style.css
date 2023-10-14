@@ -1828,6 +1828,7 @@ color: #F31155;
   content: "\2605";
   font-size: 24px;
   color: #3f526f41;
+  border-radius: 4px;
 }
 
 .star-wrapper .light_grey:before {
