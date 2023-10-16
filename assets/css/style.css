@@ -1894,6 +1894,7 @@ Supplier Profile Css
 
 .suppliers_profile_page .s_profile_area .s_profile_text_info {
   max-width: 400px;
+  width: 100%;
 }
 
 .suppliers_profile_page .s_profile_area .s_profile_text_info .s_name {
@@ -1950,52 +1951,65 @@ Supplier Profile Css
   margin-top: 20px;
 }
 
-.suppliers_profile_page .s_profile_area .profile_p_info .active_icons{
-width: 8px;
-height: 8px;
-background: #74D062;
-border-radius: 100px;
-margin-right: 8px;
+.suppliers_profile_page .s_profile_area .profile_p_info .active_icons {
+  width: 8px;
+  height: 8px;
+  background: #74D062;
+  border-radius: 100px;
+  margin-right: 8px;
 }
 
-.suppliers_profile_page .s_profile_area .profile_p_info p{
+.suppliers_profile_page .s_profile_area .profile_p_info p {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-.suppliers_profile_page .s_profile_area .profile_p_info p span{
+.suppliers_profile_page .s_profile_area .profile_p_info p span {
   color: #12a4f5;
 }
 
-.suppliers_profile_page .s_profile_area .contact_persons p.cp_title{
+.suppliers_profile_page .s_profile_area .contact_persons p.cp_title {
   font-size: 20px;
   margin-bottom: 16px;
 }
 
-.suppliers_profile_page .s_profile_area .contact_persons .tag_list{
+.suppliers_profile_page .s_profile_area .contact_persons .tag_list {
   flex-wrap: wrap;
   gap: 5px;
   row-gap: 5px;
 }
 
-.suppliers_profile_page .s_profile_area .contact_persons .tag_list a{
+.suppliers_profile_page .s_profile_area .contact_persons .tag_list a {
   background: #3F526F29;
   color: #3F526F;
 }
 
-.suppliers_profile_page .s_profile_area .contact_persons p.desc{
+.suppliers_profile_page .s_profile_area .contact_persons p.desc {
   padding: 20px;
   background: #F4F5F9;
   margin-top: 20px;
 }
 
-.suppliers_profile_page .s_profile_area .btn{
+.suppliers_profile_page .s_profile_area .btn.btn_y {
   background: var(--secondary-color);
   margin-top: 20px;
   width: max-content;
 }
 
-.suppliers_profile_page .s_profile_area .btn:hover{
+.suppliers_profile_page .s_profile_area .btn.btn_y:hover {
   background: #e4ba5edc;
+}
+
+.suppliers_profile_page .s_profile_area .brn_group {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: end;
+  margin-top: 40px;
+}
+
+.suppliers_profile_page .s_profile_area .brn_group .btn,
+.suppliers_profile_page .s_profile_area .brn_group .btn_sec{
+  width: 100px;
 }
