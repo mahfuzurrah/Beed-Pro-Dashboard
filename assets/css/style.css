@@ -1983,6 +1983,26 @@ Supplier Profile Css
 .suppliers_profile_page .s_profile_area .contact_persons .tag_list a {
   background: #3F526F29;
   color: #3F526F;
+  font-weight: 600;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+
+
+.suppliers_profile_page .s_profile_area .js-tags .tag.js-tag{
+  background: #3F526F29;
+}
+
+.suppliers_profile_page .s_profile_area .js-tags .tag.js-tag:hover{
+  background: #FFAE1133;
+  color: #3F526F;
+}
+
+.suppliers_profile_page .s_profile_area .js-tags a {
+  color: #3F526F;
+  font-weight: 600;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
 }
 
 .suppliers_profile_page .s_profile_area .contact_persons p.desc {
@@ -2010,6 +2030,6 @@ Supplier Profile Css
 }
 
 .suppliers_profile_page .s_profile_area .brn_group .btn,
-.suppliers_profile_page .s_profile_area .brn_group .btn_sec{
+.suppliers_profile_page .s_profile_area .brn_group .btn_sec {
   width: 100px;
 }
