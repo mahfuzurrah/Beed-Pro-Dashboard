@@ -1842,3 +1842,160 @@ Product Name Page
   content: "\2605";
   color: var(--primary-color);
 }
+
+
+
+
+/* ==============================================
+Supplier Profile Css
+============================================= */
+
+.suppliers_profile_page .s_profile_area {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  gap: 70px;
+}
+
+
+.suppliers_profile_page .s_profile_area .profile_img {
+  text-align: center;
+  width: max-content;
+  min-width: 200px;
+}
+
+.suppliers_profile_page .s_profile_area .profile_img h1 {
+  margin-top: 26px;
+}
+
+.suppliers_profile_page .s_profile_area .img_area {
+  position: relative;
+}
+
+.suppliers_profile_page .s_profile_area .img_area img {
+  width: 200px;
+  height: 200px;
+  border-radius: 1000px;
+  border: 3px solid #E5E5E5;
+}
+
+.suppliers_profile_page .s_profile_area .img_area .edit_icon {
+  padding: 8px 10px;
+  border: 2px solid #E5E5E5;
+  border-radius: 100px;
+  color: #12a4f5;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  background: var(--white-color);
+  cursor: pointer;
+}
+
+.suppliers_profile_page .s_profile_area .s_profile_text_info {
+  max-width: 400px;
+}
+
+.suppliers_profile_page .s_profile_area .s_profile_text_info .s_name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.suppliers_profile_page .s_profile_area .s_profile_text_info p.name_status {
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0
+}
+
+.suppliers_profile_page .s_profile_area .s_profile_text_info .dot_icons {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+
+.suppliers_profile_page .s_profile_area .s_profile_text_info .edit_icons {
+  font-size: 18px;
+  color: #12a4f5;
+  cursor: pointer;
+}
+
+.suppliers_profile_page .s_profile_area .tag_list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.suppliers_profile_page .s_profile_area .tag_list .list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.suppliers_profile_page .s_profile_area .tag_list .tag {
+  background: rgba(18, 164, 245, 0.2);
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: #12A4F5;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.suppliers_profile_page .s_profile_area .profile_p_info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 20px;
+}
+
+.suppliers_profile_page .s_profile_area .profile_p_info .active_icons{
+width: 8px;
+height: 8px;
+background: #74D062;
+border-radius: 100px;
+margin-right: 8px;
+}
+
+.suppliers_profile_page .s_profile_area .profile_p_info p{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.suppliers_profile_page .s_profile_area .profile_p_info p span{
+  color: #12a4f5;
+}
+
+.suppliers_profile_page .s_profile_area .contact_persons p.cp_title{
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.suppliers_profile_page .s_profile_area .contact_persons .tag_list{
+  flex-wrap: wrap;
+  gap: 5px;
+  row-gap: 5px;
+}
+
+.suppliers_profile_page .s_profile_area .contact_persons .tag_list a{
+  background: #3F526F29;
+  color: #3F526F;
+}
+
+.suppliers_profile_page .s_profile_area .contact_persons p.desc{
+  padding: 20px;
+  background: #F4F5F9;
+  margin-top: 20px;
+}
+
+.suppliers_profile_page .s_profile_area .btn{
+  background: var(--secondary-color);
+  margin-top: 20px;
+  width: max-content;
+}
+
+.suppliers_profile_page .s_profile_area .btn:hover{
+  background: #e4ba5edc;
+}
