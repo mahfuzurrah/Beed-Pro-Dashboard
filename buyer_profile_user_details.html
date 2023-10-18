@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <!-- Custom Css -->
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -105,6 +106,7 @@
           <div class="toggle_menu" id="toggle_side_menu">
             <i class="bx bx-menu icons"></i>
           </div>
+          <a href="supplyer.html" class="btn_sec">Suppliers</a>
           <div class="currency_area">
             <iconify-icon class="icons" icon="twemoji:flag-armenia"></iconify-icon>
             <span>
@@ -141,7 +143,7 @@
         <div class="breadcrumb">
           <a href="index.html">Home</a>
           <span><i class="bx bx-chevron-right icons"></i></span>
-          <a href="beed-flow-request.html" class="active">Suppliers</a>
+          <a href="buyer_profile.html" class="active">Buyers</a>
         </div>
         <section class="suppliers_profile_page">
           <div class="section_title">
@@ -149,17 +151,17 @@
               <iconify-icon
                 icon="ion:chevron-back-outline"
               ></iconify-icon> </a
-            >Supplyer Profile Page</h1>
+            > Buyer Profile Page</h1>
             <hr class="mt-3" />
           </div>
           <div class="body_tab_nav mt-2">
             <ul>
               <li>
-                <a href="supplier_profile_company_info.html" class="active"><i class="bx bx-home icons"></i>Company
+                <a href="supplier_profile_company_info.html"><i class="bx bx-home icons"></i>Company
                   Information</a>
               </li>
               <li>
-                <a href="supplier_profile_user_details.html"><i class="bx bx-user-circle icons"></i>User Details</a>
+                <a href="supplier_profile_user_details.html" class="active"><i class="bx bx-user-circle icons"></i>User Details</a>
               </li>
             </ul>
           </div>
@@ -179,21 +181,12 @@
               </div>
               <div class="s_profile_text_info">
                 <div class="form-group">
-                  <label for="exampleInputPhone">Country of Operation *</label>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Select</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Organization Number *</label>
+                  <label for="exampleInputEmail1">Full Name *</label>
                   <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Type" required />
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Company Name *</label>
+                  <label for="exampleInputEmail1">Job Title *</label>
                   <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Type" required />
                 </div>
@@ -203,28 +196,18 @@
                     placeholder="Type" required />
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Address *</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Type" required />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Company Email</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Type" required />
-                </div>
-                <div class="form-group">
                   <label for="exampleInputPhone">Company Industry *</label>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Select</option>
+                  <select class="form-select js-example-basic-multiple-limit" aria-label="Default select example" multiple="multiple">
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
                 </div>
                 <div class="brn_group">
-                  <a href="supplier_profile_user_details.html" class="btn">Next</a>
+                  <a href="buyer_profile_company_info.html" class="btn_sec">Back</a>
+                  <a href="buyer_profile_status.html" class="btn">Next</a>
                 </div>
-              </div>
+              </div> 
             </div>
           </div>
         </section>
@@ -339,6 +322,7 @@
   <script src="assets/js/fontawesome.min.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- Custom JS -->
   <script src="assets/js/custom_jquery.js"></script>
