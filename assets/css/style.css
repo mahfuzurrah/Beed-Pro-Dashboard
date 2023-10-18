@@ -165,12 +165,20 @@ input {
   height: 40px;
 }
 
+.select2-selection,
 .form-select {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   height: 40px;
   font-size: var(--normal-font-size);
   color: var(--description-color);
+}
+
+span.select2-selection.select2-selection--multiple {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  border: 1px solid var(--border-color);
 }
 
 label {
@@ -1179,6 +1187,18 @@ All Page Common Css Code End
   color: var(--white-color);
 }
 
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+  border-radius: 4px;
+background: #12A4F533;
+color: #12A4F5;
+border: none;
+padding: 2px 4px;
+}
+
+button.select2-selection__choice__remove {
+  display: none;
+}
+
 .flow_ex_text {
   margin-top: 30px;
 }
@@ -1877,6 +1897,7 @@ Supplier Profile Css
   height: 200px;
   border-radius: 1000px;
   border: 3px solid #E5E5E5;
+  object-fit: cover;
 }
 
 .suppliers_profile_page .s_profile_area .img_area .edit_icon {
@@ -2032,4 +2053,19 @@ Supplier Profile Css
 .suppliers_profile_page .s_profile_area .brn_group .btn,
 .suppliers_profile_page .s_profile_area .brn_group .btn_sec {
   width: 100px;
+}
+
+.suppliers_profile_page .file-upload {
+    display: none;
+}
+
+.selection{
+  position: relative;
+}
+
+.selection::after {
+  content: "▼";
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
