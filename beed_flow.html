@@ -1,586 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suppliers Contact List</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/fav.png" />
-    <link rel="stylesheet" href="assets/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Page css -->
-    <link rel="stylesheet" href="assets/css/suppliers_contact_list.css" />
 
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suppliers Contact List</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/fav.png" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Page css -->
+  <link rel="stylesheet" href="assets/css/suppliers_contact_list.css" />
 
-  <body>
-    <div class="main">
-      <!-- side_navbar toggle_body new_navbar -->
-      <div
-        class="side_navbar toggle_body new_navbar new_navbar"
-        id="toggle_content"
-      >
-        <div class="toggle_icon" id="toggle_icon">
-          <i class="bx bx-menu-alt-left icons"></i>
-        </div>
-        <div class="logo_area">
-          <a href="index.html"
-            ><img class="logo" src="assets/img/logo.svg" alt="Logo"
-          /></a>
-          <a href="index.html"
-            ><img class="logo sm_logo" src="assets/img/sm_logo.svg" alt="Logo"
-          /></a>
-        </div>
-        <hr class="mt-2" />
-        <div class="nav_list_area">
-          <ul class="menu_list">
-            <li class="nav_list">
-              <a
-                href="#"
-                class="nav_link active"
-                onclick="toggleNavDropdown('sub_menu1')"
-              >
-                <span><i class="bx bx-home icons"></i>Pricing</span>
-                <i class="bx bx-chevron-down icons"></i>
-              </a>
-              <ul class="sub_menu sub_nav_bg" id="sub_menu1">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-              </ul>
-            </li>
-            <p class="nav_title mt-5">Main Menu</p>
-            <li class="nav_list">
-              <a
-                href="#"
-                class="nav_link"
-                onclick="toggleNavDropdown('sub_menu2')"
-              >
-                <span><i class="bx bx-layer icons"></i>Beed Flow</span>
-                <i class="bx bx-chevron-down icons"></i>
-              </a>
-              <ul class="sub_menu sub_nav_bg" id="sub_menu2">
-                <li><a href="#">Beed Deal</a></li>
-                <li><a href="#">Beed Doc</a></li>
-              </ul>
-            </li>
-            <p class="nav_title mt-5">Additional</p>
-            <li class="nav_list">
-              <a
-                href="#"
-                class="nav_link"
-                onclick="toggleNavDropdown('sub_menu3')"
-              >
-                <span><i class="bx bx-layer icons"></i>Suppliers</span>
-                <i class="bx bx-chevron-down icons"></i>
-              </a>
-              <ul class="sub_menu sub_nav_bg" id="sub_menu3">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-              </ul>
-            </li>
-            <li class="nav_list">
-              <a
-                href="#"
-                class="nav_link"
-                onclick="toggleNavDropdown('sub_menu4')"
-              >
-                <span><i class="bx bx-layer icons"></i>Contracts</span>
-                <i class="bx bx-chevron-down icons"></i>
-              </a>
-              <ul class="sub_menu sub_nav_bg" id="sub_menu4">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-              </ul>
-            </li>
-            <li class="nav_list">
-              <a
-                href="#"
-                class="nav_link"
-                onclick="toggleNavDropdown('sub_menu5')"
-              >
-                <span><i class="bx bx-layer icons"></i>Name</span>
-                <i class="bx bx-chevron-down icons"></i>
-              </a>
-              <ul class="sub_menu sub_nav_bg" id="sub_menu5">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-              </ul>
-            </li>
-            <li class="nav_list">
-              <a
-                href="#"
-                class="nav_link"
-                onclick="toggleNavDropdown('sub_menu6')"
-              >
-                <span
-                  ><i class="bx bx-home icons"></i>Documentation
-                  <span class="side_notifi">new</span></span
-                >
-                <i class="bx bx-chevron-down icons"></i>
-              </a>
-              <ul class="sub_menu sub_nav_bg" id="sub_menu6">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+  <div class="main">
+    <!-- side_navbar toggle_body new_navbar -->
+    <div class="side_navbar toggle_body new_navbar new_navbar" id="toggle_content">
+      <div class="toggle_icon" id="toggle_icon">
+        <i class="bx bx-menu-alt-left icons"></i>
       </div>
-      <div class="body_container toggle_body">
-        <!-- top_navbar -->
-        <div class="top_navbar">
-          <div class="left">
-            <div class="toggle_menu" id="toggle_side_menu">
-              <i class="bx bx-menu icons"></i>
-            </div>
-            <a href="contract-list.html" class="btn_sec">BUYER</a>
-          </div>
-          <div class="right">
-            <div class="text">
-              <p>Welcome to the Beed.Pro!</p>
-              <p class="company_name">Company Name</p>
-            </div>
-            <div class="top_icon_group">
-              <div class="user">
-                <a href="#" class="user_area" onclick="toggleUserStatus()">
-                  <i class="bx bx-user-circle icons"></i>
-                </a>
-                <div class="status">
-                  <i class="bx bxs-check-circle icons green"></i>
-                  <i class="bx bxs-x-circle icons red"></i>
-                </div>
-              </div>
-              <div class="user">
-                <a href="#" class="user_area" onclick="toggleNotification()">
-                  <i class="bx bx-bell icons"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <!-- body -->
-          <div class="breadcrumb">
-            <a href="index.html">Home</a>
-            <span><i class="bx bx-chevron-right icons"></i></span>
-            <a href="contract-list.html" class="active">Agreement</a>
-          </div>
-          <section class="suppliers_con_list">
-            <div class="section_title">
-              <h1>Beed Flow</h1>
-              <hr class="mt-3" />
-            </div>
-            <div class="find_add_suppliers">
-              <div class="s_find_info">
-                <div class="s_categories">
-                  <label for="">Categories</label>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>All</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="s_search">
-                  <label for="">Search</label>
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Search"
-                      required
-                    />
-                    <span class="input-group-text" id="togglePassword">
-                      <i class="bx bx-search icons"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="s_add_bulk">
-                <a href="#" class="btn">Request for Proposal</a>
-              </div>
-            </div>
-            <div class="suppliers_list_group beed_flow_list_group mt-2">
-              <div class="s_list f_green mt-2">
-                <div class="s_header">
-                  <div class="title">
-                    <h2>Monitor</h2>
-                  </div>
-                </div>
-                <div class="overflow_area">
-                  <div class="s-info_group f-info_group collum_2">
-                    <div class="collum_2">
-                      <ul>
-                        <li>
-                          <span>Category</span>
-                          <p class="s_p_info">Office Supply</p>
-                        </li>
-                        <li>
-                          <span>Number of bids</span>
-                          <p class="s_p_info">34</p>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <span>Duration</span>
-                          <p class="s_p_info">4 Months</p>
-                        </li>
-                        <li>
-                          <span>Status</span>
-                          <p class="s_p_info active">Active</p>
-                        </li>
-                      </ul>
-                    </div>
-                    <ul class="qnumber s_btn_area">
-                      <li>
-                        <h1>$ 554</h1>
-                      </li>
-                      <li>
-                        <p>Total Quantity 23</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="s_list f_yellow mt-2">
-                <div class="s_header">
-                  <div class="title">
-                    <h2>Monitor</h2>
-                  </div>
-                </div>
-                <div class="overflow_area">
-                  <div class="s-info_group f-info_group collum_2">
-                    <div class="collum_2">
-                      <ul>
-                        <li>
-                          <span>Category</span>
-                          <p class="s_p_info">Office Supply</p>
-                        </li>
-                        <li>
-                          <span>Number of bids</span>
-                          <p class="s_p_info">34</p>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <span>Duration</span>
-                          <p class="s_p_info">4 Months</p>
-                        </li>
-                        <li>
-                          <span>Status</span>
-                          <p class="s_p_info draft">Draft</p>
-                        </li>
-                      </ul>
-                    </div>
-                    <ul class="qnumber s_btn_area">
-                      <li>
-                        <h1>$ 554</h1>
-                      </li>
-                      <li>
-                        <p>Total Quantity 23</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="s_list f_blue mt-2">
-                <div class="s_header">
-                  <div class="title">
-                    <h2>Monitor</h2>
-                  </div>
-                </div>
-                <div class="overflow_area">
-                  <div class="s-info_group f-info_group collum_2">
-                    <div class="collum_2">
-                      <ul>
-                        <li>
-                          <span>Category</span>
-                          <p class="s_p_info">Office Supply</p>
-                        </li>
-                        <li>
-                          <span>Number of bids</span>
-                          <p class="s_p_info">34</p>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <span>Duration</span>
-                          <p class="s_p_info">4 Months</p>
-                        </li>
-                        <li>
-                          <span>Status</span>
-                          <p class="s_p_info evaluation">Evaluation</p>
-                        </li>
-                      </ul>
-                    </div>
-                    <ul class="qnumber s_btn_area">
-                      <li>
-                        <h1>$ 554</h1>
-                      </li>
-                      <li>
-                        <p>Total Quantity 23</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="s_list f_black mt-2">
-                <div class="s_header">
-                  <div class="title">
-                    <h2>Monitor</h2>
-                  </div>
-                </div>
-                <div class="overflow_area">
-                  <div class="s-info_group f-info_group collum_2">
-                    <div class="collum_2">
-                      <ul>
-                        <li>
-                          <span>Category</span>
-                          <p class="s_p_info">Office Supply</p>
-                        </li>
-                        <li>
-                          <span>Number of bids</span>
-                          <p class="s_p_info">34</p>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <span>Duration</span>
-                          <p class="s_p_info">4 Months</p>
-                        </li>
-                        <li>
-                          <span>Status</span>
-                          <p class="s_p_info completed">completed</p>
-                        </li>
-                      </ul>
-                    </div>
-                    <ul class="qnumber s_btn_area">
-                      <li>
-                        <h1>$ 554</h1>
-                      </li>
-                      <li>
-                        <p>Total Quantity 23</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="pagination_area mt-4">
-                <p>1-10 of 80 item(s)</p>
-                <nav aria-label="navigation" class="navigation">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true"
-                          ><i class="bx bx-chevron-left icons"></i
-                        ></span>
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link active" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true"
-                          ><i class="bx bx-chevron-right icons"></i
-                        ></span>
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="pagination">
-                    <div
-                      class="form-group c-selecet bold no-margin"
-                      style="width: 110px"
-                    >
-                      <select class="form-select">
-                        <option value="">10/page</option>
-                        <option value="">20/page</option>
-                        <option value="">30/page</option>
-                        <option value="">40/page</option>
-                        <option value="">50/page</option>
-                        <option value="">60/page</option>
-                        <option value="">70/page</option>
-                        <option value="">80/page</option>
-                      </select>
-                    </div>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </section>
-        </div>
-        <!-- nav_user_status -->
-        <div class="nav_user_status" id="nav_user_status">
-          <ul>
-            <li>
-              <a href=""><i class="fa-solid fa-user-gear icons"></i>Profile</a>
-            </li>
-            <div class="custom-selector">
-              <div class="selected-option" onclick="toggleOptions()">
-                <div class="option-text">
-                  <iconify-icon icon="twemoji:flag-liberia"></iconify-icon>
-                  English
-                </div>
-              </div>
-              <div class="options" id="options">
-                <div class="options_list" onclick="selectOption('English')">
-                  <iconify-icon icon="twemoji:flag-liberia"></iconify-icon>
-                  English
-                </div>
-                <div class="options_list" onclick="selectOption('Spanish')">
-                  <iconify-icon icon="twemoji:flag-germany"></iconify-icon>
-                  German
-                </div>
-                <div class="options_list" onclick="selectOption('French')">
-                  <iconify-icon
-                    icon="emojione-v1:flag-for-portugal"
-                  ></iconify-icon>
-                  Portugues
-                </div>
-                <div class="options_list" onclick="selectOption('German')">
-                  <iconify-icon
-                    icon="twemoji:flag-french-polynesia"
-                  ></iconify-icon>
-                  French
-                </div>
-              </div>
-            </div>
-            <li>
-              <a href=""
-                ><i class="fa-solid fa-arrow-right-to-bracket icons"></i>Log
-                out</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- notification area -->
-        <div class="notification_area" id="notificationDiv">
-          <!-- Notification List -->
-          <div class="notification_list" id="notificationList">
-            <div class="notifi_item" onclick="openNotification()">
-              <div class="notifi_header read">
-                <h6 class="notifi_title">
-                  Title of the message should be here
-                </h6>
-                <p>03.08.2023</p>
-              </div>
-              <p>
-                Radzen is a desktop tool that gives you the power to create line
-                of business applications fast.
-              </p>
-            </div>
-            <div class="notifi_item" onclick="openNotification()">
-              <div class="notifi_header unread">
-                <h6 class="notifi_title">
-                  Title of the message should be here
-                </h6>
-                <p>03.08.2023</p>
-              </div>
-              <p>
-                Radzen is a desktop tool that gives you the power to create line
-                of business applications fast.
-              </p>
-            </div>
-          </div>
-
-          <!-- Open Single notification -->
-          <div
-            class="single_notification"
-            id="single_notification"
-            style="display: none"
-          >
-            <a href="#" id="backButton" onclick="backNotification()"
-              ><i class="bx bx-chevron-left icons"></i>Back</a
-            >
-            <hr class="mt-2" />
-            <div class="notifi_item">
-              <div class="notifi_header">
-                <h6 class="notifi_title">
-                  Title of the message should be here
-                </h6>
-                <p>03.08.2023</p>
-              </div>
-              <p>
-                Radzen is a desktop tool that gives you Radzen is a desktop tool
-                that gives you the power to create line of business applications
-                fast. the power to create line of business applications fast.
-                Radzen is a desktop tool that gives you Radzen is a desktop tool
-                that gives you the power to create line of business applications
-                fast. the power to create line of business applications
-                fast.Radzen is a desktop tool that gives you Radzen is a desktop
-                tool that gives you the power to create line of business
-                applications fast. the power to create line of business
-                applications fast.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="logo_area">
+        <a href="index.html"><img class="logo" src="assets/img/logo.svg" alt="Logo" /></a>
+        <a href="index.html"><img class="logo sm_logo" src="assets/img/sm_logo.svg" alt="Logo" /></a>
       </div>
-
-      <div class="side_ex_bg">
-        <img src="assets/img/Background Gradient.svg" alt="" />
+      <hr class="mt-2" />
+      <div class="nav_list_area">
+        <ul class="menu_list">
+          <li class="nav_list">
+            <a href="#" class="nav_link active" onclick="toggleNavDropdown('sub_menu1')">
+              <span><i class="bx bx-home icons"></i>Pricing</span>
+              <i class="bx bx-chevron-down icons"></i>
+            </a>
+            <ul class="sub_menu sub_nav_bg" id="sub_menu1">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Home</a></li>
+            </ul>
+          </li>
+          <p class="nav_title mt-5">Main Menu</p>
+          <li class="nav_list">
+            <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu2')">
+              <span><i class="bx bx-layer icons"></i>Beed Flow</span>
+              <i class="bx bx-chevron-down icons"></i>
+            </a>
+            <ul class="sub_menu sub_nav_bg" id="sub_menu2">
+              <li><a href="#">Beed Deal</a></li>
+              <li><a href="#">Beed Doc</a></li>
+            </ul>
+          </li>
+          <p class="nav_title mt-5">Additional</p>
+          <li class="nav_list">
+            <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu3')">
+              <span><i class="bx bx-layer icons"></i>Suppliers</span>
+              <i class="bx bx-chevron-down icons"></i>
+            </a>
+            <ul class="sub_menu sub_nav_bg" id="sub_menu3">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+            </ul>
+          </li>
+          <li class="nav_list">
+            <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu4')">
+              <span><i class="bx bx-layer icons"></i>Contracts</span>
+              <i class="bx bx-chevron-down icons"></i>
+            </a>
+            <ul class="sub_menu sub_nav_bg" id="sub_menu4">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+            </ul>
+          </li>
+          <li class="nav_list">
+            <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu5')">
+              <span><i class="bx bx-layer icons"></i>Name</span>
+              <i class="bx bx-chevron-down icons"></i>
+            </a>
+            <ul class="sub_menu sub_nav_bg" id="sub_menu5">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+            </ul>
+          </li>
+          <li class="nav_list">
+            <a href="#" class="nav_link" onclick="toggleNavDropdown('sub_menu6')">
+              <span><i class="bx bx-home icons"></i>Documentation
+                <span class="side_notifi">new</span></span>
+              <i class="bx bx-chevron-down icons"></i>
+            </a>
+            <ul class="sub_menu sub_nav_bg" id="sub_menu6">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
+    <div class="body_container toggle_body">
+      <!-- top_navbar -->
+      <div class="top_navbar">
+        <div class="left">
+          <div class="toggle_menu" id="toggle_side_menu">
+            <i class="bx bx-menu icons"></i>
+          </div>
+          <a href="contract-list.html" class="btn_sec">BUYER</a>
+        </div>
+        <div class="right">
+          <div class="text">
+            <p>Welcome to the Beed.Pro!</p>
+            <p class="company_name">Company Name</p>
+          </div>
+          <div class="top_icon_group">
+            <div class="user">
+              <a href="#" class="user_area" onclick="toggleUserStatus()">
+                <i class="bx bx-user-circle icons"></i>
+              </a>
+              <div class="status">
+                <i class="bx bxs-check-circle icons green"></i>
+                <i class="bx bxs-x-circle icons red"></i>
+              </div>
+            </div>
+            <div class="user">
+              <a href="#" class="user_area" onclick="toggleNotification()">
+                <i class="bx bx-bell icons"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <!-- body -->
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span><i class="bx bx-chevron-right icons"></i></span>
+          <a href="contract-list.html" class="active">Agreement</a>
+        </div>
+        <section class="suppliers_con_list">
+          <div class="section_title">
+            <h1>Beed Flow</h1>
+            <hr class="mt-3" />
+          </div>
+          <div class="find_add_suppliers">
+            <div class="s_find_info">
+              <div class="s_categories">
+                <label for="">Categories</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>All</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="s_search">
+                <label for="">Search</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" required />
+                  <span class="input-group-text" id="togglePassword">
+                    <i class="bx bx-search icons"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="s_add_bulk">
+              <a href="#" class="btn">Request for Proposal</a>
+            </div>
+          </div>
+          <div class="suppliers_list_group beed_flow_list_group mt-2">
+            <div class="s_list f_green mt-2">
+              <div class="s_header">
+                <div class="title">
+                  <h2>Monitor</h2>
+                </div>
+              </div>
+              <div class="overflow_area">
+                <div class="s-info_group f-info_group collum_3">
+                    <ul>
+                      <li>
+                        <span>Category</span>
+                        <p class="s_p_info">Office Supply</p>
+                      </li>
+                      <li>
+                        <span>Contract Duration</span>
+                        <p class="s_p_info">9 Months</p>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span>Duration</span>
+                        <p class="s_p_info">4 Months</p>
+                      </li>
+                      <li>
+                        <span>Status</span>
+                        <p class="s_p_info active">Active</p>
+                      </li>
+                    </ul>
+                  <ul class="qnumber s_btn_area">
+                    <li>
+                      <h1>$ 554</h1>
+                    </li>
+                    <li>
+                      <p>Total Quantity 23</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="s_list f_yellow mt-2">
+              <div class="s_header">
+                <div class="title">
+                  <h2>Monitor</h2>
+                </div>
+              </div>
+              <div class="overflow_area">
+                <div class="s-info_group f-info_group collum_3">
+                    <ul>
+                      <li>
+                        <span>Category</span>
+                        <p class="s_p_info">Office Supply</p>
+                      </li>
+                      <li>
+                        <span>Contract Duration</span>
+                        <p class="s_p_info">9 Months</p>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span>Duration</span>
+                        <p class="s_p_info">4 Months</p>
+                      </li>
+                      <li>
+                        <span>Status</span>
+                        <p class="s_p_info draft">Draft</p>
+                      </li>
+                    </ul>
+                  <ul class="qnumber s_btn_area">
+                    <li>
+                      <h1>$ 554</h1>
+                    </li>
+                    <li>
+                      <p>Total Quantity 23</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="s_list f_blue mt-2">
+              <div class="s_header">
+                <div class="title">
+                  <h2>Monitor</h2>
+                </div>
+              </div>
+              <div class="overflow_area">
+                <div class="s-info_group f-info_group collum_3">
+                    <ul>
+                      <li>
+                        <span>Category</span>
+                        <p class="s_p_info">Office Supply</p>
+                      </li>
+                      <li>
+                        <span>Contract Duration</span>
+                        <p class="s_p_info">9 Months</p>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span>Duration</span>
+                        <p class="s_p_info">4 Months</p>
+                      </li>
+                      <li>
+                        <span>Status</span>
+                        <p class="s_p_info evaluation">Evaluation</p>
+                      </li>
+                    </ul>
+                  <ul class="qnumber s_btn_area">
+                    <li>
+                      <h1>$ 554</h1>
+                    </li>
+                    <li>
+                      <p>Total Quantity 23</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="s_list f_black mt-2">
+              <div class="s_header">
+                <div class="title">
+                  <h2>Monitor</h2>
+                </div>
+              </div>
+              <div class="overflow_area">
+                <div class="s-info_group f-info_group collum_3">
+                    <ul>
+                      <li>
+                        <span>Category</span>
+                        <p class="s_p_info">Office Supply</p>
+                      </li>
+                      <li>
+                        <span>Contract Duration</span>
+                        <p class="s_p_info">9 Months</p>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span>Duration</span>
+                        <p class="s_p_info">4 Months</p>
+                      </li>
+                      <li>
+                        <span>Status</span>
+                        <p class="s_p_info completed">completed</p>
+                      </li>
+                    </ul>
+                  <ul class="qnumber s_btn_area">
+                    <li>
+                      <h1>$ 554</h1>
+                    </li>
+                    <li>
+                      <p>Total Quantity 23</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="pagination_area mt-4">
+              <p>1-10 of 80 item(s)</p>
+              <nav aria-label="navigation" class="navigation">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true"><i class="bx bx-chevron-left icons"></i></span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link active" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true"><i class="bx bx-chevron-right icons"></i></span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="pagination">
+                  <div class="form-group c-selecet bold no-margin" style="width: 110px">
+                    <select class="form-select">
+                      <option value="">10/page</option>
+                      <option value="">20/page</option>
+                      <option value="">30/page</option>
+                      <option value="">40/page</option>
+                      <option value="">50/page</option>
+                      <option value="">60/page</option>
+                      <option value="">70/page</option>
+                      <option value="">80/page</option>
+                    </select>
+                  </div>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- nav_user_status -->
+      <div class="nav_user_status" id="nav_user_status">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-user-gear icons"></i>Profile</a>
+          </li>
+          <div class="custom-selector">
+            <div class="selected-option" onclick="toggleOptions()">
+              <div class="option-text">
+                <iconify-icon icon="twemoji:flag-liberia"></iconify-icon>
+                English
+              </div>
+            </div>
+            <div class="options" id="options">
+              <div class="options_list" onclick="selectOption('English')">
+                <iconify-icon icon="twemoji:flag-liberia"></iconify-icon>
+                English
+              </div>
+              <div class="options_list" onclick="selectOption('Spanish')">
+                <iconify-icon icon="twemoji:flag-germany"></iconify-icon>
+                German
+              </div>
+              <div class="options_list" onclick="selectOption('French')">
+                <iconify-icon icon="emojione-v1:flag-for-portugal"></iconify-icon>
+                Portugues
+              </div>
+              <div class="options_list" onclick="selectOption('German')">
+                <iconify-icon icon="twemoji:flag-french-polynesia"></iconify-icon>
+                French
+              </div>
+            </div>
+          </div>
+          <li>
+            <a href=""><i class="fa-solid fa-arrow-right-to-bracket icons"></i>Log
+              out</a>
+          </li>
+        </ul>
+      </div>
 
-    <!--====================== Modal ======================-->
-    <!--=== Archive Modal ===-->
-    <div
-      class="modal fade"
-      id="archivePopup"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">Archive</h5>
-            <button
-              type="button"
-              class="modal_close_btn"
-              data-bs-dismiss="modal"
-            >
-              <i class="bx bx-x icons"></i>
-            </button>
+      <!-- notification area -->
+      <div class="notification_area" id="notificationDiv">
+        <!-- Notification List -->
+        <div class="notification_list" id="notificationList">
+          <div class="notifi_item" onclick="openNotification()">
+            <div class="notifi_header read">
+              <h6 class="notifi_title">
+                Title of the message should be here
+              </h6>
+              <p>03.08.2023</p>
+            </div>
+            <p>
+              Radzen is a desktop tool that gives you the power to create line
+              of business applications fast.
+            </p>
           </div>
-          <div class="modal-body">
-            <p>Are yo sure you want to Archive this agreement?</p>
+          <div class="notifi_item" onclick="openNotification()">
+            <div class="notifi_header unread">
+              <h6 class="notifi_title">
+                Title of the message should be here
+              </h6>
+              <p>03.08.2023</p>
+            </div>
+            <p>
+              Radzen is a desktop tool that gives you the power to create line
+              of business applications fast.
+            </p>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn_sec" data-bs-dismiss="modal">
-              Cancel
-            </button>
-            <button type="button" class="btn btn-primary">Confirm</button>
+        </div>
+
+        <!-- Open Single notification -->
+        <div class="single_notification" id="single_notification" style="display: none">
+          <a href="#" id="backButton" onclick="backNotification()"><i class="bx bx-chevron-left icons"></i>Back</a>
+          <hr class="mt-2" />
+          <div class="notifi_item">
+            <div class="notifi_header">
+              <h6 class="notifi_title">
+                Title of the message should be here
+              </h6>
+              <p>03.08.2023</p>
+            </div>
+            <p>
+              Radzen is a desktop tool that gives you Radzen is a desktop tool
+              that gives you the power to create line of business applications
+              fast. the power to create line of business applications fast.
+              Radzen is a desktop tool that gives you Radzen is a desktop tool
+              that gives you the power to create line of business applications
+              fast. the power to create line of business applications
+              fast.Radzen is a desktop tool that gives you Radzen is a desktop
+              tool that gives you the power to create line of business
+              applications fast. the power to create line of business
+              applications fast.
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Js Part -->
-    <script src="assets/js/jquery-3.6.4.min.js"></script>
-    <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/fontawesome.min.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="assets/js/style.js"></script>
-  </body>
+
+    <div class="side_ex_bg">
+      <img src="assets/img/Background Gradient.svg" alt="" />
+    </div>
+  </div>
+
+  <!--====================== Modal ======================-->
+  <!--=== Archive Modal ===-->
+  <div class="modal fade" id="archivePopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Archive</h5>
+          <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+            <i class="bx bx-x icons"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Are yo sure you want to Archive this agreement?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn_sec" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn btn-primary">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Js Part -->
+  <script src="assets/js/jquery-3.6.4.min.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/style.js"></script>
+</body>
+
 </html>
