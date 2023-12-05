@@ -15,9 +15,9 @@
     padding-bottom: 20px;
   }
 
-  .suppliers_con_list .s-info_group {
+  /* .suppliers_con_list .s-info_group {
     width: 120%;
-  }
+  } */
 }
 
 @media screen and (max-width: 991px) {

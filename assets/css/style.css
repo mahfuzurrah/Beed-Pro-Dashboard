@@ -47,15 +47,15 @@
 }
 
 /* Hide default scrollbar */
-::-webkit-scrollbar {
-  width: 1px;
-  height: 1px;
+/* ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
   padding: 5px;
 }
 
 ::-webkit-scrollbar-track {
   background-color: var(--primary-color);
-}
+} */
 
 html {
   overflow-y: scroll;
