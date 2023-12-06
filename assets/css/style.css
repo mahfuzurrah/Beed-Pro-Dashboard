@@ -2070,3 +2070,10 @@ Supplier Profile Css
   top: 12px;
   right: 12px;
 }
+
+.beed_flow_page .s-info_group.f-info_group.collum_3{
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
