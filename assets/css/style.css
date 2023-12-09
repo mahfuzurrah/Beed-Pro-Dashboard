@@ -1047,7 +1047,6 @@ All Page Common Css Code End
   max-width: 720px;
   margin: auto;
   margin-top: 50px;
-
 }
 
 .beed_flow_content_area .flow_nav .nav_menu {
@@ -1094,7 +1093,6 @@ All Page Common Css Code End
   justify-content: center;
 }
 
-
 .beed_flow_content_area .flow_nav .nav_menu .number.active_stap {
   background: #e5e7ea;
 }
@@ -1108,7 +1106,7 @@ All Page Common Css Code End
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #4D4D4D !important;
+  color: #4d4d4d !important;
 }
 
 .js-tags {
@@ -1187,12 +1185,14 @@ All Page Common Css Code End
   color: var(--white-color);
 }
 
-.select2-container--default .select2-selection--multiple .select2-selection__choice{
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice {
   border-radius: 4px;
-background: #12A4F533;
-color: #12A4F5;
-border: none;
-padding: 2px 4px;
+  background: #12a4f533;
+  color: #12a4f5;
+  border: none;
+  padding: 2px 4px;
 }
 
 button.select2-selection__choice__remove {
@@ -1237,12 +1237,10 @@ button.select2-selection__choice__remove {
   margin: -5px !important;
 }
 
-
 .s_btn_area h1,
 .f-info_group h1 {
   font-size: 36px;
 }
-
 
 .toggle-button {
   display: none;
@@ -1255,8 +1253,6 @@ button.select2-selection__choice__remove {
 .show-more-button {
   display: inline-block;
 }
-
-
 
 .s_btn_area p,
 .f-info_group p {
@@ -1366,7 +1362,7 @@ Product Name Page
   border-radius: 5px;
 }
 
-.checkbox input[type="checkbox"]:checked+label::before {
+.checkbox input[type="checkbox"]:checked + label::before {
   background-color: #3f526f;
   color: #fff;
   border: none;
@@ -1380,12 +1376,18 @@ Product Name Page
   overflow-x: auto;
 }
 
-
-.product_name_page .product_name_list .product-info_group ul.qnumber.s_btn_area {
+.product_name_page
+  .product_name_list
+  .product-info_group
+  ul.qnumber.s_btn_area {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+}
 
+.beed_flow_page .qnumber.s_btn_area {
+  /* margin-top: -40px; */
+  transform: translateY(-42%)
 }
 
 .product_name_list .p_title_bid {
@@ -1400,7 +1402,7 @@ Product Name Page
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  background: #EEF0F2;
+  background: #eef0f2;
   margin-top: 8px;
   font-size: var(--small-font-size);
   font-weight: 500;
@@ -1413,7 +1415,7 @@ Product Name Page
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  background: #EEF0F2;
+  background: #eef0f2;
   margin-top: 8px;
   font-size: var(--small-font-size);
   font-weight: 500;
@@ -1470,7 +1472,7 @@ Product Name Page
 }
 
 .compare_page .s_header .title .price h1 {
-  color: #3F526F;
+  color: #3f526f;
   font-size: 36px;
 }
 
@@ -1478,8 +1480,6 @@ Product Name Page
   color: #12a4f5;
   font-size: 36px;
 }
-
-
 
 .compare_page .c_box {
   padding: 20px;
@@ -1585,13 +1585,11 @@ Product Name Page
   width: max-content;
 }
 
-
 .product-info_group,
 .suppliers_con_list .s-info_group {
   margin-top: 16px !important;
   margin-left: 1px !important;
 }
-
 
 .LYNX-overview #overview .wrapper {
   margin-top: 30px;
@@ -1627,7 +1625,6 @@ Product Name Page
   padding: 0 20px;
 }
 
-
 .LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list {
   display: flex;
   align-items: center;
@@ -1637,14 +1634,27 @@ Product Name Page
   border-top: 1px solid var(--border-color);
 }
 
-.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list.header-list {
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list.header-list {
   border: none;
   padding-top: 0;
   width: 85%;
   margin-left: auto;
 }
 
-.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list.header-list li {
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list.header-list
+  li {
   text-align: left;
   color: var(--title-text-color) !important;
   font-weight: 600;
@@ -1669,7 +1679,14 @@ Product Name Page
     min-width: 80px;
   }
 
-  .LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box {
+  .LYNX-overview
+    #overview
+    .wrapper
+    .big-chart
+    .box
+    .tabile-list
+    .list
+    li.color-box {
     margin-right: 55px !important;
   }
 }
@@ -1684,33 +1701,82 @@ Product Name Page
   color: var(--title-text-color);
 }
 
-.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li:nth-child(1) {
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li:nth-child(1) {
   margin-left: 0;
 }
 
-.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box {
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box {
   min-width: 20px;
   height: 10px;
   margin-right: 10px;
 }
 
-.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box.color-100 {
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box.color-100 {
   background: #cd0606;
 }
 
-.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box.color-200 {
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box.color-200 {
   background: #00ab79;
 }
 
-.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box.color-300 {
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box.color-300 {
   background: #e0e324;
 }
 
-.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box.color-400 {
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box.color-400 {
   background: #00ab79;
 }
 
-.LYNX-overview #overview .wrapper .big-chart .box .tabile-list .list li.color-box.color-500 {
+.LYNX-overview
+  #overview
+  .wrapper
+  .big-chart
+  .box
+  .tabile-list
+  .list
+  li.color-box.color-500 {
   background: #cd0606;
 }
 
@@ -1722,10 +1788,10 @@ Product Name Page
 
 .upload_card .pagination .page-item a {
   border: none !important;
-  background: #E9EAED;
+  background: #e9eaed;
   border-radius: 4px !important;
   padding: 5px 12px;
-  color: #4F4F50;
+  color: #4f4f50;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -1775,7 +1841,7 @@ Product Name Page
 
 .upload_card_2 .file-info-actions {
   padding: 5px;
-  border-bottom: 1px solid #00A1B3;
+  border-bottom: 1px solid #00a1b3;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -1804,7 +1870,6 @@ Product Name Page
   gap: 20px;
 }
 
-
 .upload_card_2 .btn.up_next {
   background: #3f526f96;
 }
@@ -1814,7 +1879,7 @@ Product Name Page
 }
 
 .file-item_red .file-info .file_name {
-  color: #F31155;
+  color: #f31155;
 }
 
 .star-checkbox-container {
@@ -1824,9 +1889,7 @@ Product Name Page
   width: 20px;
   height: 20px;
   margin-right: 20px;
-
 }
-
 
 /* Add CSS for star rating */
 .star-wrapper {
@@ -1855,17 +1918,14 @@ Product Name Page
 .star-wrapper .light_grey:before {
   content: "\2605";
   font-size: 24px;
-  color: #3f526f1f !important
+  color: #3f526f1f !important;
 }
 
 /* Change star color when checked */
-.star-wrapper input[type="checkbox"]:checked+label:before {
+.star-wrapper input[type="checkbox"]:checked + label:before {
   content: "\2605";
   color: var(--primary-color);
 }
-
-
-
 
 /* ==============================================
 Supplier Profile Css
@@ -1877,7 +1937,6 @@ Supplier Profile Css
   display: flex;
   gap: 70px;
 }
-
 
 .suppliers_profile_page .s_profile_area .profile_img {
   text-align: center;
@@ -1897,13 +1956,13 @@ Supplier Profile Css
   width: 200px;
   height: 200px;
   border-radius: 1000px;
-  border: 3px solid #E5E5E5;
+  border: 3px solid #e5e5e5;
   object-fit: cover;
 }
 
 .suppliers_profile_page .s_profile_area .img_area .edit_icon {
   padding: 8px 10px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 100px;
   color: #12a4f5;
   font-size: 18px;
@@ -1929,7 +1988,7 @@ Supplier Profile Css
   font-size: 20px;
   display: inline-flex;
   align-items: center;
-  gap: 0
+  gap: 0;
 }
 
 .suppliers_profile_page .s_profile_area .s_profile_text_info .dot_icons {
@@ -1949,7 +2008,6 @@ Supplier Profile Css
   gap: 10px;
 }
 
-
 .suppliers_profile_page .s_profile_area .tag_list .list {
   display: flex;
   align-items: center;
@@ -1960,7 +2018,7 @@ Supplier Profile Css
   background: rgba(18, 164, 245, 0.2);
   padding: 3px 6px;
   border-radius: 4px;
-  color: #12A4F5;
+  color: #12a4f5;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -1976,7 +2034,7 @@ Supplier Profile Css
 .suppliers_profile_page .s_profile_area .profile_p_info .active_icons {
   width: 8px;
   height: 8px;
-  background: #74D062;
+  background: #74d062;
   border-radius: 100px;
   margin-right: 8px;
 }
@@ -2003,25 +2061,24 @@ Supplier Profile Css
 }
 
 .suppliers_profile_page .s_profile_area .contact_persons .tag_list a {
-  background: #3F526F29;
-  color: #3F526F;
+  background: #3f526f29;
+  color: #3f526f;
   font-weight: 600;
   letter-spacing: 0.24px;
   text-transform: uppercase;
 }
 
-
-.suppliers_profile_page .s_profile_area .js-tags .tag.js-tag{
-  background: #3F526F29;
+.suppliers_profile_page .s_profile_area .js-tags .tag.js-tag {
+  background: #3f526f29;
 }
 
-.suppliers_profile_page .s_profile_area .js-tags .tag.js-tag:hover{
-  background: #FFAE1133;
-  color: #3F526F;
+.suppliers_profile_page .s_profile_area .js-tags .tag.js-tag:hover {
+  background: #ffae1133;
+  color: #3f526f;
 }
 
 .suppliers_profile_page .s_profile_area .js-tags a {
-  color: #3F526F;
+  color: #3f526f;
   font-weight: 600;
   letter-spacing: 0.24px;
   text-transform: uppercase;
@@ -2029,7 +2086,7 @@ Supplier Profile Css
 
 .suppliers_profile_page .s_profile_area .contact_persons p.desc {
   padding: 20px;
-  background: #F4F5F9;
+  background: #f4f5f9;
   margin-top: 20px;
 }
 
@@ -2057,10 +2114,10 @@ Supplier Profile Css
 }
 
 .suppliers_profile_page .file-upload {
-    display: none;
+  display: none;
 }
 
-.selection{
+.selection {
   position: relative;
 }
 
@@ -2071,7 +2128,7 @@ Supplier Profile Css
   right: 12px;
 }
 
-.beed_flow_page .s-info_group.f-info_group.collum_3{
+.beed_flow_page .s-info_group.f-info_group.collum_3 {
   display: flex !important;
   align-items: center;
   justify-content: space-between;
